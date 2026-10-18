@@ -1,8 +1,0 @@
-{
-  "appId": "com.datalaw.folio",
-  "appName": "Folio",
-  "webDir": "www",
-  "plugins": {
-    "SystemBars": { "insetsHandling": "css", "style": "DARK" }
-  }
-}

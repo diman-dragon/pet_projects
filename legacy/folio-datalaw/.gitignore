@@ -1,6 +1,0 @@
-node_modules/
-www/vendor/
-*.keystore
-*.jks
-!android/debug.keystore
-.DS_Store
