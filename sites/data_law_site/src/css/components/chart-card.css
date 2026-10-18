@@ -1,0 +1,54 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   CHART CARD  .dl-chart-card
+   ───────────────────────────────────────────────────────────────────────── */
+
+.dl-chart-card {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dl-chart-card.grid-span-2 { grid-column: span 2; }
+
+.dl-chart-card__head {
+  padding: var(--sp-8) var(--sp-8) var(--sp-5);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.dl-chart-card__badge {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  color: var(--c-gold);
+  margin-bottom: var(--sp-3);
+}
+
+.dl-chart-card__title {
+  font-family: var(--f-sans);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--c-ink);
+  margin: 0;
+}
+
+.dl-chart-card__sub {
+  font-size: var(--fs-sm);
+  color: var(--c-text-dim);
+  margin-top: var(--sp-2);
+}
+
+.dl-chart-card__body {
+  padding: var(--sp-8);
+  flex: 1;
+}
+
+.dl-chart-card__footer {
+  padding: var(--sp-5) var(--sp-8);
+  border-top: 1px solid var(--c-border);
+  font-size: var(--fs-xs);
+  color: var(--c-text-dim);
+}

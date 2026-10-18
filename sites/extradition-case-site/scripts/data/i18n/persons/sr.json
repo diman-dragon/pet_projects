@@ -1,0 +1,202 @@
+{
+  "title": "Učesnici",
+  "subtitle": "Ne apstraktan 'sistem', već konkretni službenici, podnosioci prijava i potpisnici čije su se odluke spojile u jedan krivični predmet i jedan zahtev za izručenje.",
+  "intro": "Predmet Lagovski sastavljen je rukama konkretnih ljudi. Jedni su korporativni sukob pretvorili u krivičnu priču, drugi su toj priči dali procesni oblik, a treći su kasnije neutralisali žalbe šablonskim odgovorima. Ova stranica nije galerija biografija, već mapa ličnih uloga u dokumentovanoj lancanoj konstrukciji predmeta.",
+  "clusters": {
+    "title": "Tri konture od kojih je sastavljen zahtev za izručenje",
+    "items": [
+      {
+        "label": "Korporativni motiv",
+        "title": "Od spora o kontroli do krivične naracije",
+        "tone": "info",
+        "desc": "<strong>Sergej Valentinovič Palkin</strong> i korporativni krug oko njega pokrenuli su prijave iz kojih je kasnije izrastao krivični predmet. U središtu nije klasična krađa, već privredni sukob oko AD FEZ i zakonitosti transakcije koju je arbitraža već potvrdila."
+      },
+      {
+        "label": "Istraga i MUP",
+        "title": "Procesno oblikovanje sporne verzije",
+        "tone": "danger",
+        "desc": "<strong>Jurij Mihajlovič Salikov</strong>, <strong>I.I. Čugunkov</strong> i <strong>E.I. Kuznjecov</strong> predstavljaju isti odeljenjski lanac: Salikov i Čugunkov su sukcesivno obavljali dužnost zamenika načelnika 6. odeljenja (Salikov je otišao u penziju), dok je Kuznjecov bio njihov neposredni pretpostavljeni kao načelnik odeljenja. Promena izvršioca nije promenila karakter odgovora — što pokazuje da je praksa šablonskih odbijanja bila institucionalna, a ne lična."
+      },
+      {
+        "label": "Tužilaštvo i nadzor",
+        "title": "Od nezavisnog nadzora do prenošenja iste linije",
+        "tone": "danger",
+        "desc": "<strong>A.A. Mitrohina</strong>, <strong>S.V. Prokopenko</strong> i <strong>Sergej Vladimirovič Zabaturin</strong> potpisuju odgovore koji žalbe ne razmatraju po suštini. Umesto provere zakonitosti, nadzorna vertikala ili ponavlja istu formulu ili žalbu vraća upravo onim organima čije se postupanje osporava."
+      },
+      {
+        "label": "Sudovi i spoljni adresati",
+        "title": "Tačke na kojih je povreda još mogla biti zaustavljena",
+        "tone": "default",
+        "desc": "<strong>E.A. Torgašev</strong>, <strong>Aleksandar Ivanovič Bastrikin</strong> i <strong>A.A. Klišas</strong> predstavljaju nivoe na kojima je povreda još mogla biti zaustavljena: interna kontrola GSU MUP-a (Torgašev), predsednik Istražnog komiteta RF (Bastrikin) i parlamentarni adresat (Klišas). Svaki od ovih vektora rezultirao je pisanim odgovorom — nijedan nije sadržao suštinsko razmatranje."
+      }
+    ]
+  },
+  "profiles": {
+    "title": "Imena, uloge i konkretne radnje",
+    "items": [
+      {
+        "id": "palkin",
+        "name": "Palkin Sergej Valentinovič",
+        "photo": "./assets/media/persons/palkin.jpg",
+        "role": "Potpredsednik OPŽT, direktor Direkcije za tehničku regulativu železničkih proizvoda u DOO TK EurazHolding i početni podnosilac prijave iz korporativne linije.",
+        "doc": "Prijava o krivičnom delu od 14.09.2022. preko advokata V.O. Trofimčuka; KUSP i prateći materijali nastali po Palkinovoj prijavi.",
+        "action": "Krivična verzija počinje iz njegove linije. Ime Lagovskog nije bilo prisutno u početnim materijalima, što je važno za ocenu kasnijeg 'dograđivanja' naracije. Korporativni sukob se najpre pojavljuje kao prijava, a zatim se razvija u krivično gonjenje."
+      },
+      {
+        "id": "salikov",
+        "name": "Salikov Jurij Mihajlovič",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Potpukovnik pravde, zamenika načelnika 6. odeljenja SČ GSU GU MUP Rusije za Moskovsku oblast (u vreme istrage). Otišao u penziju; dužnost je preuzeo Čugunkov.",
+        "doc": "Odluka o pokretanju predmeta; zapisnik o pretresu od 15.12.2022; zapisnici o pregledu od 17.12.2022. i 03.11.2023; materijali o potrazi.",
+        "docIds": [
+          "Postanovlenie-suda-ob-otkaze-v-obyske",
+          "Statya-125-obzhalovanie-postanovleniy-o-rozyske"
+        ],
+        "action": "Ključni procesni izvršilac: pokrenuo je predmet bez uredne privatne prijave navodno oštećenog društva, izvršio pretres uprkos sudskoj zabrani i vodio oduzimanja i raspisivanje potrage. Naknadno je postao predmet posebnih pritužbi zbog zloupotrebe i falsifikovanja dokaza. Nakon odlaska u penziju, Čugunkov je preuzeo istu dužnost — karakter odgovora se nije promenio."
+      },
+      {
+        "id": "chugunkov",
+        "name": "Čugunkov I.I.",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Zamenik načelnika 6. odeljenja SČ GSU GU MUP Rusije za Moskovsku oblast. Preuzeo dužnost nakon odlaska Salikova u penziju.",
+        "doc": "Odgovori br. 3/267704660170 i 3/267704751007 od 16.03.2026.",
+        "docIds": [
+          "chugunkov-response-660170",
+          "chugunkov-response-751007"
+        ],
+        "action": "Dao je dva gotovo identična odgovora na različite podneske odbrane. Umesto ispitivanja navedenih činjenica, odgovori su suštinu pritužbe zamenili šablonskim odbijanjem. Činjenica da promena konkretnog službenika nije promenila karakter odgovora pokazuje da blokiranje pritužbi nije bila lična inicijativa, već ustaljena praksa odeljenja."
+      },
+      {
+        "id": "kuznetsov",
+        "name": "Kuznjecov E.I.",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Načelnik 6. odeljenja SČ GSU GU MUP Rusije za Moskovsku oblast, neposredni rukovodilac istražnog tima u predmetu.",
+        "doc": "Odgovori od 25.06.2025, 20.07.2025. i 01.08.2025; žalba na nepostupanje Kuznjecova; prilozi 1-16 uz tu žalbu.",
+        "docIds": [
+          "kuznetsov-response-2025-06-25",
+          "kuznetsov-reply-2025-07-14",
+          "kuznetsov-response-2025-07-20",
+          "kuznetsov-response-2025-08-01",
+          "kuznetsov-response-2025-09-01"
+        ],
+        "action": "Niz Kuznjecovljevih odgovora dokumentuje kako se pritužbe na nezakonite istražne radnje rešavaju od strane rukovodioca čiji su podređeni navedeni u tim pritužbama. Reč je o strukturnom sukobu interesa koji onemogućava bilo kakvu suštinsku internu proveru unutar GSU MUP-a Moskovske oblasti."
+      },
+      {
+        "id": "mitrokhina",
+        "name": "Mitrohina A.A.",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Zamenik načelnika odeljenja Tužilaštva Moskovske oblasti i potpisnica serije tužilačkih odgovora.",
+        "doc": "Najmanje osam gotovo identičnih odgovora; posebni odgovori br. 13 i 31; prosleđivanje žalbe nazad u GSU; žalba protiv Mitrohine i žalba protiv njenog odgovora.",
+        "docIds": [
+          "mitrokhina-response-2026-04-23",
+          "mitrokhina-forward-to-gsu-2026-04-20",
+          "prokuratura-mo-response-16-4-469-2025",
+          "mitrokhina-response-13",
+          "mitrokhina-response-31"
+        ],
+        "action": "Lično oličava tužilački obrazac odbijanja. Umesto nezavisnog nadzora, žalbe se ili odbijaju istom formulom ili vraćaju organu čije se postupanje osporava. Za stranicu 'Flagrantno uskraćivanje pravde' ovo je jedan od najuverljivijih ponavljajućih obrazaca."
+      },
+      {
+        "id": "prokopenko",
+        "name": "Prokopenko S.V.",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Zamenik generalnog tužioca Ruske Federacije i potpisnik ključnih odgovora Generalnog tužilaštva.",
+        "doc": "Paket odgovora Generalnog tužilaštva; nacrt obraćanja Generalnom tužilaštvu; žalba protiv odgovora Prokopenka.",
+        "docIds": [
+          "prokopenko-otvety",
+          "genprok-ogr-154993-response"
+        ],
+        "action": "Nivo Generalnog tužilaštva nije ispravio nijednu od već iznetih povreda. Naprotiv, upravo je ovde formalna logika odbijanja učvršćena odozgo. Važan element ove linije jeste pozivanje na pravni stav čiji stvarni smisao, kako pokazuju materijali odbrane, ide u suprotnom smeru."
+      },
+      {
+        "id": "semina",
+        "name": "Olga Nikolajevna Semina",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Sudija Tverskog rejonskog suda u Moskvi. Donosila odluke o hapšenju u odsustvu i odbijanju razmatranja žalbi odbrane.",
+        "doc": "Rešenje o hapšenju; Rešenja Tverskog suda o vraćanju žalbi (mart 2026).",
+        "docIds": [
+          "tver-complaint-refusal-1",
+          "tver-complaint-refusal-2",
+          "tver-access-refusal"
+        ],
+        "action": "Obezbeđuje sudsku podršku nezakonitom progonu. Uskraćuje pristup pravdi vraćanjem žalbi po čl. 125 ZKP pod izmišljenim izgovorima, čime onemogućava osporavanje radnji istrage pred sudom."
+      },
+      {
+        "id": "krivoruchko",
+        "name": "Aleksej Vjačeslavovič Krivoručko",
+        "photo": "./assets/media/persons/krivoruchko.png",
+        "role": "Sudija Tverskog rejonskog suda u Moskvi, akter sa 'Magnicki liste'. Razmatrao ključne zahteve istrage u ovom predmetu.",
+        "doc": "Materijali o hapšenju u odsustvu i produženju mera obezbeđenja.",
+        "docIds": [
+          "Postanovlenie-ob-areste"
+        ],
+        "action": "Poznat po svojoj ulozi u medijski propraćenim političkim procesima. U predmetu Lagovski, njegovo učešće je garantovalo istrazi potrebne procesne odluke, uključujući hapšenje u odsustvu uprkos poznatoj adresi okrivljenog u inostranstvu."
+      },
+      {
+        "id": "gasnikova",
+        "name": "Oksana Dmitrijevna Gasnikova",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Sudija Ščelkovskog gradskog suda u Moskovskoj oblasti.",
+        "doc": "Rešenje Ščelkovskog suda o vraćanju žalbi br. 697/2025.",
+        "docIds": [
+          "shchelkovo-return-order",
+          "shchelkovo-response-697"
+        ],
+        "action": "Učestvovala u blokiranju žalbi odbrane na nivou rejonskog suda u Moskovskoj oblasti, ponavljajući istu taktiku izbegavanja suštinskog razmatranja povreda kao i Tverski sud u Moskvi."
+      },
+      {
+        "id": "mosgorsud_judges",
+        "name": "Sudije Moskovskog gradskog suda",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Apelaciona instanca koja potvrđuje odluke Tverskog suda.",
+        "doc": "Apelaciona rešenja Moskovskog gradskog suda.",
+        "docIds": [
+          "mosgorsud-2025-10-16",
+          "mosgorsud-rozysk-refusal"
+        ],
+        "action": "Sistematski potvrđuju nezakonite odluke nižih sudova, ignorišući fundamentalna kršenja ljudskih prava i direktnu kontradiktornost između nalaza istrage i odluka privrednih (arbitražnih) sudova."
+      },
+      {
+        "id": "torgashev",
+        "name": "Torgašev E.A.",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Zamenik načelnika GSU GU MUP Rusije za Moskovsku oblast. Njegovo rešenje se izričito navodi u žalbi Bastrykinu kao dokument koji je istraga bila dužna da izvrši, ali ga je ignorisala.",
+        "doc": "Rešenje Torgaševa na koje se poziva žalba Bastrikinu zbog nepostupanja po predmetu.",
+        "action": "Torgašev je važan ne kao deo lanca odbijanja, već kao suprotna tačka: njegovo rešenje trebalo je da obaveže istragu na konkretne radnje. Činjenica da je čak i interni dokument zamenika načelnika GSU bio ignorisan pokazuje da kvar u sistemu nije dolazio odozdo, već je bio upravljan."
+      },
+      {
+        "id": "zabaturin",
+        "name": "Zabaturin Sergej Vladimirovič",
+        "photo": "./assets/media/persons/zabaturin.jpg",
+        "role": "Tužilac Moskovske oblasti, neposredni pretpostavljeni Mitrohine i ostalih potpisnika tužilačkih odgovora.",
+        "doc": "Obraćanja tužiocu Moskovske oblasti; odgovori Tužilaštva Moskovske oblasti po suštini pritužbi na istražne povrede.",
+        "docIds": [
+          "prokuror-mo-response"
+        ],
+        "action": "Zabaturin je vrh tužilačke vertikale u ovom predmetu na nivou Moskovske oblasti. Obraćanja njemu pokazuju: čak i eskalacija do rukovodioca regionalnog tužilaštva nije dovela do suštinskog razmatranja. Time se isključuje mogućnost da se obrazac odbijanja objasni nemarom pojedinih izvršilaca — odbijanja su bila sistemska i upravljana."
+      },
+      {
+        "id": "bastrykin",
+        "name": "Bastrikin Aleksandar Ivanovič",
+        "photo": "./assets/media/persons/bastrykin.jpg",
+        "role": "Predsednik Istražnog komiteta Ruske Federacije, adresat žalbi o nepostupanju i fabrikovanju predmeta.",
+        "doc": "Žalba Bastrikinu zbog nepostupanja po predmetu; žalba Bastrikinu o fabrikovanju predmeta.",
+        "action": "Predstavlja nivo na kojem je predmet mogao biti izvučen iz istog regionalnog kruga i preispitan iznova. Sama obraćanja Bastrikinu beleže da standardni kanali više nisu funkcionisali i da se tražila intervencija vrha Istražnog komiteta."
+      },
+      {
+        "id": "klishas",
+        "name": "Klišas A.A.",
+        "photo": "./assets/media/persons/klishas.jpg",
+        "role": "Senator Ruske Federacije, predsednik Komiteta Saveta Federacije za ustavno zakonodavstvo i izgradnju države. Parlamentarni adresat obraćanja o sistemskim povredama ustavnih garancija.",
+        "doc": "Obraćanje Savetu Federacije; odgovor aparata Klišasovog komiteta.",
+        "action": "Ova figura pokazuje kako predmet izlazi izvan okvira jednog krivičnog spisa i postaje pitanje ustavnih garancija i sistemskog uskraćivanja zaštite. Odgovor aparata komiteta važan je kao primer da ni na političko-pravnom nivou nije ponuđen stvarni mehanizam ispravljanja povrede."
+      }
+    ]
+  },
+  "summary": "Svrha stranice 'Učesnici' nije personalizacija radi same personalizacije. Ona pokazuje da se zahtev za izručenje i proces koji mu je prethodio sastoje od potpisa, rešenja, prosleđivanja i odbijanja, a svako od njih ima prepoznatljivog autora. Zato ovde nije reč o bezličnoj grešci sistema, već o lancu pojedinačno izvršenih radnji.",
+  "labels": {
+    "role": "Uloga",
+    "doc": "Dokument",
+    "action": "Šta je učinjeno"
+  }
+}

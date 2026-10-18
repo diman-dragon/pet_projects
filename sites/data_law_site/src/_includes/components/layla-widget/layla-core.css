@@ -1,0 +1,124 @@
+/* ==========================================================================
+   DATALAW — LAYLA AI WIDGET CORE
+   ========================================================================== */
+
+.layla-container {
+  --lw-navy:   #0d1f35;
+  --lw-gold:   #c5a87c;
+  --lw-paper:  #ffffff;
+  --lw-bg:     #f5f4f0;
+  --lw-shadow: rgba(0,0,0,0.35);
+
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99999;
+  font-family: var(--f-sans);
+}
+
+.layla-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  background: var(--lw-navy);
+  border: 1px solid rgba(197,168,124,0.35);
+  border-radius: 50%;
+  box-shadow: 0 10px 32px var(--lw-shadow);
+  cursor: pointer;
+  outline: none;
+  transition:
+    transform var(--t-slow) var(--ease-out),
+    border-color var(--t-base),
+    box-shadow var(--t-base);
+}
+
+.layla-trigger:hover {
+  transform: scale(1.08);
+  border-color: var(--lw-gold);
+  box-shadow: 0 14px 40px rgba(197,168,124,0.18);
+}
+
+.orbital-system {
+  width: 52px;
+  height: 52px;
+  pointer-events: none;
+}
+
+.satellite {
+  fill: var(--lw-gold);
+  filter: drop-shadow(0 0 2px var(--lw-gold));
+}
+
+.orbit-1 { animation: orbit-spin 6s linear infinite; transform-origin: 50px 50px; }
+.orbit-2 { animation: orbit-spin 10s linear infinite reverse; transform-origin: 50px 50px; }
+.orbit-3 { animation: orbit-spin 16s linear infinite; transform-origin: 50px 50px; }
+
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.layla-window {
+  position: absolute;
+  right: 0;
+  bottom: 86px;
+  display: none;
+  flex-direction: column;
+  width: 370px;
+  height: 540px;
+  overflow: hidden;
+  background: var(--lw-paper);
+  border: 1px solid rgba(197,168,124,0.5);
+  box-shadow: 0 24px 64px var(--lw-shadow);
+  animation: layla-appear 0.3s var(--ease-out) both;
+}
+
+.layla-window.active {
+  display: flex;
+}
+
+@keyframes layla-appear {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.layla-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-5) var(--sp-6);
+  background: var(--lw-navy);
+  border-bottom: 1px solid rgba(197,168,124,0.3);
+  flex-shrink: 0;
+}
+
+.layla-messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-5) var(--sp-5);
+  overflow-y: auto;
+  background: var(--lw-bg);
+  scrollbar-color: rgba(197,168,124,0.35) transparent;
+  scrollbar-width: thin;
+}
+
+.layla-input-area {
+  display: flex;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-4);
+  background: var(--lw-paper);
+  border-top: 1px solid rgba(0,0,0,0.07);
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .layla-container { right: 16px; bottom: 16px; }
+  .layla-window { right: -4px; width: calc(100vw - 32px); height: 460px; }
+  .layla-trigger { width: 60px; height: 60px; }
+  .orbital-system { width: 44px; height: 44px; }
+}

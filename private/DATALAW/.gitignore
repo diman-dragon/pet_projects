@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+target/
+**/target/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/bin/
+
+# Runtime workspaces and local data
+.db_user/
+Clients/
+Knowledge_Base/
+Legal_Corpus/
+PII_Vault/
+models/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+
+# Secrets and environment
+.env
+.env.local
+*.env.*
+.secrets/
+license-master.key
+
+# Logs and diagnostics
+*.log
+logs/
+coverage/
+htmlcov/
+.coverage
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

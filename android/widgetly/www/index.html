@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>DataLaw Widgetly</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <pre id="err" hidden style="white-space:pre-wrap;margin:0;padding:10px 14px;background:#7a1f1f;color:#fff;font:12px/1.4 monospace"></pre>
+  <div id="app"><p style="padding:24px;font:16px system-ui">DataLaw…</p></div>
+  <script>
+    // Диагностика: любая ошибка JS показывается на экране, а не остаётся белым экраном.
+    window.showErr = function (m) {
+      var e = document.getElementById('err');
+      e.hidden = false; e.textContent += m + '\n';
+    };
+    window.addEventListener('error', function (e) { showErr('JS: ' + e.message + ' (' + (e.filename || '').split('/').pop() + ':' + e.lineno + ')'); });
+    window.addEventListener('unhandledrejection', function (e) { showErr('Promise: ' + (e.reason && (e.reason.message || e.reason))); });
+    setTimeout(function () { if (!window.__wsReady) showErr('Интерфейс не запустился за 5 с — проверьте ошибки выше.'); }, 5000);
+  </script>
+  <script type="module" src="js/app.js" onerror="showErr('Не удалось загрузить js/app.js')"></script>
+</body>
+</html>

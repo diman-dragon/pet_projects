@@ -1,0 +1,108 @@
+:root {
+  --bg: #08111d;
+  --bg-elevated: #0d1725;
+  --surface: rgba(11, 23, 38, 0.92);
+  --surface-strong: rgba(17, 31, 49, 0.96);
+  --surface-soft: rgba(22, 38, 59, 0.76);
+  --text: #edf2f7;
+  --text-muted: #9ba8bb;
+  --text-faint: #6d7b91;
+  --accent: #d6ab62;
+  --accent-strong: #f0c98a;
+  --accent-soft: #1b2230;
+  --danger: #d66d5f;
+  --border: rgba(214, 226, 242, 0.12);
+  --border-strong: rgba(214, 226, 242, 0.2);
+  --shadow: 0 28px 90px rgba(3, 10, 19, 0.36);
+  --shadow-soft: 0 16px 48px rgba(3, 10, 19, 0.22);
+  --logo-filter: brightness(0) invert(1);
+
+  --radius-xs: 12px;
+  --radius-sm: 18px;
+  --radius: 28px;
+  --radius-lg: 36px;
+
+  --max-width: 1180px;
+  --measure: 72ch;
+
+  --space-2xs: clamp(0.3rem, 0.7vw, 0.45rem);
+  --space-xs: clamp(0.45rem, 1vw, 0.7rem);
+  --space-sm: clamp(0.7rem, 1.4vw, 0.95rem);
+  --space: clamp(0.95rem, 1.8vw, 1.25rem);
+  --space-md: clamp(1.1rem, 2.2vw, 1.55rem);
+  --space-lg: clamp(1.45rem, 2.7vw, 2.15rem);
+  --space-xl: clamp(2rem, 4.2vw, 3.2rem);
+
+  --text-xxs: clamp(0.58rem, 1vw, 0.65rem);
+  --text-xs: clamp(0.68rem, 1.2vw, 0.75rem);
+  --text-sm: clamp(0.79rem, 1.45vw, 0.88rem);
+  --text-base: clamp(0.94rem, 1.65vw, 1rem);
+  --text-md: clamp(1rem, 1.9vw, 1.1rem);
+  --text-lg: clamp(1.11rem, 2.2vw, 1.24rem);
+  --text-xl: clamp(1.32rem, 2.7vw, 1.55rem);
+  --text-2xl: clamp(1.65rem, 3.4vw, 2.08rem);
+  --text-3xl: clamp(2rem, 4.2vw, 2.8rem);
+
+  --font: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI Variable Text", "Segoe UI", system-ui,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "New York", "Georgia Pro", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+
+  --touch-min: 44px;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+[data-theme="light"] {
+  --bg: #efe4d1;
+  --bg-elevated: #f7efe3;
+  --surface: rgba(255, 249, 239, 0.92);
+  --surface-strong: rgba(248, 240, 228, 0.98);
+  --surface-soft: rgba(243, 233, 217, 0.88);
+  --text: #2f2419;
+  --text-muted: #766657;
+  --text-faint: #988876;
+  --accent: #9b6033;
+  --accent-strong: #bb7a43;
+  --accent-soft: #fff8f0;
+  --danger: #b65247;
+  --border: rgba(123, 98, 77, 0.16);
+  --border-strong: rgba(123, 98, 77, 0.24);
+  --shadow: 0 28px 90px rgba(117, 88, 60, 0.14);
+  --shadow-soft: 0 16px 48px rgba(117, 88, 60, 0.12);
+  --logo-filter: none;
+  color-scheme: light;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: var(--font);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+button,
+a,
+.hdr-hamburger span,
+.stt,
+.ui-card {
+  transition-property: background-color, border-color, color, transform, opacity, box-shadow, filter;
+}

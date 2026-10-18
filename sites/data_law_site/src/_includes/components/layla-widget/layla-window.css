@@ -1,0 +1,62 @@
+.layla-window {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  display: none;
+  flex-direction: column;
+  width: 380px;
+  height: 550px;
+  overflow: hidden;
+  background: var(--layla-white);
+  border: 1px solid var(--layla-gold);
+  border-radius: 12px;
+  box-shadow: 0 25px 60px var(--layla-shadow);
+  animation: layla-slide-up 0.3s ease-out;
+}
+
+.layla-window.active {
+  display: flex;
+}
+
+@keyframes layla-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.layla-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--layla-gold);
+  background: var(--layla-navy);
+  border-bottom: 1px solid var(--layla-gold);
+}
+
+.layla-header h4 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.status-live {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.layla-close {
+  color: var(--layla-gold);
+  font-size: 1.8rem;
+  line-height: 1;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.layla-close:hover {
+  color: var(--layla-white);
+  transform: scale(1.2);
+}

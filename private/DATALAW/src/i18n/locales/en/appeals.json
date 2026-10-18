@@ -1,0 +1,7 @@
+{
+  "appeal.timeline.event.appealDate": "Appeal filing date",
+  "appeal.timeline.event.responseDue": "Response deadline (30 days)",
+  "appeal.timeline.event.fileDate": "Document date",
+  "documentUpload.retroactive": "Retroactive processing",
+  "documentUpload.noExtractedText": "Could not extract text from the document"
+}

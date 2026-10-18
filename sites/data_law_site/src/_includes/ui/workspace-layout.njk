@@ -1,0 +1,92 @@
+{% macro workspace_layout(page) %}
+<div class="intelligence-hub">
+  <header class="intelligence-header">
+    <div class="text-overline text-overline--gold">Strategic Analysis Engine</div>
+    <h1>{{ page.title }}</h1>
+    <p class="lead-text">{{ page.description }}</p>
+  </header>
+
+  <div class="search-experience">
+    <div class="search-controls">
+      <div class="search-input-wrapper">
+        <input type="text" id="q-global" placeholder="{{ page.workspace.search.placeholder if page.workspace.search else 'Опишите ситуацию или правовой вопрос...' }}" class="main-search-input">
+        <button id="btn-search" class="btn-search-execute">
+          <span class="search-icon">🔍</span>
+          <span class="btn-text">Анализировать</span>
+        </button>
+      </div>
+      
+      <div class="advanced-filters">
+        <div class="filter-group">
+          <select id="f-jurisdiction">
+            <option value="">Все системы</option>
+            <option value="ECHR">ЕСПЧ</option>
+            <option value="International Arbitration">Арбитраж</option>
+            <option value="Interpol">Interpol (CCF)</option>
+            <option value="UN">ООН (HRC)</option>
+            <option value="National">Национальная</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <select id="f-type">
+            <option value="">Любой тип права</option>
+            <option value="Human Rights">Права человека</option>
+            <option value="Commercial">Коммерческое</option>
+            <option value="Corporate">Корпоративное</option>
+            <option value="Administrative">Административное</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <input type="text" id="f-article" placeholder="Статья (напр: Art 6)">
+        </div>
+      </div>
+    </div>
+
+    <div class="intelligence-grid">
+      {# ── LEFT: CHAT AREA ── #}
+      <main class="chat-panel">
+        <div class="chat-container" id="chat-messages">
+          <div class="chat-message chat-message--ai">
+            <div class="chat-message__avatar">L</div>
+            <div class="chat-message__content">
+              <div class="chat-message__author">Layla AI</div>
+              <div class="chat-message__text">
+                {% if page.workspace.chat and page.workspace.chat[0] %}
+                  {{ page.workspace.chat[0].text }}
+                {% else %}
+                  Здравствуйте. Я готова помочь в анализе правовой базы. Опишите ваш вопрос или ситуацию.
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="chat-input-area">
+          <textarea id="chat-input" placeholder="Задайте уточняющий вопрос или опишите новый кейс..." rows="1"></textarea>
+          <button id="btn-chat-send" class="btn-chat-send">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+          </button>
+        </div>
+      </main>
+
+      {# ── RIGHT: SUPPORTING DOCUMENTS (FRAGMENTS) ── #}
+      <aside class="results-sidebar">
+        <div class="sidebar-header">
+          <h3>Поддерживающие документы</h3>
+          <span id="results-count" class="badge">0</span>
+        </div>
+        <div id="results-area" class="fragments-list">
+          <div class="empty-state">Документы и фрагменты появятся здесь после анализа запроса.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.DATALAW_CONFIG = {
+    libraryDataUrl: "{{ page.workspace.search.data | url if page.workspace.search and page.workspace.search.data else '/data/legal_library.json' | url }}"
+  };
+</script>
+<script src="{{ '/js/search.js' | url }}" defer></script>
+{% endmacro %}

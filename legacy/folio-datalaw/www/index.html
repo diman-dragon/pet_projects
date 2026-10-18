@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Folio</title>
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/library.css">
+<link rel="stylesheet" href="css/settings.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/viewer-thumbs.css">
+<link rel="stylesheet" href="css/tools-panel.css">
+<link rel="stylesheet" href="css/ocr.css">
+<link rel="stylesheet" href="css/fb2.css">
+<link rel="stylesheet" href="css/text-select.css">
+<link rel="stylesheet" href="css/annot.css">
+<link rel="stylesheet" href="css/toast.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<div id="app">
+  <div id="screens">
+    <section class="screen" data-screen="home">
+      <header class="bar">
+        <h1 data-i18n="app.name"></h1>
+        <button class="icon-btn" id="view-btn"></button>
+        <button class="icon-btn" id="refresh-btn" data-i18n-aria="home.refresh" hidden><svg><use href="img/icons.svg#refresh"/></svg></button>
+        <button class="icon-btn" id="images-btn" data-i18n-aria="img.title"><svg><use href="img/icons.svg#images"/></svg></button>
+        <button class="btn" id="open-btn"><svg width="18" height="18"><use href="img/icons.svg#plus"/></svg><span data-i18n="home.open"></span></button>
+      </header>
+      <div class="body" id="home-body">
+        <section id="reading-shelf" class="shelf" hidden>
+          <h2 data-i18n="home.reading"></h2>
+          <ul id="shelf-list"></ul>
+        </section>
+        <ul id="doc-list" class="grid"></ul>
+        <div id="doc-empty" class="empty" hidden>
+          <img src="img/emoji/books.png" alt="" width="72" height="72">
+          <p data-i18n="home.empty"></p>
+          <p class="small" data-i18n="home.emptyHint"></p>
+        </div>
+      </div>
+    </section>
+    <section class="screen" data-screen="settings">
+      <header class="bar"><h1 data-i18n="nav.settings"></h1></header>
+      <div class="body">
+        <div class="row"><div class="row-text"><div data-i18n="set.folder"></div><div class="small muted" data-i18n="set.folderHint"></div><div id="folder-name" class="small folder-name"></div></div>
+          <div class="folder-btns"><button class="btn" id="folder-pick"><svg width="18" height="18"><use href="img/icons.svg#folder"/></svg><span data-i18n="set.folderPick"></span></button><button class="btn btn-ghost" id="folder-clear" data-i18n="set.folderClear" hidden></button></div></div>
+        <div class="row"><span data-i18n="set.theme"></span>
+          <div class="seg" data-setting="theme"><button data-value="light" data-i18n="set.light"></button><button data-value="dark" data-i18n="set.dark"></button></div></div>
+        <div class="row"><span data-i18n="set.lang"></span>
+          <div class="seg" data-setting="lang"><button data-value="auto" data-i18n="set.auto"></button><button data-value="ru">Русский</button><button data-value="en">English</button></div></div>
+        <div class="row"><div class="row-text"><div data-i18n="set.mode"></div><div class="small muted" data-i18n="set.modeHint"></div></div>
+          <div class="seg" data-setting="mode"><button data-value="scroll" data-i18n="set.modeScroll"></button><button data-value="paged" data-i18n="set.modePaged"></button></div></div>
+        <div class="row"><div class="row-text"><div data-i18n="set.night"></div><div class="small muted" data-i18n="set.nightHint"></div></div>
+          <div class="seg" data-setting="night"><button data-value="on" data-i18n="set.on"></button><button data-value="off" data-i18n="set.off"></button></div></div>
+        <div class="row"><div class="row-text"><div data-i18n="set.awake"></div><div class="small muted" data-i18n="set.awakeHint"></div></div>
+          <div class="seg" data-setting="awake"><button data-value="off" data-i18n="set.off"></button><button data-value="5" data-i18n="set.awake5"></button><button data-value="15" data-i18n="set.awake15"></button><button data-value="always" data-i18n="set.awakeAlways"></button></div></div>
+        <div class="row"><span data-i18n="set.version"></span><span id="app-version" class="muted"></span></div>
+      </div>
+    </section>
+  </div>
+  <nav id="tabbar">
+    <button data-tab="home"><img src="img/emoji/books.png" alt=""><span data-i18n="nav.home"></span></button>
+    <button data-tab="settings"><img src="img/emoji/settings.png" alt=""><span data-i18n="nav.settings"></span></button>
+  </nav>
+<section id="viewer" hidden>
+    <header class="bar">
+      <button class="icon-btn" id="viewer-back" data-i18n-aria="viewer.back"><svg><use href="img/icons.svg#back"/></svg></button>
+      <button class="icon-btn" id="thumbs-btn" data-i18n-aria="viewer.thumbs"><svg><use href="img/icons.svg#thumbnails"/></svg></button>
+      <h1 id="viewer-title"></h1>
+      <button class="icon-btn" id="edit-btn" data-i18n-aria="viewer.edit"><svg><use href="img/icons.svg#edit"/></svg></button>
+      <button class="icon-btn" id="undo-btn" data-i18n-aria="edit.undo" disabled><svg><use href="img/icons.svg#undo"/></svg></button>
+      <button class="icon-btn" id="redo-btn" data-i18n-aria="edit.redo" disabled><svg><use href="img/icons.svg#redo"/></svg></button>
+      <button id="viewer-page"></button>
+      <button class="icon-btn" id="mode-btn" data-i18n-aria="viewer.mode"></button>
+      <button class="icon-btn" id="zoom-out" data-i18n-aria="viewer.zoomOut"><svg><use href="img/icons.svg#zoom-out"/></svg></button>
+      <button class="icon-btn" id="zoom-in" data-i18n-aria="viewer.zoomIn"><svg><use href="img/icons.svg#zoom-in"/></svg></button>
+      <button class="icon-btn" id="night-btn" data-i18n-aria="set.night"><svg><use href="img/icons.svg#moon"/></svg></button>
+    </header>
+    <div id="viewer-body">
+      <button id="thumbs-tab" class="thumbs-tab" data-i18n-aria="viewer.thumbs" hidden><svg><use href="img/icons.svg#thumbnails"/></svg></button>
+      <aside id="viewer-thumbs" class="viewer-thumbs" hidden>
+        <div class="thumbs-bar"><button id="thumbs-pin" data-i18n-aria="viewer.thumbsPin"><svg><use href="img/icons.svg#pin"/></svg></button><button id="thumbs-close" data-i18n-aria="viewer.thumbsHide"><svg><use href="img/icons.svg#close"/></svg></button></div>
+        <div id="thumbs-list"></div>
+      </aside>
+      <div id="viewer-scroll"><div id="viewer-status" class="viewer-msg" hidden></div><div id="viewer-pages"></div></div>
+    </div>
+    <div id="tools-panel" class="tools-panel" hidden>
+      <div class="tp-head"><div class="tp-grip"><i></i></div><button class="tp-close" id="tp-hide" data-i18n-aria="viewer.hidePanel"><svg><use href="img/icons.svg#close"/></svg></button></div>
+      <div class="tp-grid">
+        <button class="tp-btn" data-tool="pen" data-i18n-aria="edit.pen"><svg><use href="img/icons.svg#pen"/></svg></button>
+        <button class="tp-btn" data-tool="eraser" data-i18n-aria="edit.eraser"><svg><use href="img/icons.svg#eraser"/></svg></button>
+        <button class="tp-btn" data-tool="highlighter" data-i18n-aria="edit.highlighter"><svg><use href="img/icons.svg#highlighter"/></svg></button>
+        <button class="tp-btn" data-tool="text-select" data-i18n-aria="edit.textSelect"><svg><use href="img/icons.svg#text-select"/></svg></button>
+        <button class="tp-btn" data-tool="underline" data-i18n-aria="edit.underline"><svg><use href="img/icons.svg#underline"/></svg></button>
+        <button class="tp-btn" id="tp-pin" data-i18n-aria="viewer.pin"><svg><use href="img/icons.svg#pin"/></svg></button>
+        <button class="tp-btn" id="tp-prev" data-i18n-aria="viewer.prev"><svg><use href="img/icons.svg#prev"/></svg></button>
+        <button class="tp-btn" id="tp-next" data-i18n-aria="viewer.next"><svg><use href="img/icons.svg#next"/></svg></button>
+        <button class="tp-btn" id="tp-stylus" data-i18n-aria="edit.stylus"><svg><use href="img/icons.svg#stylus"/></svg></button>
+        <button class="tp-btn" id="tp-ocr" data-i18n-aria="ocr.btn"><svg><use href="img/icons.svg#ocr"/></svg></button>
+      </div>
+      <div class="tp-colors">
+        <button class="color-dot active" data-color="#2563eb" style="--c:#2563eb" data-i18n-aria="color.blue"></button>
+        <button class="color-dot" data-color="#ef4444" style="--c:#ef4444" data-i18n-aria="color.red"></button>
+        <button class="color-dot" data-color="#facc15" style="--c:#facc15" data-i18n-aria="color.yellow"></button>
+        <button class="color-dot" data-color="#10b981" style="--c:#10b981" data-i18n-aria="color.green"></button>
+        <button class="color-dot" data-color="#f97316" style="--c:#f97316" data-i18n-aria="color.orange"></button>
+        <button class="color-dot" data-color="#ec4899" style="--c:#ec4899" data-i18n-aria="color.pink"></button>
+        <button class="color-dot" data-color="#8b5cf6" style="--c:#8b5cf6" data-i18n-aria="color.purple"></button>
+        <button class="color-dot" data-color="#06b6d4" style="--c:#06b6d4" data-i18n-aria="color.cyan"></button>
+        <button class="color-dot" data-color="#92400e" style="--c:#92400e" data-i18n-aria="color.brown"></button>
+        <button class="color-dot" data-color="#6b7280" style="--c:#6b7280" data-i18n-aria="color.gray"></button>
+        <button class="color-dot" data-color="#1e293b" style="--c:#1e293b" data-i18n-aria="color.dark"></button>
+        <button class="color-dot" data-color="#ffffff" style="--c:#ffffff" data-i18n-aria="color.white"></button>
+        <label class="color-dot custom" data-i18n-aria="color.custom"><input type="color" id="tp-custom" value="#2563eb"></label>
+      </div>
+    </div>
+    <div id="ocr-sheet" class="ocr-sheet" hidden>
+      <div class="ocr-title" data-i18n="ocr.title"></div>
+      <div class="ocr-langs" id="ocr-langs"></div>
+      <div class="ocr-actions">
+        <button id="ocr-page" data-i18n="ocr.page"></button>
+        <button id="ocr-all" data-i18n="ocr.all"></button>
+        <button id="ocr-close" data-i18n-aria="viewer.hidePanel"><svg><use href="img/icons.svg#close"/></svg></button>
+      </div>
+      <div class="ocr-error" id="ocr-error" hidden></div>
+      <div class="ocr-run" id="ocr-run" hidden><div class="ocr-bar"><i id="ocr-fill"></i></div><span id="ocr-status"></span><button id="ocr-cancel" data-i18n="ocr.cancel"></button></div>
+    </div>
+    <div id="text-menu" class="text-bubble-menu" hidden>
+      <button data-act="copy"><svg><use href="img/icons.svg#copy"/></svg><span data-i18n="viewer.copy"></span></button>
+      <button data-act="hl"><svg><use href="img/icons.svg#highlighter"/></svg><span data-i18n="viewer.highlight"></span></button>
+      <button data-act="ul"><svg><use href="img/icons.svg#underline"/></svg><span data-i18n="viewer.underline"></span></button>
+    </div>
+  </section>
+  <div id="toast"></div>
+</div>
+</body>
+</html>

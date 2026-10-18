@@ -1,0 +1,6 @@
+/* Settings screen rows. */
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row-text{min-width:0}
+.folder-name{margin-top:4px;color:var(--accent);word-break:break-all}
+.folder-btns{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.btn-ghost{background:none;border:1px solid var(--line);color:var(--text);justify-content:center}

@@ -1,0 +1,83 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   BUTTON  .dl-btn
+   ───────────────────────────────────────────────────────────────────────── */
+
+.dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-8);
+  font-family: var(--f-sans);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    background var(--t-base) var(--ease-std),
+    color var(--t-base) var(--ease-std),
+    border-color var(--t-base) var(--ease-std);
+}
+
+/* Primary — тёмная */
+.dl-btn--primary {
+  background: var(--c-ink);
+  color: var(--c-white);
+  border-color: var(--c-ink);
+}
+.dl-btn--primary:hover {
+  background: var(--c-gold);
+  border-color: var(--c-gold);
+}
+
+/* Light — контурная на светлом */
+.dl-btn--light {
+  background: transparent;
+  color: var(--c-ink);
+  border-color: var(--c-border-mid);
+}
+.dl-btn--light:hover {
+  background: var(--c-ink);
+  color: var(--c-white);
+  border-color: var(--c-ink);
+}
+
+/* Ghost — на тёмном фоне */
+.dl-btn--ghost {
+  background: transparent;
+  color: var(--c-white-80);
+  border-color: var(--c-white-20);
+}
+.dl-btn--ghost:hover {
+  background: var(--c-white-10);
+  color: var(--c-white);
+  border-color: var(--c-white-40);
+}
+
+/* Gold */
+.dl-btn--gold {
+  background: transparent;
+  color: var(--c-gold);
+  border-color: var(--c-gold-border);
+}
+.dl-btn--gold:hover {
+  background: var(--c-gold);
+  color: var(--c-white);
+  border-color: var(--c-gold);
+}
+
+/* White (на тёмных секциях) */
+.dl-btn--white,
+[class*="bg-white text-navy"] {
+  background: var(--c-white);
+  color: var(--c-navy);
+  border-color: var(--c-white);
+}
+.dl-btn--white:hover { background: var(--c-surface); }
+
+/* Модификаторы */
+.dl-btn.justify-center { justify-content: center; }
+.dl-btn.w-full { width: 100%; }

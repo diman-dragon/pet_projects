@@ -1,0 +1,22 @@
+{
+  "name": "widgetly",
+  "version": "4.1.0",
+  "private": true,
+  "description": "DataLaw Widgetly — clock, weather and calendar home-screen widget (Capacitor 8)",
+  "scripts": {
+    "android:setup": "node scripts/setup-android.js",
+    "android:open": "npx cap open android",
+    "web": "npx serve www",
+    "android:release": "node scripts/setup-android.js && cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

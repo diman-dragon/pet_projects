@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {% set metaTitle = (pageEntry.title if pageEntry and pageEntry.title else title) %}
+  {% set metaDescription = (pageEntry.description if pageEntry and pageEntry.description else description) %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metaTitle }} | DataLaw</title>
+  <meta name="description" content="{{ metaDescription or 'DataLaw - AI-driven legal intelligence and advocacy.' }}">
+  <meta property="og:title" content="{{ metaTitle }} | DataLaw">
+  <meta property="og:description" content="{{ metaDescription or 'DataLaw - AI-driven legal intelligence and advocacy.' }}">
+  <meta property="og:image" content="{{ '/assets/og-image.png' | url }}">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/jpeg" href="{{ '/assets/datalaw-logo-shield.jpg' | url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/datalaw-logo-shield.jpg' | url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/css/tokens.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/global.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/components.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/pages.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/footer.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/layla-widget.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/pages/intelligence.css' | url }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ metadata.type }}",
+    "name": "{{ metadata.name }}",
+    "url": "{{ metadata.url }}",
+    "description": "{{ metadata.description }}",
+    "email": "{{ metadata.email }}"
+  }
+  </script>
+</head>
+<body class="site-body">
+  <div class="animate-in">
+    <a href="#main-content" class="skip-link">Перейти к основному контенту</a>
+
+    <header role="banner" aria-label="Основная навигация">
+      {% include "components/header/header.njk" %}
+    </header>
+
+    <main id="main-content" role="main">
+      {{ content | safe }}
+    </main>
+
+    <footer role="contentinfo" aria-label="Контактная информация">
+      {% include "components/footer/footer.njk" %}
+    </footer>
+  </div>
+
+  {% include "components/layla-widget/layla-widget.njk" %}
+
+  <script src="{{ '/js/main.js' | url }}" defer></script>
+  <script src="{{ '/js/layla-widget.js' | url }}" defer></script>
+
+</body>
+</html>

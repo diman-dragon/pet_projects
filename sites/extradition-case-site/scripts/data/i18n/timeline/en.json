@@ -1,0 +1,91 @@
+{
+  "title": "Timeline",
+  "subtitle": "From a commercial dispute to an international arrest warrant.",
+  "intro": "The sequence of dates in this case matters more than any commentary. It shows: the man was not hiding. He lived openly, worked and paid taxes — and learned he was a wanted criminal only at the moment of his arrest in a foreign country.",
+  "events": [
+    {
+      "date": "From 2010",
+      "title": "Outside counsel — no complaints on record",
+      "text": "Lagovsky works with Fryazino Experimental Plant JSC (FEZ) as an outside legal consultant under a services agreement. He is not a staff employee and has no authority to take decisions — he is a retained lawyer. Over more than a decade of cooperation, no complaint was ever made about his work."
+    },
+    {
+      "date": "2021–2022",
+      "title": "Corporate conflict",
+      "text": "Minority shareholder S. V. Palkin launches a series of pre-investigation inquiries and complaints — all of them fruitless. Background: an attempt to seize control of the company, which Lagovsky had been lawfully resisting in his capacity as legal counsel. In December 2021 the plant sells a plot of land to another company — this transaction will later form the basis of the criminal charges."
+    },
+    {
+      "date": "14 September 2022",
+      "title": "Criminal complaint lodged",
+      "text": "S. V. Palkin, acting through his lawyer V. O. Trofimchuk, files a complaint with the authorities. Lagovsky's name does not appear in the materials at this stage."
+    },
+    {
+      "date": "26 October 2022",
+      "title": "Criminal case opened",
+      "text": "Investigator Yu. M. Salikov (Moscow Region Main Investigation Department, Russian Ministry of Internal Affairs) opens case No. 12201460225000286 under Part 4, Article 159 of the Russian Criminal Code. The case is opened without a complaint from FEZ management — in breach of Part 3, Article 20 of the Code of Criminal Procedure. Lagovsky is listed as a witness. In December 2022 he is called in for questioning in that capacity; he is not detained and no charges are made.",
+      "docId": "KUSP-i-soputstvuyushchie-prilozheniya-po-delu-Palkina"
+    },
+    {
+      "date": "2023",
+      "title": "Move to Serbia",
+      "text": "Lagovsky and his family relocate legally to Belgrade. Their reasons: Russia's war in Ukraine and the threat of forced military conscription — Lagovsky holds a reserve officer rank and fears being called up to fight against Ukraine, the country where he was born and where his wife's family lives. He obtains a residence permit, takes up formal employment and pays taxes. He leaves Russia without obstruction, on a valid passport. He has no knowledge of any criminal case."
+    },
+    {
+      "date": "21 March 2024",
+      "title": "Charges filed in secret",
+      "text": "A year and a half after the case was opened, investigators issue a resolution formally charging Lagovsky. The procedure takes place in absentia and in secret — without notifying him, even though his address in Serbia is known to the investigators. Until this moment he was a witness. In June 2024 Lagovsky checks his own status through Russia's Gosuslugi government portal — the system shows he is not under criminal prosecution."
+    },
+    {
+      "date": "27 June 2024",
+      "title": "Arbitration: transaction found lawful",
+      "text": "The Moscow Region Arbitration Court confirms: the land sale by FEZ was entirely lawful, no loss was caused, and the price exceeded the cadastral value. The ruling is subsequently upheld at every level of the arbitration hierarchy, including the Supreme Court of the Russian Federation. The criminal prosecution continues.",
+      "docId": "case-A41-20164-2022-20240627"
+    },
+    {
+      "date": "18–27 December 2024",
+      "title": "In-absentia arrest warrant and international wanted notice",
+      "text": "18 December: investigators issue a resolution seeking an international arrest warrant. 26 December: charges re-filed. 27 December: the Tversky District Court of Moscow issues an in-absentia arrest warrant. The international wanted notice is issued despite Lagovsky's address in Serbia being on record — in violation of Article 210 of the Russian Code of Criminal Procedure. Lagovsky is still not notified of anything.",
+      "docId": "Postanovlenie-ob-areste"
+    },
+    {
+      "date": "8 April 2025",
+      "title": "Arrested in Belgrade",
+      "text": "Lagovsky is arrested at his home in Belgrade. He learns for the first time — at the moment of arrest — that a criminal case exists, that he has been charged, and that there is an international warrant for him. He spends 21 days in custody. On 29 April he is released subject to a travel ban confining him to Belgrade; his passport is confiscated."
+    },
+    {
+      "date": "4 July – 14 November 2025",
+      "title": "Serbian courts: a purely formal review",
+      "text": "On 4 July the Higher Court of Belgrade approves extradition, finding that the request meets the technical requirements on its face. The defence evidence — including the arbitration court rulings — was not considered: the court stated plainly it was reviewing the document from Moscow, not the merits of the allegations. On 14 November the Court of Appeal upholds the ruling.",
+      "docId": "Reshenie-vysshego-suda"
+    },
+    {
+      "date": "5–10 December 2025",
+      "title": "Asylum application",
+      "text": "On 5 December Lagovsky declares his intention to seek asylum. On 10 December he submits a full application to the Asylum Office of the Serbian Ministry of Internal Affairs. Grounds: a real risk of forced military mobilisation as a reservist, his Ukrainian heritage, and his objection to fighting in the war against Ukraine."
+    },
+    {
+      "date": "11 February 2026",
+      "title": "Serbian Supreme Court: protection of legality refused",
+      "text": "The Supreme Court (Kzz OK 1/2026) unanimously dismisses the defence's request for protection of legality. Significantly, the court declined to examine on the merits the argument that Lagovsky was not a 'responsible officer' — one of the key elements of the charge — characterising it as a factual question rather than a legal one. In so doing, the court used procedural formalism to avoid engaging with the substance of the case.",
+      "docId": "Reshenie-Verkhovnogo-suda"
+    },
+    {
+      "date": "23 February 2026",
+      "title": "Asylum refused",
+      "text": "The Serbian Ministry of Internal Affairs Asylum Office refuses both asylum and subsidiary protection (decision No. 26-7707/25). Reasoning: no grounds for persecution on Convention bases established; the fear of mobilisation was not classified as persecution. Lagovsky is ordered to leave Serbia within 15 days unless another basis for lawful stay is found.",
+      "docId": "Lagovskii-Dmitrii-resenje-KzA"
+    },
+    {
+      "date": "23 March 2026",
+      "title": "Asylum Commission: appeal dismissed",
+      "text": "The Asylum Commission (AŽ-23/26), chaired by Gordana Milanović, dismisses the appeal against the Office's decision as unfounded, fully upholding the original refusal. No further appeal against the Commission's decision is available — the only remaining avenue is an administrative claim before the Serbian Administrative Court.",
+      "docId": "Reshenie-komissii-za-azil"
+    },
+    {
+      "date": "April 2026 — present",
+      "title": "Administrative Court: last domestic avenue",
+      "text": "The case has been referred to the Serbian Administrative Court — the final domestic forum on the asylum question. Its ruling will determine whether Lagovsky is extradited to Russia or acquires the right to remain in Serbia. International proceedings continue in parallel: UN, Interpol/CCF, ECHR.",
+      "docId": "tuzba-lagovski-2026-05-20"
+    }
+  ],
+  "summary": "The timeline establishes three facts. First: Lagovsky was charged a year and a half after the case was opened — in secret, without notice, at a known address — and found out only when he was arrested. Second: arbitration courts through to the Russian Supreme Court found the same transaction lawful; the criminal prosecution did not stop. Third: not one Serbian court examined the defence evidence on the merits — each time the procedure was closed on formal grounds. The Administrative Court is the last domestic avenue remaining."
+}

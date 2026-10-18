@@ -1,0 +1,202 @@
+{
+  "title": "Actors",
+  "subtitle": "Not an abstract 'system' but identifiable officials, complainants and signatories whose decisions converged into one criminal case and one extradition request.",
+  "intro": "The Lagovsky case was assembled by named individuals. Some converted a corporate conflict into a criminal narrative, others gave that narrative procedural form, and others later neutralised complaints through template refusals. This page is not a gallery of biographies. It is a map of personal roles in a documentary chain.",
+  "clusters": {
+    "title": "Three contours that built the extradition case",
+    "items": [
+      {
+        "label": "Corporate motive",
+        "title": "From a control dispute to a criminal narrative",
+        "tone": "info",
+        "desc": "<strong>Sergei Valentinovich Palkin</strong> and the corporate circle around him initiated the complaints from which the criminal case later grew. At the centre is not a classic theft scenario but a commercial conflict around JSC FEZ and a transaction already upheld in arbitrazh proceedings."
+      },
+      {
+        "label": "Investigation and MVD",
+        "title": "Giving a disputed version procedural form",
+        "tone": "danger",
+        "desc": "<strong>Yuriy Mikhaylovich Salikov</strong>, <strong>I.I. Chugunkov</strong> and <strong>E.I. Kuznetsov</strong> represent the same departmental chain: Salikov and Chugunkov held the post of Deputy Head of 6th Section in succession (Salikov retired), while Kuznetsov was their direct superior as Section Head. The change of individual produced no change in the replies — demonstrating that the practice of boilerplate refusals was institutional, not personal."
+      },
+      {
+        "label": "Prosecution and supervision",
+        "title": "From independent oversight to relaying the investigators' line",
+        "tone": "danger",
+        "desc": "<strong>A.A. Mitrokhina</strong>, <strong>S.V. Prokopenko</strong> and <strong>Sergei Vladimirovich Zabaturin</strong> signed replies that did not address the complaints on the merits. Instead of reviewing legality, the supervisory chain either reproduced the same formula or sent complaints back to the very bodies being challenged."
+      },
+      {
+        "label": "Courts and external addressees",
+        "title": "Points where the violations could still have been stopped",
+        "tone": "default",
+        "desc": "<strong>E.A. Torgashev</strong>, <strong>Aleksandr Ivanovich Bastrykin</strong> and <strong>A.A. Klishas</strong> represent levels at which the violation could still have been stopped: internal MVI oversight (Torgashev), the Chair of the Investigative Committee (Bastrykin), and the parliamentary addressee (Klishas). Each of these vectors produced a written response — none of which engaged with the substance."
+      }
+    ]
+  },
+  "profiles": {
+    "title": "Names, roles and concrete actions",
+    "items": [
+      {
+        "id": "palkin",
+        "name": "Sergei Valentinovich Palkin",
+        "photo": "./assets/media/persons/palkin.jpg",
+        "role": "Vice-President of OZHPT, Director of the Technical Regulation Directorate for Railway Products at LLC TC EurazHolding, and originating complainant in the corporate strand.",
+        "doc": "Crime complaint of 14 September 2022 filed through lawyer V.O. Trofimchuk; KUSP and related materials generated from Palkin's complaint.",
+        "action": "The criminal version begins from his line. Lagovsky's name was absent from the initial materials, which matters for assessing how the narrative was later expanded. A corporate conflict first appears as a complaint and is then developed into criminal prosecution."
+      },
+      {
+        "id": "salikov",
+        "name": "Yuriy Mikhaylovich Salikov",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Lieutenant Colonel of Justice, Deputy Head of 6th Section, Special Investigation Unit, Main Investigation Department, Moscow Region MVI (at the time of the investigation). Retired; the post passed to Chugunkov.",
+        "doc": "Decision opening the case; search record of 15 December 2022; inspection records of 17 December 2022 and 3 November 2023; wanted-person materials.",
+        "docIds": [
+          "Postanovlenie-suda-ob-otkaze-v-obyske",
+          "Statya-125-obzhalovanie-postanovleniy-o-rozyske"
+        ],
+        "action": "The key procedural executor: opened the case without a proper private complaint from the allegedly injured company, carried out a search despite a court prohibition, and processed seizures and the wanted-person notice. He subsequently became the subject of separate complaints alleging abuse, forgery and falsification. After his retirement, Chugunkov took over the same post — the nature of the replies did not change."
+      },
+      {
+        "id": "chugunkov",
+        "name": "I.I. Chugunkov",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Deputy Head of 6th Section, Special Investigation Unit, Main Investigation Department, Moscow Region MVI. Assumed the post after Salikov retired.",
+        "doc": "Replies No. 3/267704660170 and No. 3/267704751007 dated 16 March 2026.",
+        "docIds": [
+          "chugunkov-response-660170",
+          "chugunkov-response-751007"
+        ],
+        "action": "Issued two near-identical replies to different applications. Instead of examining the stated facts, the replies substituted a boilerplate for the substance of the complaints. The fact that a change of official produced no change in the character of the replies shows that blocking complaints was not an individual initiative but an established practice of the unit."
+      },
+      {
+        "id": "kuznetsov",
+        "name": "E.I. Kuznetsov",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Head of 6th Section, Special Investigation Unit, Main Investigation Department, Moscow Region MVI; direct line manager of the investigative team on the case.",
+        "doc": "Replies of 25 June 2025, 20 July 2025 and 1 August 2025; complaint about Kuznetsov's inaction; Appendices 1-16 to that complaint.",
+        "docIds": [
+          "kuznetsov-response-2025-06-25",
+          "kuznetsov-reply-2025-07-14",
+          "kuznetsov-response-2025-07-20",
+          "kuznetsov-response-2025-08-01",
+          "kuznetsov-response-2025-09-01"
+        ],
+        "action": "Kuznetsov's sequence of replies documents how complaints about unlawful investigative actions are resolved by the very manager whose subordinates are named in those complaints. This is a structural conflict of interest that prevents any substantive internal review within the Moscow Region MVI Investigation Department."
+      },
+      {
+        "id": "mitrokhina",
+        "name": "A.A. Mitrokhina",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Deputy head of department at the Moscow Region Prosecutor's Office and signatory of a series of prosecutorial replies.",
+        "doc": "At least eight near-identical replies; separate replies No. 13 and No. 31; forwarding of a complaint back to the GSU; complaint against Mitrokhina and complaint against her reply.",
+        "docIds": [
+          "mitrokhina-response-2026-04-23",
+          "mitrokhina-forward-to-gsu-2026-04-20",
+          "prokuratura-mo-response-16-4-469-2025",
+          "mitrokhina-response-13",
+          "mitrokhina-response-31"
+        ],
+        "action": "She personifies the prosecutorial template refusal. Instead of independent supervision, complaints were either rejected with the same formula or returned to the very body being challenged. For the 'Flagrant Denial of Justice' page, this is one of the clearest recurring patterns."
+      },
+      {
+        "id": "prokopenko",
+        "name": "S.V. Prokopenko",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Deputy Prosecutor-General of the Russian Federation and signatory of the key General Prosecutor's Office replies.",
+        "doc": "Bundle of General Prosecutor's Office replies; draft application to the GPO; complaint against Prokopenko's reply.",
+        "docIds": [
+          "prokopenko-otvety",
+          "genprok-ogr-154993-response"
+        ],
+        "action": "The General Prosecutor's Office level corrected none of the violations already raised. Instead, the formal logic of refusal was consolidated from above. A central element here is the reliance on a legal position whose actual wording, as shown in the defence materials, points in the opposite direction."
+      },
+      {
+        "id": "semina",
+        "name": "Olga Nikolaevna Semina",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Judge of the Tverskoy District Court of Moscow. Issued rulings on arrest in absentia and refusals to consider defense complaints.",
+        "doc": "Arrest warrant; Tverskoy Court rulings on the return of complaints (March 2026).",
+        "docIds": [
+          "tver-complaint-refusal-1",
+          "tver-complaint-refusal-2",
+          "tver-access-refusal"
+        ],
+        "action": "Provides judicial cover for unlawful prosecution. Denies access to justice by returning complaints under Art. 125 of the Criminal Procedure Code on flimsy pretexts, making it impossible to challenge investigative actions in court."
+      },
+      {
+        "id": "krivoruchko",
+        "name": "Aleksey Vyacheslavovich Krivoruchko",
+        "photo": "./assets/media/persons/krivoruchko.png",
+        "role": "Judge of the Tverskoy District Court of Moscow, featured on the 'Magnitsky List'. Presided over key investigative motions in the case.",
+        "doc": "Materials on arrest in absentia and extension of restrictive measures.",
+        "docIds": [
+          "Postanovlenie-ob-areste"
+        ],
+        "action": "Known for his role in high-profile political cases. In the Lagovsky case, his involvement guaranteed the prosecution the necessary procedural outcomes, including arrest in absentia despite the defendant's known location abroad."
+      },
+      {
+        "id": "gasnikova",
+        "name": "Oksana Dmitrievna Gasnikova",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Judge of the Shchelkovo City Court of the Moscow Region.",
+        "doc": "Shchelkovo Court ruling on the return of complaints No. 697/2025.",
+        "docIds": [
+          "shchelkovo-return-order",
+          "shchelkovo-response-697"
+        ],
+        "action": "Participated in blocking defense complaints at the district court level in the Moscow Region, replicating the same tactic of evading substantive review of violations used by the Tverskoy Court of Moscow."
+      },
+      {
+        "id": "mosgorsud_judges",
+        "name": "Moscow City Court Judges",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Appellate instance that upholds the decisions of the Tverskoy Court.",
+        "doc": "Moscow City Court appellate rulings.",
+        "docIds": [
+          "mosgorsud-2025-10-16",
+          "mosgorsud-rozysk-refusal"
+        ],
+        "action": "Systematically uphold unlawful decisions of lower courts, ignoring fundamental human rights violations and the direct contradiction between the investigation's findings and arbitrazh court rulings."
+      },
+      {
+        "id": "torgashev",
+        "name": "E.A. Torgashev",
+        "photo": "./assets/media/persons/person-placeholder.svg",
+        "role": "Deputy Head of the Main Investigation Department, Moscow Region MVI. His ruling is expressly cited in the complaint to Bastrykin as a document that the investigators were obliged to implement but ignored.",
+        "doc": "Torgashev's ruling, cited in the complaint to Bastrykin about failure to act on the case.",
+        "action": "Torgashev matters not as part of the refusal chain but as the opposite point: his ruling should have compelled the investigators to take specific action. The fact that even an internal document from a Deputy Head of the Main Investigation Department was disregarded shows that the system failure was not bottom-up but managed."
+      },
+      {
+        "id": "zabaturin",
+        "name": "Sergei Vladimirovich Zabaturin",
+        "photo": "./assets/media/persons/zabaturin.jpg",
+        "role": "Prosecutor of Moscow Region; direct line manager of Mitrokhina and the other signatories of the prosecutorial replies.",
+        "doc": "Applications to the Moscow Region Prosecutor; replies from the Moscow Region Prosecutor's Office on the substance of complaints about investigative violations.",
+        "docIds": [
+          "prokuror-mo-response"
+        ],
+        "action": "Zabaturin is the apex of the prosecutorial hierarchy for this case in Moscow Region. Applications addressed to him show that even escalation to the head of the regional prosecutor's office produced no substantive review. This rules out explaining the pattern of refusals as individual inaction — the refusals were systemic and managed."
+      },
+      {
+        "id": "bastrykin",
+        "name": "Aleksandr Ivanovich Bastrykin",
+        "photo": "./assets/media/persons/bastrykin.jpg",
+        "role": "Chair of the Investigative Committee of the Russian Federation, addressee of complaints about inaction and fabrication of the case.",
+        "doc": "Complaint to Bastrykin about inaction in the case; complaint to Bastrykin about fabrication of the case.",
+        "action": "He represents the level at which the matter could have been taken out of the same regional circle and reviewed afresh. The very fact of applying to Bastrykin records that standard channels had failed and that intervention from the top of the Investigative Committee was being sought."
+      },
+      {
+        "id": "klishas",
+        "name": "A.A. Klishas",
+        "photo": "./assets/media/persons/klishas.jpg",
+        "role": "Senator of the Russian Federation; Chair of the Federation Council Committee on Constitutional Legislation and State Building. Parliamentary addressee of complaints about systemic violations of constitutional guarantees.",
+        "doc": "Application to the Federation Council; reply from the staff of Klishas' committee.",
+        "action": "This figure shows how the case extends beyond a single criminal file and becomes a question of constitutional guarantees and systemic denial of protection. The committee staff's response matters as an example of how even at the political-legal level no real corrective mechanism was offered."
+      }
+    ]
+  },
+  "summary": "The purpose of the 'Actors' page is not personalization for its own sake. It shows that the extradition request and the process leading to it consist of signatures, rulings, forwards and refusals, each with an identifiable author. That is why this is not a faceless system error but a chain of individually performed acts.",
+  "labels": {
+    "role": "Role",
+    "doc": "Document",
+    "action": "What happened"
+  }
+}

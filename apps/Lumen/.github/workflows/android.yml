@@ -1,0 +1,52 @@
+name: Android APK
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install
+        run: npm install
+
+      - name: Web build + generate Android project
+        run: npm run android:prepare
+
+      # Ключ подписи лежит в репозитории (signing/lumen.jks) — проект в разработке, не публикуется.
+      - name: Build APK
+        working-directory: android
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/signing/lumen.jks
+          KEYSTORE_PASSWORD: S3vljBoBtOv5d5B4MMYyjRSR
+          KEY_ALIAS: lumen
+          KEY_PASSWORD: S3vljBoBtOv5d5B4MMYyjRSR
+        run: |
+          ./gradlew assembleRelease --no-daemon
+          mkdir -p ../out && cp app/build/outputs/apk/release/*.apk ../out/lumen.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lumen-apk
+          path: out/lumen.apk
+
+      - name: Publish release (on tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/lumen.apk

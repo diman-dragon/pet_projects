@@ -1,0 +1,53 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   MISC UTILS & SHARED PAGE ELEMENTS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.w-24 { width: 96px; }
+.w-8  { width: 32px; }
+.w-2  { width: 8px; }
+.w-48 { width: 192px; }
+.h-48 { height: 192px; }
+.w-12 { width: 48px; }
+.min-w-16 { min-width: 64px; }
+.flex-grow { flex-grow: 1; }
+.w-1\.5 { width: 6px; }
+
+@media (min-width: 640px) {
+  .md\:flex-row { flex-direction: row; }
+  .md\:block    { display: block; }
+}
+
+/* pb-10, pt-4 etc. for education fellowships list */
+.pb-10 { padding-bottom: var(--sp-10); }
+.pb-6  { padding-bottom: var(--sp-6); }
+.pb-8  { padding-bottom: var(--sp-8); }
+.pb-1  { padding-bottom: 2px; }
+.pt-4  { padding-top: var(--sp-4); }
+.pt-8  { padding-top: var(--sp-8); }
+.py-10 { padding-top: var(--sp-10); padding-bottom: var(--sp-10); }
+.px-4  { padding-inline: var(--sp-4); }
+.px-3  { padding-inline: var(--sp-3); }
+.py-2  { padding-block: var(--sp-2); }
+.py-1  { padding-block: 3px; }
+.pr-0  { padding-right: 0; }
+.w-fit { width: fit-content; }
+.-translate-y-1\/2 { transform: translateY(-50%); }
+.top-0  { top: 0; }
+.left-12{ left: var(--sp-12); }
+
+/* inline input for newsletter */
+input[type="email"], input[type="text"] {
+  font-family: var(--f-sans);
+  font-size: var(--fs-sm);
+  color: var(--c-text);
+  background: var(--c-white);
+  border: 1px solid var(--c-border-mid);
+  padding: var(--sp-3) var(--sp-4);
+  outline: none;
+  transition: border-color var(--t-base);
+  width: 100%;
+}
+input[type="email"]:focus,
+input[type="text"]:focus { border-color: var(--c-gold); }
+input[type="email"]::placeholder,
+input[type="text"]::placeholder { color: var(--c-text-dim); }

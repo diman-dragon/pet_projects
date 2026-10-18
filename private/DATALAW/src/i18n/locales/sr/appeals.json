@@ -1,0 +1,7 @@
+{
+  "appeal.timeline.event.appealDate": "Datum podnošenja obraćanja",
+  "appeal.timeline.event.responseDue": "Rok za odgovor (30 dana)",
+  "appeal.timeline.event.fileDate": "Datum dokumenta",
+  "documentUpload.retroactive": "Retroaktivna obrada",
+  "documentUpload.noExtractedText": "Nije moguće izdvojiti tekst iz dokumenta"
+}

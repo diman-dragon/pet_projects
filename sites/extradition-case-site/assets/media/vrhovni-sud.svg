@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <rect width="200" height="40" rx="4" fill="none"/>
+  <text x="4" y="14" font-family="serif" font-size="10" fill="currentColor" font-weight="700">ВРХОВНИ СУД</text>
+  <text x="4" y="27" font-family="serif" font-size="9" fill="currentColor">Републике Србије</text>
+  <rect x="0" y="0" width="3" height="40" fill="#003DA5" rx="1"/>
+</svg>

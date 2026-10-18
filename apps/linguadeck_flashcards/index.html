@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Флешкарты</title>
+  <meta name="theme-color" content="#2F5233" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+    <div class="brand-lockup">
+      <button id="btn-menu" class="sidebar-toggle add-btn" type="button" aria-label="Открыть меню" title="Меню" aria-haspopup="true" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="brand-mark" aria-hidden="true"><span>F</span></div>
+      <div class="brand-copy"><strong>Флешкарты</strong><span>Учись быстрее</span></div>
+    </div>
+    <div class="topbar-current">
+      <span id="top-current-direction" class="top-current-direction">Выберите направление</span>
+      <span class="top-current-sep">/</span>
+      <span id="top-current-deck" class="top-current-deck">колода</span>
+    </div>
+    <div class="topbar-actions">
+      <span id="progress" class="progress">0 / 0</span>
+      <button id="btn-study" class="study-btn" type="button" title="Учить карточки, срок которых наступил" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.2l8-2.7 8 2.7-8 2.7-8-2.7z"/><path d="M4 6.2v8.4l8 2.7 8-2.7V6.2"/><path d="M8.5 8.5v6"/></svg>
+        <span class="study-btn-label">Учить</span>
+        <span id="study-badge" class="study-badge">0</span>
+      </button>
+      <button id="btn-add" class="add-btn top-add" type="button" aria-label="Добавить карточки" title="Добавить карточки" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <aside id="menu" class="sidebar" aria-label="Навигация и управление" hidden>
+    <div class="sidebar-head">
+      <div><span class="sidebar-kicker">Текущее обучение</span><strong>Флешкарты</strong></div>
+      <button id="sidebar-close" class="sidebar-close add-btn add-btn-plain" type="button" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="sidebar-context">
+      <label class="sidebar-label" for="direction-select">Направление</label>
+      <select id="direction-select" class="direction-select" aria-label="Направление"></select>
+      <label class="sidebar-label" for="deck-select">Колода</label>
+      <select id="deck-select" class="deck-select" aria-label="Колода"></select>
+    </div>
+    <nav class="sidebar-nav" aria-label="Разделы">
+      <div class="sidebar-section-title">Учёба</div>
+      <button class="sidebar-link sidebar-link-primary" type="button" data-sidebar-study><span class="sidebar-icon">▣</span><span>Учить</span><span id="sidebar-study-badge" class="sidebar-badge">0</span></button>
+      <button class="sidebar-link" type="button" data-action="stats"><span class="sidebar-icon">◒</span><span>Статистика</span></button>
+      <div class="sidebar-section-title">Карточки</div>
+      <button class="sidebar-link" type="button" data-action="new-card"><span class="sidebar-icon">＋</span><span>Добавить карточки</span></button>
+      <button class="sidebar-link" type="button" data-action="edit-card"><span class="sidebar-icon">✎</span><span>Редактировать</span></button>
+      <button class="sidebar-link sidebar-link-danger" type="button" data-action="delete-card"><span class="sidebar-icon">⌫</span><span>Удалить карточку</span></button>
+      <div class="sidebar-section-title">Структура</div>
+      <button class="sidebar-link" type="button" data-action="new-direction"><span class="sidebar-icon">＋</span><span>Новое направление</span></button>
+      <button class="sidebar-link" type="button" data-action="rename-direction"><span class="sidebar-icon">✎</span><span>Переименовать направление</span></button>
+      <button class="sidebar-link sidebar-link-danger" type="button" data-action="delete-direction"><span class="sidebar-icon">⌫</span><span>Удалить направление</span></button>
+      <button class="sidebar-link" type="button" data-action="new-deck"><span class="sidebar-icon">＋</span><span>Новая колода</span></button>
+      <button class="sidebar-link" type="button" data-action="rename-deck"><span class="sidebar-icon">✎</span><span>Переименовать колоду</span></button>
+      <button class="sidebar-link sidebar-link-danger" type="button" data-action="delete-deck"><span class="sidebar-icon">⌫</span><span>Удалить колоду</span></button>
+      <div class="sidebar-section-title">Данные</div>
+      <button class="sidebar-link" type="button" data-action="export-deck"><span class="sidebar-icon">↥</span><span>Экспортировать колоду</span></button>
+      <button class="sidebar-link" type="button" data-action="export-all"><span class="sidebar-icon">⇧</span><span>Экспортировать всё</span></button>
+      <button class="sidebar-link" type="button" data-action="import"><span class="sidebar-icon">⇩</span><span>Импортировать</span></button>
+      <button class="sidebar-link sidebar-link-cloud" type="button" data-action="sync-drive"><span class="sidebar-icon">☁</span><span>Google Drive</span><span class="sidebar-link-arrow">›</span></button>
+    </nav>
+    <div class="sidebar-footer"><span class="sidebar-status-dot"></span> Локальная база · синхронизация по запросу</div>
+  </aside>
+  <div id="menu-backdrop" class="sidebar-backdrop" hidden></div>
+
+  <div class="content-shell">
+    <main class="stage">
+      <div id="card" class="card" tabindex="0" role="button" aria-pressed="false" aria-label="Карточка, нажмите чтобы перевернуть">
+        <div class="card-face card-front">
+          <div id="card-image" class="card-image">
+            <svg class="card-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+          </div>
+          <div class="card-front-glass">
+            <p id="card-term" class="card-term"></p>
+            <p id="card-transcription" class="card-transcription" hidden></p>
+            <p id="card-show-count" class="card-show-count" hidden></p>
+          </div>
+          <div class="card-media">
+            <button id="btn-video" class="media-btn media-video" type="button" aria-label="Видео">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="13" height="13" rx="2.5"/><path d="M15.5 9.8l5-3v10.4l-5-3z"/></svg>
+            </button>
+            <button id="btn-audio" class="media-btn media-audio" type="button" aria-label="Произношение">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5H4z"/><path d="M17 9a4 4 0 0 1 0 6"/><path d="M19.5 6.5a8 8 0 0 1 0 11"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-face card-back">
+          <p id="card-description" class="card-description"></p>
+          <ul id="card-examples" class="card-examples" hidden></ul>
+        </div>
+      </div>
+      <div id="study-done" class="study-done" hidden>
+        <p class="study-done-title">Готово! 🎉</p>
+        <p class="study-done-text">Все карточки этой колоды на сегодня повторены.</p>
+        <button id="btn-study-done-exit" class="btn btn-primary" type="button">Вернуться к обзору</button>
+      </div>
+      <p id="hint" class="hint">нажмите на карточку, чтобы перевернуть</p>
+    </main>
+
+    <footer id="controls-browse" class="controls">
+      <button id="btn-prev" class="nav-btn" aria-label="Предыдущая карточка">‹ Назад</button>
+      <button id="btn-next" class="nav-btn" aria-label="Следующая карточка">Далее ›</button>
+    </footer>
+
+    <footer id="controls-study" class="controls controls-study" hidden>
+      <div id="grade-row" class="grade-row" hidden>
+        <button class="grade-btn grade-again" type="button" data-rating="again">Снова<span id="grade-sub-again" class="grade-sub"></span></button>
+        <button class="grade-btn grade-hard" type="button" data-rating="hard">Трудно<span id="grade-sub-hard" class="grade-sub"></span></button>
+        <button class="grade-btn grade-good" type="button" data-rating="good">Хорошо<span id="grade-sub-good" class="grade-sub"></span></button>
+        <button class="grade-btn grade-easy" type="button" data-rating="easy">Легко<span id="grade-sub-easy" class="grade-sub"></span></button>
+      </div>
+      <button id="btn-study-skip" class="btn study-skip-btn" type="button">Пропустить →</button>
+      <button id="btn-study-exit" class="btn study-exit-btn" type="button">Завершить сессию</button>
+    </footer>
+
+    <p class="mock-note">Данные хранятся локально в браузере (OPFS). Google Drive используется только для синхронизации по запросу.</p>
+  </div>
+
+  <dialog id="add-dialog" class="dialog" aria-labelledby="add-title">
+    <div class="dialog-body">
+      <div class="dialog-head">
+        <h2 id="add-title" class="dialog-title">Добавить карточки</h2>
+        <button id="add-close" class="add-btn add-btn-plain" type="button" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p id="add-deck-name" class="dialog-sub"></p>
+      <p id="add-hierarchy" class="dialog-sub"></p>
+
+      <div id="add-tabs" class="tabs" role="tablist">
+        <button id="add-tab-single" class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="add-panel-single">Одна карточка</button>
+        <button id="add-tab-batch" class="tab" type="button" role="tab" aria-selected="false" aria-controls="add-panel-batch" tabindex="-1">Пакетно</button>
+      </div>
+
+      <section id="add-panel-single" class="tab-panel" role="tabpanel" aria-labelledby="add-tab-single">
+        <label class="field"><span>Лицевая сторона *</span>
+          <input id="add-front" type="text" autocomplete="off" />
+        </label>
+        <label class="field"><span>Обратная сторона *</span>
+          <textarea id="add-back" rows="2"></textarea>
+        </label>
+        <label class="field"><span>Транскрипция</span>
+          <input id="add-transcription" type="text" autocomplete="off" />
+        </label>
+        <label class="field"><span>Примеры (каждый с новой строки)</span>
+          <textarea id="add-examples" rows="3"></textarea>
+        </label>
+        <div class="field-row">
+          <label class="field"><span>Картинка</span>
+            <input id="add-image" type="file" accept="image/*" />
+          </label>
+          <label class="field"><span>Аудио</span>
+            <input id="add-audio" type="file" accept="audio/*" />
+          </label>
+        </div>
+        <button id="add-single-submit" class="btn btn-primary" type="button">Добавить</button>
+      </section>
+
+      <section id="add-panel-batch" class="tab-panel" role="tabpanel" aria-labelledby="add-tab-batch" hidden>
+        <p class="help">
+          Одна строка — одна карточка: <code>слово ; перевод ; транскрипция ; пример 1, пример 2</code>
+        </p>
+        <details class="help">
+          <summary>Подробнее о формате</summary>
+          <ul>
+            <li>Обязательны первые два поля, остальные можно оставлять пустыми: <code>слово;перевод;;пример</code></li>
+            <li>Если в тексте есть <code>;</code> — возьмите поле в "кавычки": <code>"нарочитый; обдуманный"</code></li>
+            <li>Запятая внутри примера — <code>\,</code>. Лишние поля после четвёртого тоже считаются примерами</li>
+            <li>Разделитель определяется сам (<code>;</code>, Tab или <code>|</code>) — или выберите вручную</li>
+          </ul>
+        </details>
+        <textarea id="add-text" class="mono" rows="7" spellcheck="false" aria-label="Текст для пакетного добавления"
+          placeholder="ubiquitous;повсеместный;/juːˈbɪkwɪtəs/;Wi-Fi is ubiquitous, Phones are ubiquitous&#10;reluctant;неохотный&#10;deliberate;&quot;нарочитый; обдуманный&quot;"></textarea>
+        <div class="field-row field-row-center">
+          <label class="file-btn">
+            <input id="add-file" type="file" accept=".txt,.csv,.tsv,text/plain,text/csv,text/tab-separated-values" />
+            <span>Загрузить .txt</span>
+          </label>
+          <label class="field field-inline"><span>Разделитель</span>
+            <select id="add-delim">
+              <option value="auto" selected>Авто</option>
+              <option value=";">;</option>
+              <option value="&#9;">Tab</option>
+              <option value="|">|</option>
+            </select>
+          </label>
+        </div>
+        <label class="check"><input id="add-header" type="checkbox" /> Первая строка — заголовок</label>
+        <label class="check"><input id="add-dups" type="checkbox" checked /> Пропускать дубликаты</label>
+        <div id="add-preview" class="preview" aria-live="polite" hidden></div>
+        <button id="add-batch-submit" class="btn btn-primary" type="button" disabled>Добавить</button>
+      </section>
+
+      <p id="add-status" class="status" role="status" aria-live="polite" hidden></p>
+    </div>
+  </dialog>
+
+  <dialog id="edit-dialog" class="dialog" aria-labelledby="edit-title">
+    <div class="dialog-body">
+      <div class="dialog-head">
+        <h2 id="edit-title" class="dialog-title">Редактировать карточку</h2>
+        <button id="edit-close" class="add-btn add-btn-plain" type="button" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <label class="field"><span>Лицевая сторона *</span><input id="edit-front" type="text" autocomplete="off" /></label>
+      <label class="field"><span>Обратная сторона *</span><textarea id="edit-back" rows="2"></textarea></label>
+      <label class="field"><span>Транскрипция</span><input id="edit-transcription" type="text" autocomplete="off" /></label>
+      <label class="field"><span>Примеры (каждый с новой строки)</span><textarea id="edit-examples" rows="3"></textarea></label>
+
+      <div class="media-edit">
+        <span class="media-edit-title">Картинка</span>
+        <div id="edit-image-cur" class="media-current"></div>
+        <label id="edit-image-remove-wrap" class="check"><input id="edit-image-remove" type="checkbox" /> Удалить файл</label>
+        <input id="edit-image" type="file" accept="image/*" aria-label="Заменить картинку" />
+      </div>
+      <div class="media-edit">
+        <span class="media-edit-title">Аудио</span>
+        <div id="edit-audio-cur" class="media-current"></div>
+        <label id="edit-audio-remove-wrap" class="check"><input id="edit-audio-remove" type="checkbox" /> Удалить файл</label>
+        <input id="edit-audio" type="file" accept="audio/*" aria-label="Заменить аудио" />
+      </div>
+
+      <p id="edit-status" class="status" role="status" aria-live="polite" hidden></p>
+      <div class="btn-row">
+        <button id="edit-cancel" class="btn" type="button">Отмена</button>
+        <button id="edit-save" class="btn btn-primary" type="button">Сохранить</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="direction-dialog" class="dialog dialog-sm" aria-labelledby="direction-title">
+    <div class="dialog-body">
+      <h2 id="direction-title" class="dialog-title">Новое направление</h2>
+      <label class="field"><span>Название</span><input id="direction-name" type="text" autocomplete="off" /></label>
+      <p id="direction-status" class="status" role="status" aria-live="polite" hidden></p>
+      <div class="btn-row">
+        <button id="direction-cancel" class="btn" type="button">Отмена</button>
+        <button id="direction-save" class="btn btn-primary" type="button">Создать</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="deck-dialog" class="dialog dialog-sm" aria-labelledby="deck-title">
+    <div class="dialog-body">
+      <h2 id="deck-title" class="dialog-title">Новая колода</h2>
+      <label class="field"><span>Название</span><input id="deck-name" type="text" autocomplete="off" /></label>
+      <p id="deck-status" class="status" role="status" aria-live="polite" hidden></p>
+      <div class="btn-row">
+        <button id="deck-cancel" class="btn" type="button">Отмена</button>
+        <button id="deck-save" class="btn btn-primary" type="button">Создать</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="confirm-dialog" class="dialog dialog-sm" aria-labelledby="confirm-title" aria-describedby="confirm-text">
+    <div class="dialog-body">
+      <h2 id="confirm-title" class="dialog-title"></h2>
+      <p id="confirm-text" class="help"></p>
+      <div class="btn-row">
+        <button id="confirm-cancel" class="btn" type="button">Отмена</button>
+        <button id="confirm-ok" class="btn btn-danger" type="button">Удалить</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="stats-dialog" class="dialog stats-dialog" aria-labelledby="stats-title">
+    <div class="dialog-body">
+      <div class="dialog-head"><h2 id="stats-title" class="dialog-title">Статистика обучения</h2><button id="stats-close" class="add-btn add-btn-plain" type="button" aria-label="Закрыть">×</button></div>
+      <label class="field"><span>Показать</span><select id="stats-scope"><option value="">Все направления и колоды</option></select></label>
+      <div class="stats-kpis">
+        <div><b id="stats-total">0</b><span>Карточек</span></div><div><b id="stats-learned">0</b><span>Выучено</span></div><div><b id="stats-due">0</b><span>К повторению</span></div><div><b id="stats-shows">0</b><span>Показов</span></div><div><b id="stats-reviews">0</b><span>Оценок</span></div><div><b id="stats-success">0%</b><span>Успешность</span></div><div><b id="stats-streak">0</b><span>Дней подряд</span></div>
+      </div>
+      <section class="stats-grid">
+        <article class="stats-panel"><h3>Повторения</h3><div id="stats-daily-chart"></div></article>
+        <article class="stats-panel"><h3>Показы</h3><div id="stats-shows-chart"></div></article>
+        <article class="stats-panel"><h3>Выучено по колодам</h3><div id="stats-decks-chart"></div></article>
+        <article class="stats-panel"><h3>Оценки</h3><div id="stats-ratings"></div></article>
+      </section>
+      <section class="stats-panel"><h3>Чаще всего показывались</h3><div id="stats-top-cards"></div></section>
+      <div class="btn-row"><button id="stats-refresh" class="btn" type="button">Обновить</button><button id="stats-close-2" class="btn btn-primary" type="button">Закрыть</button></div>
+    </div>
+  </dialog>
+
+  <dialog id="sync-dialog" class="dialog dialog-sm" aria-labelledby="sync-title">
+    <div class="dialog-body">
+      <div class="dialog-head">
+        <h2 id="sync-title" class="dialog-title">Синхронизация с Google Drive</h2>
+        <button id="sync-close" class="add-btn add-btn-plain" type="button" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p class="dialog-sub">Локальная SQL-база и OPFS остаются основными. В Google Drive приложение создаёт папку «Flashcards»: manifest.json, данные синхронизации и отдельные медиафайлы по SHA-256. Изменения объединяются между устройствами.
+        Для первого подключения нужен OAuth Client ID вашего Google Cloud проекта.</p>
+      <label class="field"><span>Google OAuth Client ID</span>
+        <input id="sync-client-id" type="text" autocomplete="off" placeholder="...apps.googleusercontent.com" />
+      </label>
+      <p id="sync-status" class="status" role="status" aria-live="polite" hidden></p>
+      <div class="btn-row">
+        <button id="sync-cancel" class="btn" type="button">Закрыть</button>
+        <button id="sync-connect" class="btn" type="button">Подключить Google</button>
+        <button id="sync-pull" class="btn" type="button">↓ Получить изменения</button>
+        <button id="sync-push" class="btn" type="button">↑ Отправить изменения</button>
+        <button id="sync-sync" class="btn btn-primary" type="button">☁ Синхронизировать</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="import-dialog" class="dialog dialog-sm" aria-labelledby="import-title">
+    <div class="dialog-body">
+      <div class="dialog-head">
+        <h2 id="import-title" class="dialog-title">Импорт колод</h2>
+        <button id="import-close" class="add-btn add-btn-plain" type="button" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p class="help">Файл экспорта (.json) — одна колода или полный бэкап. Импорт всегда создаёт НОВЫЕ колоды, существующие не трогает.</p>
+      <label class="file-btn">
+        <input id="import-file" type="file" accept=".json,application/json" />
+        <span>Выбрать файл</span>
+      </label>
+      <div id="import-preview" class="preview" aria-live="polite" hidden></div>
+      <p id="import-status" class="status" role="status" aria-live="polite" hidden></p>
+      <div class="btn-row">
+        <button id="import-cancel" class="btn" type="button">Закрыть</button>
+        <button id="import-submit" class="btn btn-primary" type="button" disabled>Импортировать</button>
+      </div>
+    </div>
+  </dialog>
+
+  <p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+
+  <script src="js/util.js"></script>
+  <script src="js/schema.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/mediaStore.js"></script>
+  <script src="js/cardManager.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/study.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/deckManager.js"></script>
+  <script src="js/editCard.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/flip.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/batchAdd.js"></script>
+  <script src="js/addCard.js"></script>
+  <script src="js/addDialog.js"></script>
+  <script src="js/editDialog.js"></script>
+  <script src="js/deckDialog.js"></script>
+  <script src="js/directionDialog.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/backup.js"></script>
+  <script src="js/importDialog.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/actions.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="js/googleDriveSync.js"></script>
+  <script src="js/syncDialog.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

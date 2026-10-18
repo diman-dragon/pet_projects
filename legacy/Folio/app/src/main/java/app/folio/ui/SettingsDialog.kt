@@ -1,0 +1,140 @@
+package app.folio.ui
+
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
+import app.folio.Brand
+import app.folio.BuildConfig
+import app.folio.R
+import java.io.File
+
+private fun dirSize(f: File): Long = if (f.exists()) f.walkTopDown().filter { it.isFile }.sumOf { it.length() } else 0L
+
+private fun fmt(b: Long): String = when {
+    b >= 1L shl 30 -> "%.1f ГБ".format(b / (1024.0 * 1024 * 1024))
+    b >= 1L shl 20 -> "%.1f МБ".format(b / (1024.0 * 1024))
+    b >= 1L shl 10 -> "%.0f КБ".format(b / 1024.0)
+    else -> "$b Б"
+}
+
+@Composable
+private fun SectionTitle(text: String) {
+    Text(
+        text, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary,
+        modifier = Modifier.padding(top = 14.dp, bottom = 4.dp)
+    )
+}
+
+@Composable
+private fun RadioRow(label: String, selected: Boolean, onClick: () -> Unit) {
+    Row(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+        RadioButton(selected = selected, onClick = null)
+        Text(label, Modifier.padding(start = 12.dp))
+    }
+}
+
+@Composable
+private fun SwitchRow(label: String, checked: Boolean, onChange: (Boolean) -> Unit) {
+    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(label, Modifier.weight(1f))
+        Switch(checked = checked, onCheckedChange = onChange)
+    }
+}
+
+@Composable
+fun SettingsDialog(onDismiss: () -> Unit) {
+    val ctx = LocalContext.current
+    val prefs = remember { ctx.getSharedPreferences("folio", 0) }
+    var paged by remember { mutableStateOf(prefs.getBoolean("paged", true)) }
+    var cacheBytes by remember { mutableLongStateOf(dirSize(File(ctx.cacheDir, "docs"))) }
+    val version = BuildConfig.VERSION_NAME
+    fun open(url: String) {
+        runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+    }
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Настройки") },
+        text = {
+            Column(Modifier.verticalScroll(rememberScrollState())) {
+                SectionTitle("Тема оформления")
+                RadioRow("Как в системе", Settings.theme == "system") { Settings.setTheme(ctx, "system") }
+                RadioRow("Светлая", Settings.theme == "light") { Settings.setTheme(ctx, "light") }
+                RadioRow("Тёмная", Settings.theme == "dark") { Settings.setTheme(ctx, "dark") }
+                RadioRow("AMOLED (чёрная)", Settings.theme == "amoled") { Settings.setTheme(ctx, "amoled") }
+                RadioRow("Бумага (тёплая)", Settings.theme == "paper") { Settings.setTheme(ctx, "paper") }
+                if (Build.VERSION.SDK_INT >= 31 && Settings.theme !in listOf("amoled", "paper")) {
+                    SwitchRow("Динамические цвета (Material You)", Settings.dynamicColors) { Settings.setDynamic(ctx, it) }
+                }
+
+                SectionTitle("Чтение")
+                SwitchRow("Просмотр по страницам (иначе — лента)", paged) {
+                    paged = it
+                    prefs.edit().putBoolean("paged", it).apply()
+                }
+                SwitchRow("Ночной режим (инверсия страниц)", Settings.nightMode) { Settings.setNightMode(ctx, it) }
+                SwitchRow("Рисовать только стилусом (при открытии книги)", Settings.stylusOnly) { Settings.setStylusOnly(ctx, it) }
+
+                SectionTitle("Данные")
+                Text("Кэш документов: ${fmt(cacheBytes)}")
+                TextButton(onClick = {
+                    File(ctx.cacheDir, "docs").listFiles()?.forEach { it.delete() }
+                    cacheBytes = dirSize(File(ctx.cacheDir, "docs"))
+                }) { Text("Очистить кэш") }
+                Text(
+                    "Аннотации, прогресс и правки страниц не удаляются.",
+                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                SectionTitle("О приложении")
+                Row(Modifier.padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        painterResource(R.drawable.ic_datalaw), contentDescription = Brand.NAME,
+                        modifier = Modifier.size(40.dp), tint = MaterialTheme.colorScheme.onSurface
+                    )
+                    Column(Modifier.padding(start = 12.dp)) {
+                        Text(Brand.NAME, style = MaterialTheme.typography.titleMedium)
+                        Text(
+                            "Разработчик Folio", style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+                Text("Folio — открытый просмотрщик документов")
+                Text("Версия $version", style = MaterialTheme.typography.bodyMedium)
+                Text(Brand.COPYRIGHT, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    "Лицензия AGPL-3.0-or-later. Движок документов — MuPDF (Artifex Software), AGPL-3.0.",
+                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    "Приложение работает полностью офлайн: не собирает данные и не отправляет их никуда.",
+                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(top = 4.dp)
+                )
+                TextButton(onClick = { open(BuildConfig.SOURCE_URL) }) { Text("Исходный код (AGPL)") }
+                TextButton(onClick = { open(BuildConfig.SOURCE_URL + "/blob/main/PRIVACY.md") }) { Text("Политика конфиденциальности") }
+            }
+        },
+        confirmButton = { TextButton(onClick = onDismiss) { Text("Готово") } }
+    )
+}

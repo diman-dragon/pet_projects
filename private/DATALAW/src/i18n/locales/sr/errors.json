@@ -1,0 +1,18 @@
+{
+  "errors.common.unknown": "Nepoznata greška",
+  "errors.common.notFound": "Zapis nije pronađen",
+  "errors.config.missingWorkDir": "Radni direktorijum nije podešen",
+  "errors.config.resolveFailed": "Nije moguće odrediti putanju konfiguracije",
+  "errors.db.queryFailed": "Greška upita baze podataka",
+  "errors.serialization.invalidPayload": "Neispravan zahtev",
+  "errors.fs.io": "Greška fajl sistema",
+  "errors.fs.pathMissing": "Putanja fascikle obraćanja nije pronađena",
+  "errors.fs.invalidFileName": "Neispravno ime fajla",
+  "errors.document.extractFailed": "Nije moguće izvući tekst iz dokumenta",
+  "errors.ai.unavailable": "Lokalni AI model nije dostupan",
+  "errors.ai.requestFailed": "Greška zahteva prema lokalnom AI modelu",
+  "errors.ai.invalidResponse": "Lokalni AI model je vratio neispravan odgovor",
+  "errors.ai.transport": "Greška povezivanja sa lokalnim AI modelom",
+  "errors.appeal.chainMissing": "Nedostaje kontekst lanca obraćanja",
+  "errors.regex.invalid": "Interna greška obrade šablona"
+}

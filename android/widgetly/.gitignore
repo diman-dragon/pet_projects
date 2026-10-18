@@ -1,0 +1,8 @@
+node_modules/
+/android/
+/dist/
+*.jks
+*.keystore
+# фиксированный debug-ключ (не секрет): нужен, чтобы каждая сборка из CI устанавливалась поверх предыдущей
+!native/android/debug.keystore
+.DS_Store

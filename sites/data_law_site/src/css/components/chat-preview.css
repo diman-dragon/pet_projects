@@ -1,0 +1,93 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   LAYLA CHAT PREVIEW  .dl-chat-preview
+   ───────────────────────────────────────────────────────────────────────── */
+
+.dl-chat-preview {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--c-gold-border);
+  background: var(--c-white);
+  max-width: 560px;
+  overflow: hidden;
+}
+
+.dl-chat-preview__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-6);
+  background: var(--c-navy);
+  border-bottom: 1px solid rgba(181,129,58,.25);
+}
+
+.dl-chat-preview__status {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-caps);
+  color: var(--c-gold);
+  opacity: .8;
+}
+
+.dl-chat-preview__name {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+
+.dl-chat-preview__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-6);
+  background: var(--c-surface);
+  min-height: 180px;
+}
+
+.dl-chat-preview__msg {
+  max-width: 88%;
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-loose);
+}
+
+.dl-chat-preview__msg--ai {
+  align-self: flex-start;
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-left: 3px solid var(--c-gold);
+  color: var(--c-text);
+}
+
+.dl-chat-preview__msg--user {
+  align-self: flex-end;
+  background: var(--c-navy);
+  color: rgba(255,255,255,.85);
+}
+
+.dl-chat-preview__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--c-white);
+  border-top: 1px solid var(--c-border);
+}
+
+.dl-chat-preview__placeholder {
+  font-size: var(--fs-sm);
+  color: var(--c-text-dim);
+}
+
+.dl-chat-preview__send {
+  background: var(--c-navy);
+  color: var(--c-gold);
+  border: none;
+  padding: 6px 14px;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition: background var(--t-base);
+}
+.dl-chat-preview__send:hover { background: var(--c-gold); color: var(--c-white); }

@@ -1,0 +1,106 @@
+{
+  "title": "Međunarodni postupci",
+  "subtitle": "Stanje predmeta pred Srbijom, Interpolom, UN i ESLJP.",
+  "intro": "Međunarodne institucije angažovane su kao nezavisni forumi za verifikaciju — ne kao oblik pritiska, već kao mehanizam koji međunarodno pravo obezbeđuje tamo gde domaći postupci zakažu. Svaka institucija ispituje poseban aspekt istog skupa činjenica.",
+  "items": [
+    {
+      "org": "Srbija",
+      "status": "Završna faza — odluka je na ministru pravde",
+      "text": "Nakon što je Apelacioni sud Beograda potvrdio da su uslovi za ekstradiciju ispunjeni, dosije je upućen ministru pravde — poslednjem koraku u ovom postupku, bez mogućnosti dalje žalbe. U ovoj fazi ministar ima diskreciono pravo da odbije izručenje ako smatra da je zahtev politički ili komercijalno motivisan, ili ako postoji verodostojan rizik po prava lica.",
+      "focus": "U praksi, srpski ministri pravde veoma retko odbijaju ekstradiciju kada su sudovi utvrdili da su formalni uslovi ispunjeni. Upravo zato je paralelno angažovanje međunarodnih mehanizama jedini realan način da se ova odluka podvrgne spoljašnjoj kontroli."
+    },
+    {
+      "org": "Interpol / CCF",
+      "status": "🔄 U toku — CCF potvrdio prijem 28. oktobra 2025.",
+      "text": "Rusija je aktivirala međunarodnu poternicu putem Red Noticea izdatog 25. januara 2025, na osnovu naloga za hapšenje in absentia koji je Tverski okružni sud Moskve izdao 27. decembra 2024. Odbrana je osporila poternicu podnošenjem žalbe Komisiji Interpola za kontrolu dosijea (CCF) — jedinom telu ovlašćenom da preispituje pravni osnov poternica i nalaže njihovo brisanje. Dana 28. oktobra 2025. CCF je zvanično obavestio odbranu da je preispitivanje pokrenuto (ref. CCF/135/R1610.25) i zatražio eventualne dodatne materijale u roku od mesec dana.",
+      "focus": "Centralni argument zasniva se na članu 3 Statuta Interpola, koji izričito zabranjuje organizaciji mešanje u stvari komercijalne prirode. Transakcija u osnovi optužbe proglašena je zakonitom od arbitražnih sudova sve do ruskog Vrhovnog suda — to je ključni dokaz da je spor komercijalne, a ne krivičnopravne prirode. Postoji i dodatni argument: sam tekst Red Noticea Lagovskog opisuje kao 'inženjera preduzeća', što je direktno u suprotnosti sa njegovim dokumentovanim statusom samostalnog nezavisnog pravnika koji radi po ugovoru o pružanju usluga, potvrđenim potvrdama o prijemu i nalozima za plaćanje.",
+      "sources": [
+        {
+          "label": "Interpol CCF — zvanična stranica",
+          "href": "https://www.interpol.int/Who-we-are/Commission-for-the-Control-of-INTERPOL-s-Files-CCF"
+        },
+        {
+          "label": "Konstitucija Interpola, član 3",
+          "href": "https://www.interpol.int/en/content/download/590/file/01%20E%20CONSTITUTION%2011%202021.pdf?inLanguage=eng-GB"
+        }
+      ],
+      "doc": {
+        "title": "Pismo Interpol CCF od 28. oktobra 2025.",
+        "ref": "CCF/135/R1610.25",
+        "href": "./files/international/interpol-and-unhcr/2025-10-28-Otvet-CCF-Interpola-po-krasnomu-uvedomleniyu.pdf"
+      }
+    },
+    {
+      "org": "UN / WGAD",
+      "status": "Žalba podneta Radnoj grupi za arbitrarno pritvaranje",
+      "text": "Predmet je upućen Radnoj grupi UN za arbitrarno pritvaranje (WGAD) — mehanizmu zasnovanom na ugovoru, ovlašćenom da utvrdi da li je pritvaranje — ili verodostojna pretnja pritvaranjem — nespojivo s međunarodnim pravom.",
+      "focus": "WGAD procenjuje usklađenost sa članovima 9 i 14 Međunarodnog pakta o građanskim i političkim pravima: pravo na slobodu i bezbednost ličnosti i pravo na pravično suđenje. Ključna činjenica za ocenu: krivična optužba formulisana je tajno, bez ikavog obaveštenja subjektu, dve i po godine nakon spornih događaja.",
+      "sources": [
+        {
+          "label": "Baza mišljenja WGAD",
+          "href": "https://wgad-opinions.ohchr.org/"
+        },
+        {
+          "label": "MPGPP — zvanični tekst",
+          "href": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+        }
+      ]
+    },
+    {
+      "org": "ESLJP",
+      "status": "Pravilo 39 odbijeno. Puna predstavka u pripremi.",
+      "text": "Odbrana je podnela zahtev za privremene mere po Pravilu 39 — hitnom mehanizmu Suda za privremeno blokiranje ekstradicije dok se predmet razmatra. Zahtev je odbijen. Rusija se 2022. povukla iz Saveta Evrope i više nije stranka Konvencije; međutim, Srbija ostaje država članica Saveta Evrope i snosi punu konvencijsku odgovornost za ono što će se s Lagovskim desiti kao posledica ekstradicije.",
+      "focus": "Puna predstavka gradi se kombinacijom konvencijskih odredbi. Član 3: realni rizik od mučenja i nečovečnog postupanja, s obzirom na povlačenje Rusije iz UN Konvencije protiv mučenja i dokumentovanu pretnju prisilne mobilizacije. Član 2: opasnost po život u aktivnoj zoni sukoba. Član 8: pravo na porodični život — dvoje maloletne dece Lagovskog nalazi se u Srbiji. Član 13: ne postoji efikasan domaći pravni lek jer odluka ministra pravde nije podložna žalbi. Član 6 aktuelan je ne kroz srpski postupak neposredno, već kroz doktrinu 'flagrantnog uskraćivanja pravde': izručenje osobi u pravosudni sistem koji očigledno nije nezavisan samo po sebi predstavlja povredu Konvencije, bez obzira na to što bi taj sistem potom mogao da uradi.",
+      "sources": [
+        {
+          "label": "ESLJP factsheet o Pravilu 39",
+          "href": "https://www.echr.coe.int/documents/d/echr/FS_Interim_measures_ENG"
+        },
+        {
+          "label": "Savet Evrope: Rusija je prestala da bude strana Konvencije 16. septembra 2022.",
+          "href": "https://www.coe.int/en/web/portal/coe-and-internet-news/-/asset_publisher/a55ywOQisJi3/content/la-russie-cesse-d-%C3%AAtre-partie-%C3%A0-la-convention-europ%C3%A9enne-des-droits-de-l-homme-le-16-septembre-2022"
+        },
+        {
+          "label": "Othman (Abu Qatada) v. the United Kingdom, predstavka br. 8139/09",
+          "href": "https://hudoc.echr.coe.int/eng?i=001-108629"
+        }
+      ]
+    },
+    {
+      "org": "Evropska komisija / Delegacija EU",
+      "status": "Obraćanja poslata",
+      "text": "Odbrana se obratila i evropskim institucijama: Delegaciji EU u Srbiji, kanalu Evropske komisije, kao i Ministarstvu za evropske integracije Srbije. Razlog je jednostavan: ono što se dešava predstavlja flagrantno gaženje zakonitosti, pri čemu ni sudovi, ni tužilaštvo, ni administrativni mehanizmi ne pružaju stvarnu zaštitu po suštini.",
+      "focus": "Ta obraćanja ne zamenjuju sudske postupke, ali evidentiraju da nije reč o usputnoj procesnoj grešci, već o pitanju usklađenosti predmeta sa osnovnim standardima vladavine prava na koje se Srbija sama poziva u procesu evropskih integracija.",
+      "sources": [
+        {
+          "label": "Pismo Delegaciji EU u Srbiji (PDF)",
+          "href": "./files/international/interpol-and-unhcr/Pismo-v-delegatsiyu-ES-v-Serbii.pdf"
+        },
+        {
+          "label": "Obraćanje Ministarstvu za evropske integracije (PDF)",
+          "href": "./files/serbia/authorities/Ministerstvo-po-evrointegratsii-Serbii.pdf"
+        },
+        {
+          "label": "Pismo predsedniku Aleksandru Vučiću (PDF)",
+          "href": "./files/serbia/authorities/Pismo-prezidentu-Vuchichu.pdf"
+        }
+      ]
+    },
+    {
+      "org": "UNHCR / Srbija",
+      "status": "Odgovor primljen — čeka se odluka suda",
+      "text": "Dana 21. aprila 2026. Lagovski se obratio predstavništvu UNHCR-a u Beogradu dokumentujući sistemski propast pravne zaštite: čisto formalistički karakter svih azilantskih odluka, povrede čl. 3 i čl. 8 EKLJP i dokumentovanu nedostupnost pravde u Rusiji. UNHCR je odgovorio da unutrašnja pravna sredstva nisu iscrpljena, budući da je predmet u toku pred Upravnim sudom. UNHCR nije pružio suštinsku ocenu nijednog od iznetih argumenata.",
+      "focus": "Azilantski postupak u Srbiji prošao je sve instance do Komisije za azil — oba stepena su odbila, ograničivši se na formalnu proveru. Jedina preostala brana pred ekstradicijom je Upravni sud koji razmatra tužbu na odluku Komisije. Statistika u uporedivim predmetima ne daje osnova za optimizam. UNHCR-ova preporuka da se čeka faktički prenosi odgovornost za ishod na postupak koji ni u jednom sličnom predmetu nije stao na stranu podnosioca.",
+      "sources": [
+        {
+          "label": "Pismo UNHCR-u u Beogradu (PDF)",
+          "href": "./files/international/interpol-and-unhcr/Pismo-v-UVKB.pdf"
+        }
+      ]
+    }
+  ],
+  "summary": "Međunarodna dimenzija nije paralelna verzija nacionalnog postupka — to je njegova spoljna revizija. Različiti forumi ispituju različite aspekte: Srbija donosi suverenu političku odluku; Interpol preispituje da li poternica ispunjava sopstvena pravila; WGAD ocenjuje arbitrarnost gonjenja; ESLJP ispituje konvencijsku odgovornost Srbije; a evropske institucije — usklađenost sa osnovnim standardima vladavine prava. Odbijanje privremenih mera po Pravilu 39 ne prejudicira meritum: Pravilo 39 je instrument brzog reagovanja s visokim pragom primene, a suštinska predstavka ocenjuje se po sasvim drugačijim merilima.",
+  "labels": {
+    "focus": "Suština"
+  }
+}

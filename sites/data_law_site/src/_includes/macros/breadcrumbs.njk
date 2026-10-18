@@ -1,0 +1,23 @@
+{% macro breadcrumbs(page) %}
+{% if page and page.url %}
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+  <ol>
+    <li><a href="{{ '/' | url }}">Главная</a></li>
+    {% set paths = page.url.split('/') %}
+    {% set currentPath = "" %}
+    {% for path in paths %}
+      {% if path and path != "pages" %}
+        {% set currentPath = currentPath + "/" + path %}
+        <li>
+          {% if loop.last %}
+            <span aria-current="page">{{ path | capitalize }}</span>
+          {% else %}
+            <a href="{{ currentPath | url }}">{{ path | capitalize }}</a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}
+{% endmacro %}

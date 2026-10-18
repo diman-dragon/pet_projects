@@ -1,0 +1,2 @@
+[env]
+PROTOC = "{CARGO_MANIFEST_DIR}/.protoc/bin/protoc.exe"

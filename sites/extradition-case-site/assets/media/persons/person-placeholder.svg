@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Person silhouette">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f4f6"/>
+      <stop offset="1" stop-color="#d7dde6"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#707989"/>
+      <stop offset="1" stop-color="#3f4754"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="0" fill="url(#bg)"/>
+  <circle cx="120" cy="82" r="42" fill="url(#shadow)"/>
+  <path d="M42 218c8-52 38-82 78-82s70 30 78 82H42Z" fill="url(#shadow)"/>
+</svg>

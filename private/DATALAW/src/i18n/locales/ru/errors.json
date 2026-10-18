@@ -1,0 +1,18 @@
+{
+  "errors.common.unknown": "Неизвестная ошибка",
+  "errors.common.notFound": "Запись не найдена",
+  "errors.config.missingWorkDir": "Рабочая директория не настроена",
+  "errors.config.resolveFailed": "Не удалось определить путь конфигурации",
+  "errors.db.queryFailed": "Ошибка запроса к базе данных",
+  "errors.serialization.invalidPayload": "Некорректные данные запроса",
+  "errors.fs.io": "Ошибка файловой системы",
+  "errors.fs.pathMissing": "Путь к папке обращения не найден",
+  "errors.fs.invalidFileName": "Некорректное имя файла",
+  "errors.document.extractFailed": "Не удалось извлечь текст из документа",
+  "errors.ai.unavailable": "Локальная AI-модель недоступна",
+  "errors.ai.requestFailed": "Ошибка запроса к локальной AI-модели",
+  "errors.ai.invalidResponse": "Локальная AI-модель вернула некорректный ответ",
+  "errors.ai.transport": "Ошибка подключения к локальной AI-модели",
+  "errors.appeal.chainMissing": "Не найден контекст цепочки обращения",
+  "errors.regex.invalid": "Ошибка внутренней обработки шаблона"
+}

@@ -1,0 +1,72 @@
+/* ── ТИПОГРАФИКА ──────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--f-serif);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--c-ink);
+}
+
+h1 { font-size: var(--fs-hero); }
+h2 { font-size: var(--fs-3xl); }
+h3 { font-size: var(--fs-2xl); }
+h4 { font-size: var(--fs-xl); }
+h5 { font-size: var(--fs-lg); }
+
+/* Серифный italic акцент */
+em {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  color: var(--c-gold);
+  letter-spacing: 0;
+}
+
+p { line-height: var(--lh-loose); }
+p + p { margin-top: 1.2rem; }
+
+strong { font-weight: var(--fw-semibold); }
+
+/* Overline — ALL CAPS метка над заголовком */
+.text-overline {
+  font-family: var(--f-sans);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  color: var(--c-text-dim);
+  line-height: 1;
+}
+
+.text-overline--gold { color: var(--c-gold); }
+.text-overline--red  { color: var(--c-red); }
+.text-overline--white{ color: rgba(255,255,255,.5); }
+
+/* Display — серифный заголовок страницы */
+.text-display {
+  font-family: var(--f-serif);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+
+.text-h1 { font-family: var(--f-serif); font-size: var(--fs-3xl); font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); }
+.text-h2 { font-family: var(--f-serif); font-size: var(--fs-2xl); font-weight: var(--fw-bold); line-height: var(--lh-snug); letter-spacing: var(--ls-tight); }
+.text-h3 { font-family: var(--f-serif); font-size: var(--fs-xl);  font-weight: var(--fw-bold); line-height: var(--lh-snug); letter-spacing: var(--ls-tight); }
+.text-h4 { font-family: var(--f-sans);  font-size: var(--fs-lg);  font-weight: var(--fw-semibold); line-height: var(--lh-snug); }
+
+.text-lead  { font-size: var(--fs-md); line-height: var(--lh-loose); color: var(--c-text-mid); font-weight: var(--fw-light); }
+.text-muted { color: var(--c-text-mid); }
+.text-dim   { color: var(--c-text-dim); }
+.text-white { color: var(--c-white); }
+.text-accent{ color: var(--c-gold); }
+.text-navy  { color: var(--c-navy); }
+
+.text-xxs { font-size: var(--fs-xs); }
+.text-sm  { font-size: var(--fs-sm); }
+
+.font-bold   { font-weight: var(--fw-bold); }
+.font-serif  { font-family: var(--f-serif); }
+.italic      { font-style: italic; }

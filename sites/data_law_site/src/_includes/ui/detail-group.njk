@@ -1,0 +1,88 @@
+{% from "ui/button.njk" import button %}
+{% from "ui/card.njk" import card %}
+
+{% macro detail_group(group, bg) %}
+  {% set groupLayout = group.layout or "cards" %}
+  {% set columns = group.columns or (2 if groupLayout == "text" else 3) %}
+
+  <div class="mt-12">
+    {% if group.eyebrow %}
+      <div class="text-overline{% if bg == 'dark' %} text-overline--white{% else %} text-overline--gold{% endif %} mb-3">{{ group.eyebrow }}</div>
+    {% endif %}
+
+    {% if group.title %}
+      <h3 class="text-h3 mb-4{% if bg == 'dark' %} text-white{% endif %}">{{ group.title }}</h3>
+    {% endif %}
+
+    {% if group.text %}
+      <p class="mb-8{% if bg == 'dark' %} text-white{% endif %}">{{ group.text | safe }}</p>
+    {% endif %}
+
+    {% if group.items and group.items.length %}
+      {% if groupLayout == "text" %}
+        <div class="grid grid-{{ columns }} gap-12">
+          {% for item in group.items %}
+            <div>
+              {% if item.eyebrow %}
+                <div class="text-overline{% if bg == 'dark' %} text-overline--white{% else %} text-overline--gold{% endif %} mb-3">{{ item.eyebrow }}</div>
+              {% endif %}
+              {% if item.title %}
+                <h4 class="text-h3 mb-4{% if bg == 'dark' %} text-white{% endif %}">{{ item.title }}</h4>
+              {% endif %}
+              {% if item.text %}
+                <p{% if bg == 'dark' %} class="text-white"{% endif %}>{{ item.text | safe }}</p>
+              {% endif %}
+              {% if item.points %}
+                <ul class="feature-list{% if bg == 'dark' %} text-white{% endif %}">
+                  {% for point in item.points %}
+                    <li>{{ point }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% elif groupLayout == "actions" %}
+        <div class="flex gap-4">
+          {% for item in group.items %}
+            {{ button({
+              text: item.title,
+              href: item.href,
+              type: item.type or "primary",
+              trigger: item.trigger
+            }) }}
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="grid grid-{{ columns }} gap-8">
+          {% for item in group.items %}
+            {% if item.points %}
+              {% call card({
+                label: item.eyebrow,
+                title: item.title,
+                description: item.text,
+                href: item.href,
+                dark: bg == "dark"
+              }) %}
+                <ul class="feature-list{% if bg == 'dark' %} text-white{% endif %}">
+                  {% for point in item.points %}
+                    <li>{{ point }}</li>
+                  {% endfor %}
+                </ul>
+              {% endcall %}
+            {% else %}
+              {{ card({
+                label: item.eyebrow,
+                title: item.title,
+                description: item.text,
+                href: item.href,
+                footer: item.footer,
+                dark: bg == "dark"
+              }) }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endmacro %}

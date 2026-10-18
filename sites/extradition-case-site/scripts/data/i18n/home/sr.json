@@ -1,0 +1,104 @@
+{
+  "main": {
+    "anatomy": {
+      "title": "Mapa predmeta",
+      "subtitle": "Transnacionalno krivično gonjenje: država primenjuje pravne instrumente izvan granica sopstvene jurisdikcije.",
+      "text": "Transnacionalna represija retko počinje nasiljem — počinje papirom. Arbitraža i tri sudske instance sve do Vrhovnog suda Ruske Federacije potvrdile su isto: transakcija je bila zakonita. Zatim su iste te činjenice postale osnova krivične optužbe.\n\nU tome je suštinska teškoća — ne ishod, već mehanizam. Kada ista radnja istovremeno biva proglašena zakonitom od strane građanskih sudova i krivičnom od strane tužilaca, pojam zakonitosti gubi sadržinu. Kada se svaki podnesak prima, registruje i prosleđuje — ali nikad ne razmatra po suštini — pravo na pravnu zaštitu postoji samo na papiru. Kada ekstradicioni mehanizam zahtev tretira kao procesnu formalnost, a ne kao nezavisnu proveru osnovanosti gonjenja — sistem više nije zaštitni mehanizam. Postaje transmisioni kaiš.\n\nU samoj Rusiji nijedan organ nije razmatrao argumente odbrane po suštini. Tužilaštvo Moskovske oblasti, Generalno tužilaštvo, Moskovski gradski sud: prosleđivanja, registracije, formalni odgovori. U Srbiji je zamolnica za izručenje prošla kroz tri sudske instance i čeka potpis ministra pravde — kao dokument za obradu, ne kao zahtev koji treba proveriti.\n\nKada su domaći mehanizmi zatvoreni, ostaju međunarodni: CCF Interpola za osporavanje Red Noticea, UNHCR za procenu rizika od progona, ukrajinski organi u vezi sa pojedinim okolnostima. Sva tri su aktivirana.",
+      "manifesto": "Ovaj predmet nije izuzetak. On je demonstracija onoga što postaje moguće kada sistem checks and balances prestane da funkcioniše — kada se krivični zakon može primenjivati arbitrarno, kada sudovi potvrđuju zakonitost radnji koje tužioci istovremeno gone kao krivična dela, i kada država poseduje i aparat i političku volju da lice goni preko granica. Ova izloženost tiče se svakog ko je napustio takvu državu. Pitanje koje ovaj arhiv postavlja je jednostavno: ako ovi mehanizmi ne mogu da zaštite lice za koje su stvoreni — koga onda štite?"
+    },
+    "cards": {
+      "legal": {
+        "title": "Pravni disonans",
+        "text": "Arbitražni sud Moskovske oblasti, drugostepeni i kasacioni sud, kao i Vrhovni sud Ruske Federacije — svi su potvrdili zakonitost transakcije u predmetu A41-20164/2022. Krivični predmet otvoren paralelno iste te činjenice kvalifikuje kao prevaru. Odbranino stanovište o fer tržišnoj vrednosti — dokumentovano u istraživačkom spisu — naknadno se reinterpretira kao dokaz umišljaja u potcenjivanju cene.\n\nDva međusobno isključiva zaključka o istoj radnji, doneta od strane organa iste države: to nije procesna nedoslednost. To je instrumentalizacija krivičnog gonjenja.",
+        "question": "Kako zahtev za fer tržišnu vrednost može biti dokaz umišljaja u njenom prikrivanju?",
+        "link": "Odluka Arbitražnog suda Moskovske oblasti, predmet A41-20164/2022"
+      },
+      "international": {
+        "title": "Međunarodni okvir",
+        "text": "Transnacionalna represija je praksa u kojoj država goni lice van sopstvene teritorije putem pravnih i vanlegalnih mehanizama: međunarodnih poternica Interpola, zamolnica za izručenje i diplomatskog pritiska. Sve tri forme prisutne su u ovom predmetu: Red Notice Interpola (osporen pred CCF-om), formalna zamolnica za izručenje Srbiji i podnesci UNHCR-u.\n\nSvaki od ovih mehanizama predviđa nezavisnu proveru osnovanosti gonjenja. Upravo ta provera — njen tok, nalazi i ograničenja — predmet je ovog arhiva.",
+        "link": "Međunarodni postupci"
+      },
+      "actors": {
+        "title": "Učesnici",
+        "text": "Krivični predmet pokrenuli su istražni organi Moskovske oblasti. Zamolnicu za izručenje uputilo je Generalno tužilaštvo Ruske Federacije. O zamolnici su odlučivali srpski sudovi u tri instance; konačni akt čeka potpis ministra pravde Republike Srbije.\n\nIstovremeno: CCF Interpola razmatra žalbu na Red Notice; UNHCR obrađuje zahtev za azil; Ustavni sud Srbije razmatra ustavnu žalbu. Svi učesnici, datumi njihovih ovlašćenja i akti koje su doneli dokumentovani su bez uredničkog komentara.",
+        "link": "Registar učesnika"
+      },
+      "archive": {
+        "title": "Arhiva dokumenata",
+        "text": "Primarni izvori bez uredničkih izmena i autorske interpretacije. Arhiva je strukturirana oko četiri celine, od kojih svaka odgovara posebnoj pravnoj dimenziji predmeta. Dokumenti se objavljuju u obliku u kome su primljeni od nadležnih organa:",
+        "list": [
+          "Početak predmeta — transakcija, arbitraža, krivični postupak",
+          "Srbija — ekstradicioni postupak, azil",
+          "Rusija — žalbe, odgovori, sudska odbijanja",
+          "Međunarodni okvir — Interpol, UNHCR, Ukrajina"
+        ]
+      },
+      "flagrant": {
+        "title": "Flagrantno uskraćivanje pravde",
+        "text": "Po standardu ESLJP, 'flagrantno uskraćivanje pravde' je povreda prava na pravično suđenje toliko teška da sama po sebi predstavlja samostalan osnov za odbijanje izručenja — bez obzira na suštinu optužbe.\n\nU ovom predmetu: više od 8 podnesaka Tužilaštvu Moskovske oblasti — svi prosleđeni ili odbijeni bez razmatranja suštine. 5 podnesaka Generalnom tužilaštvu — isti ishod. Žalba Moskovskom gradskom sudu — odbijena kao nedopuštena. Nijedan organ nije doneo odluku koja sadrži ikakvu suštinsku ocenu argumenata odbrane.\n\nOvo nije procesni propust. To je sistem koji funkcioniše tačno onako kako je ustrojen — ali ne za ovo lice.",
+        "link": "Flagrantno uskraćivanje pravde"
+      }
+    }
+  },
+  "sidebar": {
+    "title": "Hronika predmeta",
+    "note": "Događaji i mediji — od novijeg ka starijem.",
+    "news": [
+      {
+        "sort": "2026-06-05",
+        "date": "5. jun 2026.",
+        "source": "Delegacija EU u Srbiji",
+        "logo": "eu",
+        "logo_alt": "Delegacija EU",
+        "title": "Odgovor Delegacije EU: zakazan sastanak",
+        "desc": "Delegacija Evropske unije u Beogradu odgovorila je na podnesak odbrane. Zakazan je radni sastanak povodom rizika od izručenja i poštovanja ljudskih prava.",
+        "link": "./files/international/interpol-and-unhcr/Otvet-Delegatsii-ES-v-Serbii.pdf"
+      },
+      {
+        "sort": "2026-05-27",
+        "date": "27. maj 2026.",
+        "source": "Generalno tužilaštvo RF",
+        "logo": "prokuratura",
+        "logo_alt": "GT RF",
+        "title": "GT: odbijena provera falsifikata",
+        "desc": "Zamenik generalnog tužioca RF Prokopenko S.V. odbio je žalbu na radnje istražitelja Salikova, ignorišući dokaze o podmetanju u zapisnicima.",
+        "link": "./files/russia/prokuratura/2026-05-27-Otvet-Zamgenprokurora.pdf"
+      },
+      {
+        "sort": "2026-05-01",
+        "date": "Maj 2026.",
+        "source": "Radio Slobodna Evropa",
+        "logo": "rse",
+        "logo_alt": "RSE",
+        "title": "RSE objava: 'Pola godine bez potpisa ministra'",
+        "desc": "Veliki tekst o predmetu Lagovski: pravni vakuum, odsustvo zdravstvenog osiguranja za porodicu i čekanje na političku odluku ministra pravde.",
+        "link": "https://www.slobodnaevropa.org/a/dmitrij-lagovski-rusij-srbija-izrucenje/33756952.html"
+      },
+      {
+        "sort": "2026-04-21",
+        "date": "21. april 2026.",
+        "source": "UNHCR Srbija",
+        "logo": "unhcr",
+        "logo_alt": "UNHCR",
+        "title": "Podnesak UNHCR-u",
+        "desc": "Odbrana je predala predstavništvu UN u Srbiji kompletan paket dokumenata koji potvrđuju rizike od progona po političkim i etničkim osnovama.",
+        "link": "./files/international/interpol-and-unhcr/Pismo-v-UVKB.pdf"
+      },
+      {
+        "sort": "2026-03-23",
+        "date": "23. mart 2026.",
+        "source": "Komisija za azil Srbije",
+        "logo": "komisija-azil",
+        "logo_alt": "Komisija za azil",
+        "title": "Konačno odbijanje azila",
+        "desc": "Komisija je potvrdila odluku o odbijanju, ne razmatrajući navode o porodičnom životu (čl. 8 EKLJP). Pokrenut postupak pred Upravnim sudom.",
+        "link": "./files/serbia/asylum/commission-decision/Lagovskii-Dmitrii-resenje-KzA.pdf"
+      }
+    ],
+    "subscribe": {
+      "title": "Pratite ažuriranja",
+      "text": "Novi dokumenti i presude objavljuju se u arhivi čim postanu dostupni."
+    },
+    "archive_link": "Celokupna arhiva dokumenata"
+  }
+}

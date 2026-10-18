@@ -1,0 +1,53 @@
+.workspace-settings-backdrop { position: fixed; inset: 0; z-index: 220; display: grid; place-items: center; padding: 24px; background: rgba(51, 38, 23, .28); }
+.workspace-settings-modal { width: min(560px, 100%); max-height: calc(100vh - 48px); overflow-y: auto; overscroll-behavior: contain; padding: 24px; border: 1px solid rgba(107, 79, 42, .22); border-radius: 16px; background: #fffdf8; box-shadow: 0 24px 70px rgba(48, 32, 15, .28); color: #4a3a28; }
+.workspace-settings-modal--index { width: min(460px, 100%); }
+.workspace-settings-backdrop--submodal { z-index: 240; }
+.workspace-settings-backdrop--area-preview { align-items: center; justify-content: flex-end; background: rgba(51,38,23,.1); }
+.workspace-settings-backdrop--area-preview .workspace-settings-modal { margin-right: 24px; }
+.workspace-settings-modal__header, .workspace-settings-modal__actions, .workspace-settings-modal__path { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.workspace-settings-modal__header { margin-bottom: 18px; }
+.workspace-settings-modal__eyebrow { color: #a17b4d; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.workspace-settings-modal h2 { margin: 4px 0 0; color: #533d25; font-family: "Segoe Print", "Bradley Hand", cursive; font-size: 25px; font-weight: 600; }
+.workspace-settings-modal__close { border: 0; background: transparent; color: #8a6334; cursor: pointer; font-size: 26px; }
+.workspace-settings-modal__hint, .workspace-settings-modal__current { color: #806b51; font-size: 12px; line-height: 1.5; }
+.workspace-settings-modal label { display: grid; gap: 6px; margin-top: 14px; color: #765a3c; font-size: 12px; }
+.workspace-settings-modal input, .workspace-settings-modal select { width: 100%; box-sizing: border-box; padding: 9px 10px; border: 1px solid rgba(107, 79, 42, .24); border-radius: 8px; background: #fff; color: #43301d; font: inherit; }
+.workspace-settings-modal__path input { min-width: 0; }
+.workspace-settings-modal__theme-field { display: grid; gap: 6px; margin-top: 14px; color: #765a3c; font-size: 12px; }
+.workspace-settings-modal__theme-buttons { display: flex; gap: 8px; }
+.workspace-settings-modal__theme-top { display: grid; gap: 12px; margin-bottom: 18px; padding: 13px; border: 1px solid rgba(107, 79, 42, .14); border-radius: 11px; background: rgba(173, 132, 76, .06); }
+.workspace-settings-modal__theme-top p { margin: 4px 0 0; color: #806b51; font-size: 11px; }
+.workspace-settings-modal__theme-button { flex: 1; padding: 7px 10px; border: 1px solid rgba(107, 79, 42, .24); border-radius: 7px; background: transparent; color: #765a3c; cursor: pointer; font: inherit; font-size: 11px; }
+.workspace-settings-modal__theme-button--active { border-color: #76522c; background: rgba(118, 82, 44, .14); box-shadow: inset 0 0 0 1px #76522c; color: #533d25; font-weight: 700; }
+.workspace-settings-modal__path button, .workspace-settings-modal__primary, .workspace-settings-modal__secondary { padding: 9px 13px; border-radius: 8px; cursor: pointer; font: inherit; font-size: 12px; white-space: nowrap; }
+.workspace-settings-modal__path button, .workspace-settings-modal__primary { border: 1px solid #76522c; background: #76522c; color: #fffaf0; }
+.workspace-settings-modal__secondary { border: 1px solid rgba(107, 79, 42, .24); background: transparent; color: #765a3c; }
+.workspace-settings-modal__current { margin-top: 16px; padding: 10px; border-radius: 8px; background: rgba(173, 132, 76, .08); overflow-wrap: anywhere; }
+.workspace-settings-modal__links { display: grid; gap: 7px; }
+.workspace-settings-modal__link { display: grid; width: 100%; grid-template-columns: 26px minmax(0, 1fr) 18px; gap: 10px; align-items: center; padding: 12px 11px; border: 1px solid rgba(107, 79, 42, .16); border-radius: 10px; background: transparent; color: #765a3c; cursor: pointer; font: inherit; text-align: left; }
+.workspace-settings-modal__link:hover { border-color: rgba(118, 82, 44, .38); background: rgba(173, 132, 76, .08); }
+.workspace-settings-modal__link-icon { color: #967044; font-size: 18px; text-align: center; }
+.workspace-settings-modal__link strong, .workspace-settings-modal__link small { display: block; }
+.workspace-settings-modal__link strong { color: #533d25; font-size: 12px; }
+.workspace-settings-modal__link small { margin-top: 3px; color: #806b51; font-size: 10px; line-height: 1.35; }
+.workspace-settings-modal__danger-link { margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(107, 79, 42, .14); }
+.workspace-settings-modal__link--danger { border-color: rgba(160, 62, 50, .22); }
+.workspace-settings-modal__link--danger .workspace-settings-modal__link-icon, .workspace-settings-modal__link--danger strong { color: #a03e32; }
+.workspace-settings-modal__danger-zone small { color: #806b51; font-size: 11px; }
+.workspace-settings-modal__transfer { width: 100%; margin-top: 14px; padding: 10px; border: 1px solid rgba(107, 79, 42, .24); border-radius: 8px; background: transparent; color: #765a3c; cursor: pointer; font: inherit; font-size: 12px; text-align: left; }
+.workspace-settings-modal__danger-zone { display: grid; gap: 7px; margin-top: 18px; padding: 12px; border: 1px solid rgba(160, 62, 50, .25); border-radius: 9px; background: rgba(160, 62, 50, .05); }
+.workspace-settings-modal__section-title { color: #765a3c; font-size: 12px; font-weight: 700; }
+.workspace-settings-modal__danger-zone p { margin: 0; color: #806b51; font-size: 11px; line-height: 1.45; }
+.workspace-settings-modal__danger { justify-self: start; padding: 8px 11px; border: 1px solid rgba(160, 62, 50, .35); border-radius: 7px; background: transparent; color: #a03e32; cursor: pointer; font: inherit; font-size: 12px; }
+.workspace-settings-modal__error { margin-top: 12px; color: #a03e32; font-size: 12px; }
+.workspace-settings-modal__actions { justify-content: flex-end; margin-top: 22px; }
+.workspace-settings-modal__primary:disabled { cursor: not-allowed; opacity: .55; }
+.workspace-settings-modal__locked-areas { display: grid; gap: 7px; margin-top: 16px; }
+.workspace-settings-modal__locked-area { display: grid; width: 100%; grid-template-columns: 26px minmax(0, 1fr) 18px; gap: 10px; align-items: center; padding: 11px; border: 1px dashed rgba(161,123,77,.52); border-radius: 10px; background: rgba(173,132,76,.06); color: #765a3c; cursor: pointer; font: inherit; text-align: left; }
+.workspace-settings-modal__locked-area:hover { border-color: #76522c; background: rgba(173,132,76,.12); }
+.workspace-settings-modal__locked-area--active { border-color: #76522c; background: rgba(173,132,76,.16); box-shadow: inset 0 0 0 1px rgba(118,82,44,.35); }
+.workspace-settings-modal__locked-area-icon { color: #a17b4d; font-size: 18px; text-align: center; }
+.workspace-settings-modal__locked-area strong, .workspace-settings-modal__locked-area small { display: block; }
+.workspace-settings-modal__locked-area strong { color: #533d25; font-size: 12px; }
+.workspace-settings-modal__locked-area small { margin-top: 3px; color: #806b51; font-size: 10px; }
+.workspace-settings-modal__empty { margin-top: 16px; padding: 18px 12px; border: 1px dashed rgba(107,79,42,.2); border-radius: 9px; color: #806b51; font-size: 12px; text-align: center; }

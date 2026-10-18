@@ -1,0 +1,71 @@
+{
+  "title": "Press archive",
+  "manifesto": "Not a news ticker — an outside audit. Each entry is on-the-record journalism documenting facts in the Lagovsky case.",
+  "items": [
+    {
+      "sort": "2026-05-01",
+      "date": "May 2026",
+      "source": "Radio Free Europe",
+      "logo": "rse",
+      "logo_alt": "Radio Free Europe",
+      "title": "Belgrade's bus driver: six months without the minister's signature",
+      "summary": "RFE/RL fills in the human detail: Lagovsky lost his job at a private company operating urban passenger transport services the moment he applied for asylum, and has been without income or health insurance for six months. The family — wife, a nurse, and two teenage sons aged 13 and 15 — gets by on her salary alone. The younger boy, Aleksey, is in sixth grade and plays basketball for a local club. Justice Minister Nenad Vuić has no statutory deadline for a decision and refuses to comment.",
+      "focus": "Defence lawyer Hrle's position, as recorded by RFE/RL: Serbia cannot lawfully extradite while an Article 3 ECHR risk remains unresolved — and two parallel proceedings, the asylum case and a Constitutional Court application, are still open.",
+      "link": "https://www.slobodnaevropa.org/a/dmitrij-lagovski-rusij-srbija-izrucenje/33756952.html"
+    },
+    {
+      "sort": "2025-12-09",
+      "date": "9 December 2025",
+      "source": "Port",
+      "logo": "port",
+      "logo_alt": "Port Media",
+      "title": "Serbia seeks to extradite Russian national on fraud charges; he denies guilt and fears front",
+      "summary": "Dmitry Lagovsky, who has lived in Serbia for over two years working as a bus driver, faces extradition to Russia. Russian authorities accuse him of involvement in a land fraud scheme from four years ago. Lagovsky maintains he was merely an independent lawyer hired to process documents. Serbian courts have ruled that legal prerequisites for extradition are met, despite defense arguments regarding the lack of evidence and the risk of unfair trial.",
+      "focus": "This case highlights the risks for Russian emigrants facing 'economic' charges. Beyond imprisonment, Lagovsky (a reserve lieutenant) fears mobilization into the war against Ukraine, his birthplace where his family still resides.",
+      "link": "https://portmedia.info/news/iz-serbii-hotyat-ekstradirovat-rossiyanina"
+    },
+    {
+      "sort": "2025-12-08",
+      "date": "8 December 2025",
+      "source": "N1",
+      "logo": "n1",
+      "logo_alt": "N1",
+      "title": "Court wouldn't look at the defence — only Moscow's bundle",
+      "summary": "N1 captures the central contradiction: Serbian courts approved extradition without examining the defence evidence, including Russian arbitration rulings on the very same transaction. Lagovsky sums it up himself: \"Only the asylum commission is obliged to hear me. The court is not.\" He is convinced that if deported, he will go straight to the front — he holds a reserve officer rank, was born in Ukraine, and will not fight against his own people.",
+      "focus": "The piece also records that prosecutor Predrag Ćetković did not challenge the arbitration rulings at the hearing — the court simply deemed them irrelevant to the extradition review.",
+      "link": "https://n1info.rs/vesti/dmitriju-preti-izrucenje-rusiji-strahuje-da-bi-mogao-da-zavrsi-na-ratisu-u-ukrajini-dok-srpski-sud-dokaze-ne-razmatra/"
+    },
+    {
+      "sort": "2025-12-07",
+      "date": "7 December 2025",
+      "source": "Nova.rs",
+      "logo": "nova",
+      "logo_alt": "Nova.rs",
+      "title": "Came looking for safety, found agony: a family caught between the front and deportation",
+      "summary": "Nova puts the human story first: Lagovsky brought his family to Serbia in 2022 to escape the war. Now he has no job, his children are integrated in Belgrade schools, and his wife earns the only income. \"If they deport me, she will be left alone with two children. That will be very hard for everyone,\" he says. After the appeal court confirmed the extradition grounds, the file has been passed to the minister.",
+      "focus": "Nova highlights that the asylum application is a live legal obstacle requiring a risk assessment before any surrender can take place.",
+      "link": "https://nova.rs/vesti/hronika/u-srbiji-trazio-sigurnost-za-porodicu-a-sada-prolazi-kroz-agoniju-rusu-dmitriju-preti-deportacija-i-mobilizacija-za-rat-sud-ignorise-dokaze-koji-dokazuju-njegovu-nevinost/"
+    },
+    {
+      "sort": "2025-12-05",
+      "date": "5 December 2025",
+      "source": "Radio Free Europe",
+      "logo": "rse",
+      "logo_alt": "Radio Free Europe",
+      "title": "Serbia one ministerial signature away from extradition",
+      "summary": "RFE/RL records that after the appeal ruling of 3 December 2025, the last domestic decision-maker became the Justice Minister — whose act is administrative, not judicial, and cannot be appealed. Police had already cancelled Lagovsky's temporary residence permit.",
+      "focus": "The defence warning, as reported: ministers very rarely reverse an extradition once the courts have ticked the boxes — which makes this stage the decisive one.",
+      "link": "https://www.slobodnaevropa.org/a/dmitri-lagovski-izrucenje-rusija-srbija/33614508.html"
+    }
+  ],
+  "press_call": {
+    "title": "For journalists",
+    "text": "Arbitration, extradition, asylum, Interpol — primary documents and defence filings are open. Ask for anything.",
+    "thesis": "Serbia isn't extraditing a fugitive. It's extraditing a lawyer who drafted a lawful contract. If that stands, international law is just paperwork.",
+    "thesis_label": "Press line"
+  },
+  "labels": {
+    "focus": "Why it matters",
+    "open_link": "Read at source"
+  }
+}

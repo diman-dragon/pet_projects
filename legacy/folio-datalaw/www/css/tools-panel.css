@@ -1,0 +1,25 @@
+/* Floating tool palette: transparent backing over the document, draggable by its grip / background, never resizes the page. */
+.tools-panel{position:absolute;left:0;top:0;z-index:30;width:156px;padding:6px 8px 9px;border-radius:18px;background:rgba(18,12,6,.52);border:1px solid rgba(255,255,255,.16);color:var(--on-chrome);touch-action:none;user-select:none;-webkit-user-select:none;will-change:transform}
+.tools-panel[hidden]{display:none!important}
+.tools-panel.dragging{opacity:.8}
+.tp-head{position:relative;height:26px;margin:0 -2px}
+.tp-grip{position:absolute;inset:0 30px 0 0;display:grid;place-items:center;cursor:grab}
+.tp-close{position:absolute;top:0;right:0;width:26px;height:26px;display:grid;place-items:center}
+.tp-close svg{width:24px;height:24px}
+.tp-grip i{width:38px;height:4px;border-radius:2px;background:rgba(255,255,255,.5)}
+.tools-panel.pinned .tp-grip i{background:#ef4444}
+.tp-grid{display:grid;grid-template-columns:repeat(3,38px);gap:6px 4px;justify-content:center}
+.tp-btn{width:38px;height:38px;border-radius:12px;display:grid;place-items:center}
+.tp-btn svg{width:27px;height:27px}
+.tp-btn:active{background:rgba(255,255,255,.18)}
+.tp-btn.active,.tp-btn.on{background:rgba(255,255,255,.2);box-shadow:inset 0 0 0 2px var(--on-chrome)}
+.tp-colors{display:grid;grid-template-columns:repeat(5,22px);gap:9px 8px;justify-content:center;margin-top:10px}
+.color-dot{width:22px;height:22px;border-radius:50%;background:var(--c);border:2px solid rgba(255,255,255,.4);transition:transform .12s}
+.color-dot.active{transform:scale(1.2);border-color:#fff;box-shadow:0 0 0 2px var(--c)}
+#undo-btn,#redo-btn{display:none}
+.show-undo #undo-btn,.show-undo #redo-btn{display:grid}
+#undo-btn:disabled,#redo-btn:disabled{opacity:.35}
+@media (max-width:420px){.show-undo #zoom-in,.show-undo #zoom-out{display:none}}
+.color-dot.custom{position:relative;display:block;background:conic-gradient(#ef4444,#facc15,#10b981,#06b6d4,#8b5cf6,#ef4444);overflow:hidden}
+.color-dot.custom input{position:absolute;inset:-6px;width:40px;height:40px;opacity:0;cursor:pointer}
+.color-dot.custom.active{background:var(--c)}

@@ -1,0 +1,46 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   KPI STRIP  .dl-kpi-strip
+   ───────────────────────────────────────────────────────────────────────── */
+
+.dl-kpi-strip {
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-white);
+  padding: var(--sp-10) 0;
+}
+
+.dl-kpi-strip__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  flex-wrap: wrap;
+}
+
+.dl-kpi-strip__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  min-width: 120px;
+}
+
+.dl-kpi-strip__num {
+  font-family: var(--f-serif);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  letter-spacing: var(--ls-tight);
+  color: var(--c-ink);
+}
+
+.dl-kpi-strip__label {
+  font-size: var(--fs-sm);
+  color: var(--c-text-mid);
+  line-height: var(--lh-snug);
+}
+
+.dl-kpi-strip__trend {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--c-text-dim);
+}
+.dl-kpi-strip__trend--up { color: var(--c-green); }

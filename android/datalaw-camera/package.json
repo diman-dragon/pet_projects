@@ -1,0 +1,24 @@
+{
+  "name": "datalaw-camera",
+  "version": "1.0.3",
+  "private": true,
+  "description": "DataLaw Camera — камера на Capacitor 8 (CameraX, PRO-режим, портрет, эффекты)",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "npx --yes http-server www -p 8080 -c-1",
+    "brand": "python3 brand/build_assets.py",
+    "check": "node scripts/check-brand.mjs",
+    "docs": "node scripts/build-docs.mjs",
+    "keystore": "node scripts/make-keystore.mjs",
+    "android:add": "cap add android && node scripts/patch-android.mjs && cap sync android",
+    "android:sync": "node scripts/patch-android.mjs && cap sync android",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "about": {
+    "title": "About This Archive",
+    "text": "An independent public record of the Lagovsky extradition case. The archive collects court rulings, procedural documents, and press coverage to keep the proceedings fully transparent.",
+    "disclaimer": "All documents published here are either drawn from public sources or provided by the defence team in the exercise of their right to public legal advocacy on behalf of their client."
+  },
+  "nav": {
+    "title": "Navigation"
+  },
+  "contact": {
+    "title": "Press & Verification",
+    "press": "Press enquiries:",
+    "legal": "Legal support:",
+    "phone": "+381 65 230 48 25",
+    "telegram": "Telegram: @diman_dragon",
+    "telegram_link": "https://t.me/diman_dragon",
+    "email": "1448884@gmail.com"
+  },
+  "copyright": {
+    "text": "© 2025–2026 Lagovsky Case Archive. Updated as new rulings become available.",
+    "location": "Belgrade — Moscow — Interpol (monitoring)"
+  }
+}

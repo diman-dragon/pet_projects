@@ -1,0 +1,24 @@
+/* FB2 reader page: a reflowable "book page" with its own typography; font size follows the zoom buttons. */
+.fb2{box-sizing:border-box;width:min(calc(100vw - 20px),46rem);padding:26px 20px 56px;background:#fbf5e6;color:#2a2118;border-radius:4px;box-shadow:0 3px 12px rgba(0,0,0,.5);font:calc(var(--fs,1) * 18px)/1.62 Georgia,"Noto Serif","Times New Roman",serif;text-align:justify;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word;-webkit-user-select:text;user-select:text}
+.night .fb2{background:#0c0c0c;color:#d9d3c7;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.fb2 p{margin:0;text-indent:1.5em}
+.fb2 .gap{height:1em}
+.fb2-head{text-align:center;margin-bottom:1.6em}
+.fb2-author{font-size:.85em;opacity:.75;margin-bottom:.4em}
+.fb2-title{font-size:1.5em;line-height:1.25;margin:.2em 0 .6em}
+.fb2 .pic{display:block;max-width:100%;height:auto;margin:1em auto;border-radius:3px}
+.fb2 .title{text-align:center;text-indent:0;margin:1.6em 0 .8em;line-height:1.28}
+.fb2 h2.title{font-size:1.3em}.fb2 h3.title{font-size:1.15em}.fb2 h4.title,.fb2 h5.title,.fb2 h6.title{font-size:1.05em}
+.fb2 .subtitle{text-align:center;text-indent:0;font-weight:700;margin:1em 0}
+.fb2 .epigraph{margin:1em 0 1em 25%;font-style:italic;text-align:left}
+.fb2 .cite{margin:1em 1.5em;padding-left:.8em;border-left:3px solid rgba(120,90,50,.4)}
+.fb2 .text-author{text-align:right;text-indent:0;font-style:italic}
+.fb2 .poem{margin:1em 0 1em 8%;text-align:left}.fb2 .stanza{margin:.6em 0}.fb2 .v{text-indent:0}
+.fb2 .annotation{font-size:.92em;opacity:.85;margin-bottom:1.6em}
+.fb2 .notes{margin-top:2.4em;padding-top:1em;border-top:1px solid rgba(120,90,50,.35);font-size:.9em}
+.fb2 a.note{color:#1d4ed8;text-decoration:none;vertical-align:super;font-size:.75em;padding:0 2px}
+.night .fb2 a.note{color:#93c5fd}
+.fb2 table{border-collapse:collapse;margin:1em 0}.fb2 td,.fb2 th{border:1px solid rgba(120,90,50,.4);padding:4px 8px}
+.fb2-back{position:absolute;right:14px;bottom:calc(18px + var(--sab));z-index:30;width:46px;height:46px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-size:22px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.fb2-back[hidden]{display:none}
+.no-thumbs #thumbs-btn,.no-thumbs #thumbs-tab,.no-draw #edit-btn,.no-mode #mode-btn{display:none!important}

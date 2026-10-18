@@ -1,0 +1,91 @@
+.person-card {
+  --person-accent: #a87536;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 250px;
+  height: 350px;
+  flex-direction: column;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #51402c;
+  container-type: inline-size;
+  font-family: "Segoe UI Variable Text", "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  pointer-events: none;
+}
+
+.person-card--male { --person-accent: #3d7fbd; }
+.person-card--female { --person-accent: #c45468; }
+.person-card--selected { box-shadow: 0 0 0 2px color-mix(in srgb, var(--person-accent) 30%, transparent), 0 0 14px color-mix(in srgb, var(--person-accent) 28%, transparent); }
+
+@property --person-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.person-card--selected::before {
+  position: absolute;
+  z-index: 2;
+  inset: -2px;
+  background: conic-gradient(from var(--person-angle), transparent 0deg 250deg, color-mix(in srgb, var(--person-accent) 55%, transparent) 280deg, var(--person-accent) 310deg, #fff 330deg, var(--person-accent) 350deg, transparent 360deg);
+  content: "";
+  animation: person-card-accent-orbit 2.8s linear infinite;
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--person-accent) 70%, transparent));
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  padding: 3px;
+}
+
+.person-card > * { position: relative; z-index: 1; }
+@keyframes person-card-accent-orbit { to { --person-angle: 360deg; } }
+
+.person-card__photo {
+  display: grid;
+  width: 250px;
+  height: 250px;
+  flex: 0 0 250px;
+  place-items: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.person-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.person-card__photo-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  border-radius: 50%;
+  color: rgba(108, 79, 43, 0.48);
+  font-family: Georgia, serif;
+  font-size: 82px;
+  line-height: 1;
+}
+
+.person-card__photo-placeholder--male { color: #3d7fbd; background: rgba(61, 127, 189, 0.12); }
+.person-card__photo-placeholder--female { color: #c45468; background: rgba(196, 84, 104, 0.12); }
+
+.person-card__mourning-ribbon { position: absolute; top: 16px; right: -22px; z-index: 1; width: 78px; height: 13px; transform: rotate(45deg); background: rgba(18, 18, 18, .78); box-shadow: 0 1px 3px rgba(0, 0, 0, .18); opacity: .78; }
+
+.person-card__details { display: grid; min-height: 0; gap: clamp(3px, 1.5cqw, 6px); padding: clamp(8px, 3cqw, 12px) clamp(10px, 4cqw, 16px) 0; overflow: hidden; }
+.person-card__name { display: -webkit-box; overflow: hidden; color: #4d3821; font-size: clamp(14px, 7cqw, 18px); font-weight: 600; letter-spacing: -.015em; line-height: 1.12; text-wrap: balance; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.person-card__surname { overflow: hidden; color: #5f4930; font-size: clamp(16px, 8cqw, 21px); font-weight: 700; letter-spacing: -.02em; line-height: 1.08; overflow-wrap: anywhere; text-wrap: balance; }
+.person-card__line { display: flex; align-items: baseline; justify-content: space-between; gap: clamp(6px, 2cqw, 10px); color: #8b7356; font-size: clamp(10px, 4.4cqw, 12px); font-weight: 500; letter-spacing: .005em; line-height: 1.2; }
+.person-card__line span { flex: 0 0 auto; }
+.person-card__line strong { min-width: 0; overflow: hidden; color: #5f4930; font-size: clamp(11px, 4.8cqw, 13px); font-weight: 600; letter-spacing: -.005em; overflow-wrap: anywhere; text-align: right; text-wrap: balance; }

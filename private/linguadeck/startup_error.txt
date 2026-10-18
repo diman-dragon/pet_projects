@@ -1,0 +1,9 @@
+﻿cargo :     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.64s
+строка:1 знак:1
++ cargo run --manifest-path src-tauri/Cargo.toml -- --log-path startup_ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (    Finished `d...get(s) in 0.64s:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+     Running `src-tauri\target\debug\linguadeck.exe --log-path startup_debug.txt`
+DEBUG: Found 138 logs for date 2026-05-03

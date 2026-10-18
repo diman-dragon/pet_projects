@@ -1,0 +1,7 @@
+{
+  "appeal.timeline.event.appealDate": "Дата подачи обращения",
+  "appeal.timeline.event.responseDue": "Срок ответа (30 дней)",
+  "appeal.timeline.event.fileDate": "Дата документа",
+  "documentUpload.retroactive": "Ретроактивная обработка",
+  "documentUpload.noExtractedText": "Не удалось извлечь текст из документа"
+}

@@ -1,0 +1,105 @@
+/* ==========================================================================
+   DATALAW — LAYLA AI WIDGET THEME (Modernized)
+   ========================================================================== */
+
+:root {
+  --lw-navy: #0d1f35;
+  --lw-gold: #c5a87c;
+  --lw-white: #ffffff;
+  --lw-bg: #f8f9fa;
+  --lw-text: #334155;
+  --lw-shadow: 0 10px 30px rgba(13, 31, 53, 0.15);
+}
+
+.layla-window {
+  font-family: 'DM Sans', sans-serif;
+  border-radius: 12px;
+  background-color: var(--lw-white) !important;
+  opacity: 1 !important;
+  border: 1px solid rgba(197, 168, 124, 0.2) !important;
+  box-shadow: var(--lw-shadow) !important;
+}
+
+.layla-header {
+  background: var(--lw-navy) !important;
+  color: var(--lw-white);
+  padding: 16px 20px !important;
+  border-bottom: 2px solid var(--lw-gold) !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.layla-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.status-live {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--lw-gold);
+}
+
+.layla-header h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--lw-white);
+}
+
+.layla-close {
+  color: var(--lw-gold);
+  font-size: 24px;
+}
+
+.msg {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 12px;
+  max-width: 85%;
+}
+
+.msg.ai {
+  align-self: flex-start;
+  color: var(--lw-navy);
+  background: #f1f5f9;
+  border: none;
+}
+
+.msg.user {
+  align-self: flex-end;
+  color: #fff;
+  background: var(--lw-navy);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.layla-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  background: var(--lw-bg);
+}
+
+.layla-send {
+  padding: 0 20px;
+  border-radius: 24px;
+  background: var(--lw-navy);
+  color: var(--lw-gold);
+  border: 1px solid var(--lw-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.layla-send:hover {
+  background: var(--lw-gold);
+  color: var(--lw-navy);
+}

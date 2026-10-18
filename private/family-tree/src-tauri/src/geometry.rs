@@ -1,0 +1,2 @@
+pub const PERSON_CARD_WIDTH: f64 = 250.0;
+pub const DEFAULT_MARRIAGE_GAP: f64 = 350.0;

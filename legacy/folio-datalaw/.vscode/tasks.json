@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "dev server", "type": "shell", "command": "npm run dev", "isBackground": true, "problemMatcher": [] },
+    { "label": "check contract", "type": "shell", "command": "npm run check", "problemMatcher": [], "group": "test" },
+    { "label": "bump version", "type": "shell", "command": "npm run bump", "problemMatcher": [] },
+    { "label": "sync android", "type": "shell", "command": "npm run sync", "problemMatcher": [] },
+    {
+      "label": "build debug apk (local)",
+      "type": "shell",
+      "command": "npm run sync && cd android && ./gradlew assembleDebug",
+      "windows": { "command": "npm run sync && cd android && gradlew.bat assembleDebug" },
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}

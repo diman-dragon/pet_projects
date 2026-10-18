@@ -1,0 +1,128 @@
+{% from "ui/button.njk" import button %}
+{% from "ui/card.njk" import card %}
+{% from "ui/hero.njk" import hero %}
+{% from "ui/section.njk" import section %}
+{% from "ui/detail-group.njk" import detail_group %}
+{% from "ui/workspace-layout.njk" import workspace_layout %}
+{% from "macros/breadcrumbs.njk" import breadcrumbs %}
+
+{% macro master_page(page) %}
+  {% if page.layout == "workspace" %}
+    {{ workspace_layout(page) }}
+  {% else %}
+    <div class="container">{{ breadcrumbs(page) }}</div>
+    {{ hero(page.hero) }}
+
+    {% if page.band %}
+      <div class="dl-band">
+        <div class="dl-band__inner">
+          <span class="dl-band__tag">{{ page.band.tag }}</span>
+          <span class="dl-band__text">{{ page.band.text }}</span>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.news and page.news.main %}
+      <section class="dl-section dl-section--base">
+        <div class="container">
+          <div class="dl-section__header home-news-header">
+            <div>
+              <div class="text-overline text-overline--gold dl-section__label">{{ page.news.label }}</div>
+              <h2 class="dl-section__title">{{ page.news.title }}</h2>
+            </div>
+            {% if page.news.href and page.news.linkText %}
+              <a href="{{ page.news.href | url }}" class="home-news-all">{{ page.news.linkText }}</a>
+            {% endif %}
+          </div>
+
+          <div class="home-news-grid">
+            <article class="home-news-main">
+              <div class="home-news-main__tag">
+                <span class="home-news-main__tag-line"></span>
+                {{ page.news.main.tag }}
+              </div>
+              <a href="{{ page.news.main.href | url }}" class="home-news-main__title">
+                {{ page.news.main.title }}
+              </a>
+              <p class="home-news-main__lead">{{ page.news.main.lead }}</p>
+              <time class="home-news-main__date">{{ page.news.main.date }}</time>
+            </article>
+
+            <div class="home-news-side">
+              {% for item in page.news.side %}
+                <article class="home-news-side__item">
+                  <div class="text-overline text-overline--gold">{{ item.label }}</div>
+                  <a href="{{ item.href | url }}" class="home-news-side__title">{{ item.title }}</a>
+                  <time class="home-news-side__date">{{ item.date }}</time>
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.feature and page.feature.items and page.feature.items.length %}
+      <section class="dl-section dl-section--dark">
+        <div class="container">
+          <div class="home-tech-grid">
+            <div class="home-tech-left">
+              <div class="text-overline text-overline--gold dl-section__label">{{ page.feature.label }}</div>
+              <h2 class="dl-section__title text-white">{{ page.feature.title | safe }}</h2>
+            </div>
+
+            <div class="home-tech-features">
+              {% for item in page.feature.items %}
+                <div class="home-tech-feature">
+                  <span class="home-tech-feature__num">{{ item.num }}</span>
+                  <div>
+                    <div class="home-tech-feature__title">{{ item.title }}</div>
+                    <p class="home-tech-feature__text">{{ item.text }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.tools and page.tools.length %}
+      <section class="dl-section dl-section--base pt-0">
+        <div class="container">
+          <div class="home-tools-grid">
+            {% for item in page.tools %}
+              <a href="{{ item.href | url }}" class="home-tool{% if item.dark %} home-tool--dark{% endif %}">
+                <div class="home-tool__num">{{ item.num }}</div>
+                <div class="home-tool__title">{{ item.title }}</div>
+                <p class="home-tool__desc">{{ item.desc }}</p>
+                <span class="home-tool__arrow">→</span>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.details %}
+      {% call section({
+        label: page.details.label,
+        title: page.details.title,
+        description: page.details.description,
+        bg: page.details.bg or "white"
+      }) %}
+        {% if page.details.groups %}
+          {% for group in page.details.groups %}
+            {{ detail_group(group, page.details.bg or "white") }}
+          {% endfor %}
+        {% elif page.details.items %}
+          {{ detail_group({
+            items: page.details.items,
+            layout: page.details.layout or "cards",
+            columns: page.details.columns
+          }, page.details.bg or "white") }}
+        {% endif %}
+      {% endcall %}
+    {% endif %}
+  {% endif %}
+{% endmacro %}

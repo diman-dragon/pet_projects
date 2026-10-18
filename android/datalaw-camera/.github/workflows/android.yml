@@ -1,0 +1,176 @@
+name: DataLaw Camera — сборка и релиз
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      upload_to_play:
+        description: 'Загрузить AAB в Google Play (internal track)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # versionCode = базовое число + номер запуска (всегда растёт => обновление ставится поверх)
+  VERSION_CODE_BASE: '1000'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      app_id: ${{ steps.meta.outputs.app_id }}
+      version_name: ${{ steps.meta.outputs.version_name }}
+      real_key: ${{ steps.sign.outputs.real }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      # Android SDK уже установлен на ubuntu-latest (ANDROID_HOME). Отдельный setup-android не нужен:
+      # он пытается доустановить устаревший пакет 'tools' и падает. Только принимаем лицензии.
+      - name: Лицензии Android SDK
+        run: |
+          SDKM=$(ls "$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager | sort -V | tail -1)
+          yes | "$SDKM" --licenses > /dev/null || true
+          echo "sdkmanager: $SDKM"
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Версия и метаданные
+        id: meta
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then NAME="${GITHUB_REF_NAME#v}"; BUILD=release; else NAME="$VER-dev.${GITHUB_RUN_NUMBER}"; BUILD=dev; fi
+          CODE=$((VERSION_CODE_BASE + GITHUB_RUN_NUMBER))
+          echo "DL_VERSION_NAME=$NAME" >> "$GITHUB_ENV"
+          echo "DL_VERSION_CODE=$CODE" >> "$GITHUB_ENV"
+          echo "DL_BUILD=$BUILD" >> "$GITHUB_ENV"
+          echo "app_id=$(node -p "require('./capacitor.config.json').appId")" >> "$GITHUB_OUTPUT"
+          echo "version_name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "Версия: $NAME (versionCode $CODE)"
+
+      - name: Проверка бренда и конфигурации
+        run: node scripts/check-brand.mjs
+
+      - name: Подготовка ключа подписи
+        id: sign
+        env:
+          KS_B64: ${{ secrets.DL_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.DL_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.DL_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.DL_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KS_B64" ] && [ -n "$KS_PASS" ] && [ -n "$KS_ALIAS" ]; then
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/datalaw-release.p12"
+            echo "DL_KEYSTORE=$RUNNER_TEMP/datalaw-release.p12" >> "$GITHUB_ENV"
+            echo "DL_STORE_PASS=$KS_PASS" >> "$GITHUB_ENV"
+            echo "DL_KEY_ALIAS=$KS_ALIAS" >> "$GITHUB_ENV"
+            [ -n "$KEY_PASS" ] && echo "DL_KEY_PASS=$KEY_PASS" >> "$GITHUB_ENV"
+            echo "real=true" >> "$GITHUB_OUTPUT"
+            echo "Подпись: РЕАЛЬНЫЙ ключ DataLaw"
+          else
+            echo "real=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Секреты подписи не заданы — сборка подписана DEV-ключом из репозитория (signing/datalaw-dev.p12). Обновления поверх друг друга работают, но для Google Play и публичной раздачи создайте свой ключ: npm run keystore"
+          fi
+
+      - name: Зависимости JS
+        run: npm install --no-audit --no-fund
+
+      - name: Платформа Android (Capacitor 8)
+        run: npx cap add android
+
+      - name: Патч нативной части (плагины, иконка, манифест, подпись)
+        run: node scripts/patch-android.mjs
+
+      - name: Sync web-ресурсов
+        run: npx cap sync android
+
+      - name: Сборка APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease
+
+      - name: Сборка AAB (только с реальным ключом)
+        if: steps.sign.outputs.real == 'true'
+        working-directory: android
+        run: ./gradlew --no-daemon bundleRelease
+
+      - name: Артефакты и проверка подписи
+        run: |
+          mkdir -p dist
+          NAME="DataLaw-Camera-${DL_VERSION_NAME}-${DL_VERSION_CODE}"
+          cp android/app/build/outputs/apk/release/app-release.apk "dist/${NAME}.apk"
+          if [ -f android/app/build/outputs/bundle/release/app-release.aab ]; then
+            cp android/app/build/outputs/bundle/release/app-release.aab "dist/${NAME}.aab"
+          fi
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          "$BT/apksigner" verify --print-certs "dist/${NAME}.apk" | tee cert.txt
+          echo "### Подпись APK" >> "$GITHUB_STEP_SUMMARY"
+          grep -E "SHA-256|Signer #1 certificate DN" cert.txt | sed 's/^/    /' >> "$GITHUB_STEP_SUMMARY"
+          echo "Один и тот же SHA-256 у всех сборок => обновляются поверх друг друга." >> "$GITHUB_STEP_SUMMARY"
+          ls -la dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DataLaw-Camera-${{ env.DL_VERSION_NAME }}
+          path: dist/*
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
+
+  play:
+    needs: build
+    if: needs.build.outputs.real_key == 'true' && (startsWith(github.ref, 'refs/tags/v') || inputs.upload_to_play == true)
+    runs-on: ubuntu-latest
+    env:
+      HAS_PLAY: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Строгая проверка бренда (без заглушек)
+        run: node scripts/check-brand.mjs --strict
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Загрузка в Google Play (internal)
+        if: env.HAS_PLAY == 'true'
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: ${{ needs.build.outputs.app_id }}
+          releaseFiles: dist/*.aab
+          track: internal
+          status: completed
+      - name: Нет ключа сервис-аккаунта
+        if: env.HAS_PLAY != 'true'
+        run: echo "::notice::PLAY_SERVICE_ACCOUNT_JSON не задан — загрузите dist/*.aab вручную в Play Console (см. store/RELEASE_CHECKLIST.md)."

@@ -1,0 +1,15 @@
+---
+pagination:
+  data: pageContent.list
+  size: 1
+  alias: pageEntry
+layout: base.njk
+eleventyComputed:
+  permalink: "{{ pageEntry.permalink }}"
+  title: "{{ pageEntry.title }}"
+  description: "{{ pageEntry.description }}"
+---
+
+{% from "ui/master-page.njk" import master_page %}
+
+{{ master_page(pageEntry) }}

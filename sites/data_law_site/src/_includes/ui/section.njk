@@ -1,0 +1,43 @@
+{#
+  section({ label, title, description, bg, class, id, headerClass })
+  bg: 'base' | 'alt' | 'white' | 'dark' (default: 'base')
+  Поддерживает {% call section({...}) %}content{% endcall %}
+#}
+{% macro section(params) %}
+  {%- set bg = params.bg or 'base' -%}
+  {%- set bgClass = {
+    'base':  'dl-section--base',
+    'alt':   'dl-section--alt',
+    'white': 'dl-section--white',
+    'dark':  'dl-section--dark'
+  }[bg] or 'dl-section--base' -%}
+  {%- set cls = 'dl-section ' + bgClass + (' ' + params.class if params.class else '') -%}
+
+  <section class="{{ cls }}"{% if params.id %} id="{{ params.id }}"{% endif %}>
+    <div class="container">
+
+      {% if params.label or params.title or params.description %}
+        <div class="dl-section__header{{ (' ' + params.headerClass) if params.headerClass else '' }}">
+          {% if params.label %}
+            <div class="text-overline{% if bg == 'dark' %} text-overline--white{% else %} text-overline--gold{% endif %} dl-section__label">
+              {{ params.label }}
+            </div>
+          {% endif %}
+          {% if params.title %}
+            <h2 class="dl-section__title{% if bg == 'dark' %} text-white{% endif %}">
+              {{ params.title | safe }}
+            </h2>
+          {% endif %}
+          {% if params.description %}
+            <p class="dl-section__desc{% if bg == 'dark' %} text-white{% endif %}">
+              {{ params.description | safe }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {{ caller() if caller }}
+
+    </div>
+  </section>
+{% endmacro %}

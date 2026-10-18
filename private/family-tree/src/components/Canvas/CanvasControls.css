@@ -1,0 +1,40 @@
+.canvas-controls {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+  border: 1px solid rgba(80, 65, 45, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 252, 245, 0.92);
+  box-shadow: 0 4px 16px rgba(50, 40, 20, 0.12);
+}
+
+.canvas-controls button {
+  min-width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #443b2e;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.canvas-controls button:hover {
+  background: rgba(80, 65, 45, 0.1);
+}
+
+.canvas-controls__zoom-value{display:inline-flex;min-width:48px;height:30px;align-items:center;justify-content:center;color:#443b2e;font-size:12px;font-weight:600}
+.canvas-controls__zoom-100{min-width:46px!important;color:#967044!important;font-size:11px!important}
+
+.canvas-controls__fit-tree {
+  margin-left: 2px;
+  border-left: 1px solid rgba(80, 65, 45, 0.15) !important;
+  color: #967044 !important;
+  font-size: 18px !important;
+}

@@ -1,0 +1,27 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   ANALYTICS — HERO META & CHARTS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.analytics-hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.analytics-update-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--c-text-mid);
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.analytics-update-dot { background: var(--c-green); }
+
+/* SVG inline in analytics donut */
+svg text { font-family: var(--f-serif); fill: var(--c-ink); }

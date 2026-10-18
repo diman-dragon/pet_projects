@@ -1,0 +1,9 @@
+pub mod appeal_repository;
+pub mod case_repository;
+pub mod client_repository;
+pub mod client_dossier_repository;
+pub mod dashboard_repository;
+pub mod db;
+pub mod hierarchy_repository;
+pub mod line_repository;
+pub mod trash_repository;

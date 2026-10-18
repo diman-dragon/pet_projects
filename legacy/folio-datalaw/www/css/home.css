@@ -1,0 +1,5 @@
+/* Library empty state and shared bits of the Library header. */
+.empty{height:100%;display:grid;justify-items:center;align-content:center;gap:8px;text-align:center;color:var(--muted);padding:24px}
+.empty img{margin-bottom:6px}
+#refresh-btn.spin svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}

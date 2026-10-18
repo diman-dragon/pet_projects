@@ -1,0 +1,196 @@
+РЕЕСТР ДОКУМЕНТОВ
+Сформировано: 2026-06-06
+Всего документов: 144
+
+
+## РФ / Документы сделки
+- 2021-12-28 | Договор купли-продажи участка | files/russia/core-evidence/deal-documents-and-acts/Dogovor-kupli-prodazhi-uchastka.pdf
+- 2021-12-28 | Протокол № 58 Совета директоров АО «ФЭЗ» | files/russia/core-evidence/deal-documents-and-acts/Protokol-58-s-podpisiami.pdf
+
+## РФ / Следственные материалы
+- 2022-12-17 | Разбор протокола осмотра | files/russia/core-evidence/investigative-materials/Razbor-protokola-osmotra.docx
+- 2024 | Протокол осмотра iPhone оценщика Сорокиной | files/russia/core-evidence/investigative-materials/Protokol-osmotra-iphone-Sorokinoy.pdf
+- 2024 | Протокол осмотра базы CRM ООО «Оценка и право» | files/russia/core-evidence/investigative-materials/Protokol-osmotra-CRM-Ocenka-i-Pravo.pdf
+
+## РФ / Статус юриста
+- 2018-01-31 | Договор об оказании юридических услуг | files/russia/core-evidence/professional-status-and-work/Dogovor-yuruslug.pdf
+- 2025-06-07 | Выписка из ЕГРИП от 07.06.2025 | files/russia/core-evidence/professional-status-and-work/2025-06-07-Vypiska-EGRIP-Lagovskiy.pdf
+
+## РФ / Арбитражные суды
+- 2024-06-27 | Решение АС Московской области (27.06.2024) | files/russia/courts/arbitration/A41-20164-2022_20240627_Reshenija_i_postanovlenija.pdf
+- 2024-09-13 | Постановление апелляции (13.09.2024) | files/russia/courts/arbitration/A41-20164-2022_20240913_Postanovlenie_apelljacionnoj_instancii.pdf | связано с: Решение АС Московской области (27.06.2024)
+- 2025-01-24 | Решение кассации (24.01.2025) | files/russia/courts/arbitration/A41-20164-2022_20250124_Reshenija_i_postanovlenija.pdf | связано с: Постановление апелляции (13.09.2024)
+- 2025-05-12 | Определение (12.05.2025) | files/russia/courts/arbitration/A41-20164-2022_20250512_Opredelenie.pdf | связано с: Решение кассации (24.01.2025)
+- 2024-06-27 | Решение арбитража — заверенный перевод | files/russia/courts/arbitration/Reshenie-arbitrazha-perevod.pdf | связано с: Решение АС Московской области (27.06.2024)
+
+## РФ / Прокуратура
+- 2025-08-01 | Ответ прокурора Московской области на жалобу | files/russia/prokuratura/2025-08-01-Otvet-prokurora-MO-na-zhalobu.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025 | Прокуратура МО: пересылка жалобы на Кузнецова в ГСУ | files/russia/prokuratura/Prokuratura-MO-pereadresatsiya-v-GSU-po-zhalobe-na-Kuznetsova.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-08-01 | Прокуратура МО: ответ № 16/4-469-2025 | files/russia/prokuratura/2025-08-01-Otvet-prokuratury-MO-16-4-469-2025.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2026-03-16 | Чугунков: ответ на заявление о преступлении № 3/267704660170 | files/russia/prokuratura/2026-03-16-Otvet-Chugunkova-3-267704660170.pdf | связано с: Жалоба в прокуратуру МО на ответы Чугункова
+- 2026-03-16 | Чугунков: ответ на заявление о преступлении № 3/267704751007 | files/russia/prokuratura/2026-03-16-Otvet-Chugunkova-3-267704751007.pdf | связано с: Жалоба в прокуратуру МО на ответы Чугункова
+- 2025-06-25 | Кузнецов: ответ от 25.06.2025 | files/russia/prokuratura/2025-06-25-Otvet-Kuznetsova-3-257715302565.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-07-14 | Кузнецов: ответ от 14.07.2025 | files/russia/prokuratura/2025-07-14-Otvet-Kuznetsova-3-257715302565.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-07-20 | Кузнецов: ответ от 20.07.2025 | files/russia/prokuratura/2025-07-20-Otvet-Kuznetsova-3-257717586741.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-08-01 | Кузнецов: ответ от 01.08.2025 | files/russia/prokuratura/2025-08-01-Otvet-Kuznetsova-3-257718741446.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-08-14 | Кузнецов: ответ от 14.08.2025 | files/russia/prokuratura/2025-08-14-Otvet-Kuznetsova-3-257718901833.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-08-20 | Кузнецов: ответ от 20.08.2025 | files/russia/prokuratura/2025-08-20-Otvet-Kuznetsova-3-257720364459.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2025-09-01 | Кузнецов: ответ от 01.09.2025 | files/russia/prokuratura/2025-09-01-Otvet-Kuznetsova-3-257721467906.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2026-02-17 | Жалоба в прокуратуру МО на бездействие Кузнецова | files/russia/prokuratura/2026-02-17-Zhaloba-v-Prokuraturu-MO-na-bezdeystvie-Kuznetsova.pdf
+- 2026-03-20 | Жалоба в прокуратуру МО на ответы Чугункова | files/russia/prokuratura/2026-03-20-Zhaloba-v-Prokuraturu-MO-na-otvety-Chugunkova.pdf
+- 2026 | Приложения 1-16 к жалобе на Кузнецова | files/russia/prokuratura/Prilozheniya-k-zhalobe-na-Kuznetsova-1-16.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2026-02-17 | Жалоба в прокуратуру МО на бездействие Кузнецова — версия с приложениями | files/russia/prokuratura/2026-02-17-Zhaloba-v-Prokuraturu-MO-na-bezdeystvie-Kuznetsova-s-prilozheniyami.pdf | связано с: Жалоба в прокуратуру МО на бездействие Кузнецова
+- 2026-03-20 | Жалоба в прокуратуру МО на ответы Чугункова — версия с приложениями | files/russia/prokuratura/2026-03-20-Zhaloba-v-Prokuraturu-MO-na-otvety-Chugunkova-s-prilozheniyami.pdf | связано с: Жалоба в прокуратуру МО на ответы Чугункова
+- 2026-04-30 | Митрохина: ответ № 13 | files/russia/prokuratura/Mitrokhina-otvet-13.pdf
+- 2026-04-29 | Митрохина: ответ № 31 с переадресацией в ГСУ МВД | files/russia/prokuratura/Mitrokhina-otvet-31.pdf
+- 2026-04-20 | Прокуратура МО: пересылка жалобы на Митрохину в ГСУ | files/russia/prokuratura/2026-04-20-Prokuratura-MO-pereadresatsiya-v-GSU-po-zhalobe-na-Mitrokhinu.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-04-23 | Прокуратура МО: ответ Митрохиной от 23.04.2026 | files/russia/prokuratura/2026-04-23-Prokuratura-MO-otvet-Mitrokhinoy.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-03-17 | Прокопенко: ответы Генпрокуратуры | files/russia/prokuratura/Genprokuratura-Prokopenko-otvety.pdf
+- 2026 | Генпрокуратура: ответ по жалобе ОГР-154993-26 | files/russia/prokuratura/Genprokuratura-otvet-OGR-154993-26.pdf | связано с: Жалоба в Генпрокуратуру на ответ Прокопенко
+- 2025 | Прокуратура МО: ответ о «неполучении ответов» | files/russia/prokuratura/Prokuratura-MO-otvet-o-nepoluchenii-otvetov.pdf | связано с: Жалоба в Генпрокуратуру на ответ прокуратуры МО
+- 2026-05-19 | Прокуратура МО: подтверждение поступления обращения | files/russia/prokuratura/Mitrokhina-registratsiya-obrashcheniya.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-05-20 | Прокуратура МО: присвоение регистрационного номера | files/russia/prokuratura/Mitrokhina-prisvoenie-nomera.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-05-19 | Жалоба в прокуратуру МО на Митрохину | files/russia/prokuratura/2026-05-19-Zhaloba-na-Mitrokhinu-v-Prokuraturu-MO.pdf
+- 2025-08-09 | Жалоба в Генпрокуратуру на ответ прокуратуры МО | files/russia/prokuratura/2025-08-09-Zhaloba-v-Genprokuraturu-na-otvet-prokuratury-MO.pdf
+- 2026-03-17 | Жалоба в Генпрокуратуру на ответ Прокопенко | files/russia/prokuratura/Zhaloba-v-Genprokuratura-na-otvet-Prokopenko.docx | связано с: Прокопенко: ответы Генпрокуратуры
+- 2025 | Жалоба в Генпрокуратуру на ответ Митрохиной | files/russia/prokuratura/Zhaloba-v-Genprokuraturu-na-otvet-Mitrokhinoy.pdf | связано с: Митрохина: ответ № 31 с переадресацией в ГСУ МВД
+- 2025 | Жалоба в УСБ на ответ Митрохиной | files/russia/prokuratura/Zhaloba-v-USB-na-otvet-Mitrokhinoy.pdf | связано с: Митрохина: ответ № 31 с переадресацией в ГСУ МВД
+- 2026-05-19 | Жалоба на Митрохину — полная версия | files/russia/prokuratura/2026-05-19-Zhaloba-na-Mitrokhinu-v-Prokuraturu-MO-polnaya-versiya.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-05-25 | Ответ прокуратуры на заявление о преступлении (25.05.2026) | files/russia/prokuratura/2026-05-25-Otvet-prokuratury-Lagovskomu.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-05-27 | Ответ замгенпрокурора на заявление о преступлении (27.05.2026) | files/russia/prokuratura/2026-05-27-Otvet-Zamgenprokurora.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-05-25 | Ответ прокуратуры Московской области за подписью Баклицкого (25.05.2026) | files/russia/prokuratura/2026-05-25-Otvet-prokuratury-MO-Baklitskiy.pdf | связано с: Жалоба в прокуратуру МО на Митрохину
+- 2026-03-19 | Проект жалобы в Генпрокуратуру на ответ Прокопенко (19.03.2026) | files/russia/prokuratura/2026-03-19-Zhaloba-v-Genprokuraturu-na-otvet-Prokopenko-draft.docx | связано с: Прокопенко: ответы Генпрокуратуры
+- 2025 | Свод ответов Митрохиной | files/russia/prokuratura/Svod-otvetov-Mitrokhinoy.pdf | связано с: Митрохина: ответ № 31 с переадресацией в ГСУ МВД
+
+## РФ / Следственный комитет
+- 2026-02-13 | Заявление в СК о преступлениях Саликова | files/russia/sk/2026-02-13-Zayavlenie-v-SK-o-prestupleniyakh-Salikova.pdf
+- 2026-02-17 | Жалоба Бастрыкину на бездействие по делу | files/russia/sk/2026-02-17-Zhaloba-Bastrykinu-na-bezdeystvie-po-delu.pdf | связано с: Заявление в СК о преступлениях Саликова
+- 2026-02-13 | Заявление о злоупотреблениях Саликова | files/russia/sk/2026-02-13-Zayavlenie-o-prestupleniyakh-Salikova.pdf | связано с: Заявление в СК о преступлениях Саликова
+- 2026-02-13 | Заявление о преступлении на Саликова | files/russia/sk/2026-02-13-Zayavlenie-o-prestuplenii-v-otnoshenii-Salikova.pdf | связано с: Заявление в СК о преступлениях Саликова
+- 2026-02-13 | Заявление о проверке показаний | files/russia/sk/2026-02-13-Zayavlenie-o-proverke-pokazaniy-svideteley.pdf | связано с: Заявление в СК о преступлениях Саликова
+- 2022 | КУСП и материалы по заявлению Палкина | files/russia/sk/KUSP-i-soputstvuyushchie-prilozheniya-po-delu-Palkina.pdf
+
+## РФ / ФСБ
+- 2026-02-20 | ФСБ: получение и, вероятно, дальнейшая переадресация | files/russia/fsb/FSB-Salikov-poluchenie-i-pereadresatsiya.pdf | связано с: ФСБ: заявление по Саликову
+- 2025 | ФСБ: пересылка через УПЧ № Л-9669 | files/russia/fsb/UPCh-L-9669.pdf | связано с: ФСБ: заявление по Саликову
+- 2025 | ФСБ: пересылка через УПЧ № Л-9901 | files/russia/fsb/UPCh-L-9901.pdf | связано с: ФСБ: заявление по Саликову
+- 2026-02-13 | ФСБ: заявление по Саликову | files/russia/fsb/FSB-Salikov-obrashchenie.pdf
+- 2026-03-20 | ФСБ: заявление по Палкину | files/russia/fsb/FSB-Palkin-obrashchenie.pdf
+- 2026-02-13 | ФСБ: заявление о коррупционных связях и действиях Саликова | files/russia/fsb/2026-02-13-Zayavlenie-v-FSB-o-korruptsionnykh-svyazyakh-i-deystviyakh-Salikova.pdf
+
+## РФ / Прекращение дела
+- 2025-05-30 | Обращение в Генпрокуратуру о прекращении дела | files/russia/termination/2025-05-30-Obrashchenie-v-Genprokuraturu-o-prekrashchenii-dela.pdf
+- 2025 | Ходатайство о следственных действиях через правовую помощь в Сербии | files/russia/termination/Khodataystvo-o-provedenii-sledstvennykh-deystviy-cherez-pravovuyu-pomoshch-v-Serbii.pdf | связано с: Обращение в Генпрокуратуру о прекращении дела
+- 2025-07-05 | Подтверждение подачи обращения в Генпрокуратуру | files/russia/termination/2025-07-05-Podtverzhdenie-podachi-obrashcheniya-v-Genprokuraturu.pdf | связано с: Обращение в Генпрокуратуру о прекращении дела
+- 2025-05-30 | Обращение в прокуратуру о прекращении дела | files/russia/termination/Obrashchenie-v-prokuraturu-prekrashchenie-dela.pdf | связано с: Обращение в Генпрокуратуру о прекращении дела
+- 2025 | Ходатайство в СК РФ о прекращении уголовного дела | files/russia/termination/SK-prekrashchenie-dela.pdf | связано с: Обращение в Генпрокуратуру о прекращении дела
+- 2025-05-30 | Жалоба Бастрыкину о фабрикации дела | files/russia/termination/2025-05-30-Zhaloba-Bastrykinu-o-fabrikatsii-dela.pdf | связано с: Обращение в Генпрокуратуру о прекращении дела
+
+## РФ / Госорганы и УПЧ
+- 2024 | Ответ УПЧ с переадресацией в прокуратуру МО | files/russia/state/Otvet-UPCh.pdf
+- 2025 | Второй ответ УПЧ | files/russia/state/Vtoroi-otvet-UPCh.pdf
+- 2025-07-04 | Администрация Президента РФ: регистрация и формальный ответ № И-15688 | files/russia/state/Prezident-RF-registratsiya-11184185.pdf | связано с: Повторное обращение Президенту РФ
+- 2025-07-15 | Ответ аппарата комитета Клишаса из СФ РФ | files/russia/state/Otvet-iz-Soveta-Federatsii.pdf | связано с: Обращение в Совет Федерации
+- 2025 | Повторное обращение Президенту РФ | files/russia/state/Povtornoe-obrashchenie-Prezidentu-RF.pdf
+- 2025 | Обращение в Совет Федерации | files/russia/state/Obrashchenie-v-Sovet-Federatsii.pdf
+
+## РФ / Суды России
+- 2025-07-07 | Мосгорсуд: невозможность ответа из-за розыска | files/russia/courts/Otvet-Mosgorsuda-o-nevozmozhnosti-otveta-v-rozyske.pdf | связано с: Жалоба против действий следователя
+- 2026 | Жалоба против действий следователя | files/russia/courts/2025-Statya-125-obzhalovanie-postanovleniy-o-rozyske.pdf
+- 2025 | Решение Щелковского суда о прямом запрете обыска | files/russia/courts/2025-Postanovlenie-suda-ob-otkaze-v-obyske.pdf | связано с: Жалоба против действий следователя
+- 2025-07-07 | Мосгорсуд: ответ по жалобе ст. 125 УПК РФ | files/russia/courts/Otvet-Mosgorsuda.pdf
+- 2025 | Тверской суд: отказ в доступе к правосудию | files/russia/courts/Otvet-Tverskogo-suda-ob-otkaze-v-dostupe-k-pravosudiyu.pdf
+- 2025-09-24 | Отказ в кассации | files/russia/courts/Otkaz-v-kassatsii.pdf | связано с: Тверской суд: отказ в доступе к правосудию
+- 2025 | Тверской суд: отказ в принятии жалобы | files/russia/courts/Otkaz-Tverskogo-suda-v-prinyatii-zhaloby.pdf | связано с: Тверской суд: отказ в доступе к правосудию
+- 2025 | Тверской суд: повторный отказ в принятии жалобы | files/russia/courts/Otkaz-Tverskogo-suda-v-prinyatii-zhaloby-2.pdf | связано с: Тверской суд: отказ в доступе к правосудию
+- 2025-06-20 | Щелковский суд: постановление о возврате жалобы по ст. 125 | files/russia/courts/Postanovlenie-Shchelkovskogo-suda-o-vozvrate-zhalob.pdf
+- 2025-07-03 | Щелковский суд: ответ № 697/2025 | files/russia/courts/Shchelkovskii-sud-otvet-697-2025.pdf | связано с: Щелковский суд: постановление о возврате жалобы по ст. 125
+- 2025 | Апелляционное постановление Мособлсуда | files/russia/courts/Apellyatsiya-Mosoblsud.pdf
+- 2024 | Приговор Ачкасову и др. | files/russia/courts/Prigovor-Achkasovu.pdf
+
+## Сербия / Линия обвинения
+- 2025 | Запрос Генпрокуратуры РФ об экстрадиции | files/serbia/prokuratura/Zapros-genprokuratury.pdf
+- 2025 | Запрос Генпрокуратуры — версия для Сербии | files/serbia/prokuratura/Zapros-genprokuratury-na-serbskom.pdf | связано с: Запрос Генпрокуратуры РФ об экстрадиции
+- 2025 | Обвинение | files/serbia/prokuratura/Obvinenie.pdf
+- 2025 | Обвинение - версия для Сербии | files/serbia/prokuratura/Obvinenie-na-serbskom.pdf | связано с: Обвинение
+- 2024 | Разбор обвинения — возражения защиты | files/serbia/prokuratura/Oshibki-obvineniya-okonchatelnyy-variant.docx | связано с: Обвинение
+- 2025-01-25 | Постановление о международном розыске (Red Notice) | files/serbia/prokuratura/Postanovlenie-o-mezhdunarodnom-rozyske.pdf
+- 2025-01-25 | Международный розыск — версия для Сербии | files/serbia/prokuratura/Postanovlenie-o-mezhdunarodnom-rozyske-na-serbskom.pdf | связано с: Постановление о международном розыске (Red Notice)
+- 2024-12-27 | Постановление о розыске | files/serbia/prokuratura/Postanovlenie-o-rozyske.pdf
+- 2024-12-27 | Розыск — версия для Сербии | files/serbia/prokuratura/Postanovlenie-o-rozyske-na-serbskom.pdf | связано с: Постановление о розыске
+- 2024-12-27 | Постановление об аресте (заочное) | files/serbia/prokuratura/Postanovlenie-ob-areste.pdf
+- 2024-12-27 | Арест — версия для Сербии | files/serbia/prokuratura/Postanovlenie-ob-areste-na-serbskom.pdf | связано с: Постановление об аресте (заочное)
+
+## Сербия / Судебная ветка: Высший суд и апелляции
+- 2025-07-04 | Решение Высшего суда | files/serbia/judiciary/Reshenie-vysshego-suda.pdf | связано с: Запрос Генпрокуратуры РФ об экстрадиции
+- 2025-07-25 | Дополнение защиты Дмитрия Лаговского (25.07.2025) | files/serbia/judiciary/2025-07-25-Dopuna-odbrane-Dmitrii-Lagovski.pdf | связано с: Решение Высшего суда
+- 2025-08-18 | Жалоба адвоката Марко Штамбука на решение о выдаче (18.08.2025) | files/serbia/judiciary/2025-08-18-Zalba-na-resenje-o-izrucenju-Marko-Stambuk.pdf | связано с: Решение Высшего суда
+- 2025-12-07 | Апелляция по решению о выдаче | files/serbia/judiciary/Apelljacija-natsionalnyi-sud.pdf | связано с: Решение Высшего суда
+
+## Сербия / Верховный суд
+- 2026-02-11 | Решение Верховного суда Сербии (11.02.2026) | files/serbia/judiciary/Reshenie-Verkhovnogo-suda.pdf | связано с: Апелляция по решению о выдаче
+
+## Сербия / Судебная ветка: Конституционный суд
+- 2025-12-31 | Конституционная жалоба и запрос о приостановке выдачи (31.12.2025) | files/serbia/judiciary/2025-12-31-Ustavna-zalba-i-zahtev-za-odlaganje-izrucenja.pdf | связано с: Решение Верховного суда Сербии (11.02.2026)
+
+## Сербия / Азильное производство
+- 2025-12-04 | Международная защита (04.12.2025) | files/serbia/asylum/2025-12-04-Mezhdunarodnaya-zashchita.pdf
+
+## Сербия / Азильная ветка: решение Управления
+- 2025-12-04 | Решение об отказе во ВНЖ (04.12.2025) | files/serbia/asylum/office-decision/2025-12-04-Reshenie-otkaza-vnz.pdf | связано с: Международная защита (04.12.2025)
+
+## Сербия / Азильная ветка: Комиссия по убежищу
+- 2026-03-23 | Решение Комиссии по азилу (23.03.2026) | files/serbia/asylum/commission-decision/Reshenie-komissii-za-azil.pdf | связано с: Решение об отказе во ВНЖ (04.12.2025)
+- 2026-02-23 | Решение Канцелярии по азилу (23.02.2026) | files/serbia/asylum/commission-decision/Lagovskii-Dmitrii-resenje-KzA.pdf | связано с: Решение Комиссии по азилу (23.03.2026)
+
+## Сербия / Административный суд
+- 2026-04-24 | Иск в Административный суд (24.04.2026) | files/serbia/judiciary/2026-04-24-Tuzba-Upravnom-sudu-Lagovski.pdf | связано с: Решение Канцелярии по азилу (23.02.2026)
+- 2026-05-20 | Иск Лаговского (май 2026) | files/serbia/judiciary/2026-05-20-Tuzba-Lagovski.pdf | связано с: Иск в Административный суд (24.04.2026)
+
+## Сербия / Власти Сербии
+- 2026-05-19 | Ответ Администрации Президента Сербии (19.05.2026) | files/serbia/authorities/Otvet-Administracii-Vuchicha.pdf | связано с: Письмо Президенту Сербии Александру Вучичу
+- 2026-05-18 | Письмо Президенту Сербии Александру Вучичу | files/serbia/authorities/Pismo-prezidentu-Vuchichu.pdf
+- 2026-05-30 | Письмо Президенту Александру Вучичу (май 2026) | files/serbia/authorities/2026-05-19-Vucic-appeal-forwarded-to-Ministry-of-Justice.pdf
+- 2026-05-29 | Официальное уведомление (Obaveštenje) | files/serbia/authorities/obavestenje.pdf
+- 2026-05-18 | Обращение в Министерство по евроинтеграции | files/serbia/authorities/Ministerstvo-po-evrointegratsii-Serbii.pdf
+- 2026-05-18 | Личное обращение министру Деме Берише | files/serbia/authorities/Licno-obracanje-Demi-Berishi.pdf
+- 2026-05-18 | Жалоба Защитнику граждан (май 2026) | files/serbia/authorities/Prituzba-Zastitniku-gradjana-maj-2026.pdf | связано с: Защитнику граждан Республики Сербии
+- 2025-06-06 | Ответ Защитника граждан Республики Сербии | files/serbia/authorities/Odgovor-Zastitnika-gradjana-Republike-Srbije.pdf | связано с: Защитнику граждан Республики Сербии
+- 2026-05-20 | Второй ответ Защитника граждан Сербии | files/serbia/authorities/2026-05-20-Odgovor-Zastitnika-gradjana-2.pdf | связано с: Защитнику граждан Республики Сербии
+- 2025-05-27 | Обращение к министру юстиции Сербии | files/serbia/authorities/Obrashchenie-k-ministru-yustitsii-Serbii.pdf
+- 2025-05-27 | Обраћање министру правде Србије | files/serbia/authorities/Obracanje-ministru-pravde-Srbije.pdf | связано с: Обращение к министру юстиции Сербии
+- 2025-05-27 | Защитнику граждан Республики Сербии | files/serbia/authorities/Zashchitniku-grazhdan-Respubliki-Serbii.pdf
+- 2025-05-27 | Заштитнику грађана Републике Србије | files/serbia/authorities/Zastitniku-gradjana-Republike-Srbije.pdf | связано с: Защитнику граждан Республики Сербии
+- 2025-05-27 | Подтверждение получения Минюстом Сербии | files/serbia/authorities/Podtverzhdenie-polucheniya-Ministerstvom-yustitsii-Serbii.pdf | связано с: Обращение к министру юстиции Сербии
+
+## Сербия / Политическая поддержка
+- 2026-05-18 | Письмо в партию SSP | files/serbia/political-support/Pismo-v-SSP.pdf
+- 2026-05-18 | Письмо в партию NPS | files/serbia/political-support/Pismo-v-NPS.pdf
+- 2026-05-18 | Письмо в «Зелени фронт» | files/serbia/political-support/Pismo-v-Zeleni-front.pdf
+
+## Международный контур / Интерпол и УВКБ ООН
+- 2025-10-28 | Письмо Интерпола CCF - жалоба принята | files/international/interpol-and-unhcr/2025-10-28-Otvet-CCF-Interpola-po-krasnomu-uvedomleniyu.pdf
+- 2025-11-28 | Ответ защиты в Интерпол CCF (28.11.2025) | files/international/interpol-and-unhcr/2025-11-28-Obrashchenie-v-CCF-Interpola-po-Lagovskomu.pdf | связано с: Письмо Интерпола CCF - жалоба принята
+- 2026-04-21 | Письмо в УВКБ ООН (21.04.2026) | files/international/interpol-and-unhcr/Pismo-v-UVKB.pdf
+- 2026-04-20 | Письмо в Делегацию ЕС в Сербии | files/international/interpol-and-unhcr/Pismo-v-delegatsiyu-ES-v-Serbii.pdf
+- 2026-06-05 | Ответ Делегации ЕС в Сербии (05.06.2026) | files/international/interpol-and-unhcr/Otvet-Delegatsii-ES-v-Serbii.pdf | связано с: Письмо в Делегацию ЕС в Сербии
+
+## Международный контур / Украинский трек
+- 2026-05-29 | Обращение к украинским властям | files/international/ukraine-appeals/2026-05-25-Zvernennya-do-Prezydenta-Ukrainy-email.pdf
+- 2026-05-28 | Письмо Президенту Владимиру Зеленскому | files/international/ukraine-appeals/2026-05-25-Zvernennya-do-Prezydenta-Ukrainy.docx | связано с: Обращение к украинским властям
+- 2026-05-28 | Письмо Президенту Владимиру Зеленскому | files/international/ukraine-appeals/2026-05-25-Zvernennya-do-Prezydenta-Ukrainy.pdf | связано с: Обращение к украинским властям
+- 2026-06-01 | Ответ Офиса Президента Украины | files/international/ukraine-appeals/2026-05-28-OPU-letter-022990.pdf | связано с: Обращение к украинским властям
+- 2026-05-29 | Повторное обращение к украинским властям | files/international/ukraine-appeals/2026-05-29-Repeat-zvernennya-do-Prezydenta-Ukrainy.docx | связано с: Ответ Офиса Президента Украины
+- 2026-05-29 | Повторное обращение к украинским властям | files/international/ukraine-appeals/2026-05-29-Repeat-zvernennya-do-Prezydenta-Ukrainy.pdf | связано с: Ответ Офиса Президента Украины
+- 2026-05-29 | Обращение к украинским властям | files/international/ukraine-appeals/2026-05-29-Ukraine-consulate-citizenship-correspondence.pdf
+- 2026-06-01 | Ответ Офиса Президента Украины | files/international/ukraine-appeals/2026-06-02-OPU-letter-023520.pdf | связано с: Повторное обращение к украинским властям
+
+## Международный контур / ЕСПЧ и Rule 39
+- 2025-12-05 | Запрос в ЕСПЧ по Правилу 39 (05.12.2025) | files/international/echr-rule-39/2025-12-05-Request-ECHR-Rule-39-Dmitrii-Lagovskii.pdf
+- 2025-12-05 | Решение ЕСПЧ по Правилу 39 (05.12.2025) | files/international/echr-rule-39/2025-12-05-ECHR-Rule-39-decision-37891-25.pdf | связано с: Запрос в ЕСПЧ по Правилу 39 (05.12.2025)
+- 2025-12-05 | Письмо ЕСПЧ об отказе (05.12.2025) | files/international/echr-rule-39/2025-12-05-ECHR-Rule-39-refusal-letter-37891-25.pdf | связано с: Запрос в ЕСПЧ по Правилу 39 (05.12.2025)
+
+## Международный контур / Международная политическая поддержка
+- 2025-12-04 | Письмо к Папе Лео XIV | files/international/political-support/lettera_papa_leone_XIV.pdf
+- 2026-05 | Заявление Ильи Яшина о рисках экстрадиции | files/international/political-support/Yashin-Dmitry-Lagovsky_RU.pdf | связано с: Запрос в ЕСПЧ по Правилу 39 (05.12.2025)
+- 2026-05 | Заявление Ильи Яшина о рисках экстрадиции — английская версия | files/international/political-support/Yashin-Dmitry-Lagovsky_EN.pdf | связано с: Заявление Ильи Яшина о рисках экстрадиции

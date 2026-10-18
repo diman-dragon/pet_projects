@@ -1,0 +1,65 @@
+{% from "ui/button.njk" import button %}
+
+{#
+  hero({ eyebrow, title, description, stats, actions, bg })
+  Supports {% call hero({...}) %}...{% endcall %} for additional content.
+#}
+{% macro hero(params) %}
+  {%- set bg = params.bg or 'base' -%}
+  {%- set isDark = bg == 'dark' -%}
+  {%- set cls = 'dl-hero' + (' dl-hero--dark' if isDark else '') + (' dl-hero--alt' if bg == 'alt' else '') -%}
+
+  <section class="{{ cls }}">
+    <div class="container">
+      <div class="dl-hero__inner">
+
+        <div class="dl-hero__main">
+
+          {% if params.eyebrow %}
+            <div class="dl-hero__eyebrow">
+              <span class="pulse-dot"></span>
+              <span class="text-overline">{{ params.eyebrow }}</span>
+            </div>
+          {% endif %}
+
+          {% if params.title %}
+            <h1 class="dl-hero__title">{{ params.title | safe }}</h1>
+          {% endif %}
+
+          {% if params.description %}
+            <p class="dl-hero__desc">{{ params.description | safe }}</p>
+          {% endif %}
+
+          {% if params.actions %}
+            <div class="dl-hero__actions">
+              {% for action in params.actions %}
+                {% if action.text %}
+                  {{ button(action) }}
+                {% else %}
+                  {{ action | safe }}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if caller %}
+            <div class="dl-hero__extra">{{ caller() }}</div>
+          {% endif %}
+
+        </div>
+
+        {% if params.stats %}
+          <div class="dl-hero__stats">
+            {% for s in params.stats %}
+              <div class="dl-hero__stat">
+                <span class="dl-hero__stat-num">{{ s.value }}</span>
+                <span class="dl-hero__stat-label">{{ s.label }}</span>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </section>
+{% endmacro %}

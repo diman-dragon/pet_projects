@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Dorlane",
+  "version": "1.0.0",
+  "identifier": "com.Dorlane.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Dorlane — Правозащитная система",
+        "width": 1280,
+        "height": 800,
+        "resizable": true,
+        "maximized": true,
+        "label": "main"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: https://asset.localhost asset://localhost data:; frame-src 'self' asset: https://asset.localhost asset://localhost; connect-src 'self' ipc: http://127.0.0.1 https://egrul.nalog.ru https://kad.arbitr.ru https://license.Dorlane.app asset: https://asset.localhost asset://localhost;"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "shell": {}
+  }
+}

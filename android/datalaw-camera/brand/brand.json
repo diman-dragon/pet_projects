@@ -1,0 +1,17 @@
+{
+  "name": "DataLaw Camera",
+  "shortName": "DataLaw",
+  "appId": "com.datalaw.camera",
+  "tagline": "Камера DataLaw: фото, видео, ручной режим, портрет и смешные эффекты",
+  "taglineEn": "DataLaw camera: photo, video, pro controls, portrait and fun effects",
+  "colors": {
+    "ink": "#0B0C10",
+    "accent": "#4C8DFF",
+    "porcelain": "#F4F6F9"
+  },
+  "company": "DataLaw",
+  "website": "https://example.com/datalaw",
+  "privacyUrl": "https://example.com/datalaw/camera/privacy",
+  "supportEmail": "CHANGE_ME@example.com",
+  "mediaFolder": "DataLaw"
+}

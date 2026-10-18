@@ -1,0 +1,23 @@
+/* ==========================================================================
+   DATALAW — COMPONENTS CSS (INDEX)
+   Все компоненты теперь вынесены в отдельные файлы в папке components/.
+   ========================================================================== */
+
+@import "components/button.css";
+@import "components/card.css";
+@import "components/section.css";
+@import "components/hero.css";
+@import "components/kpi-strip.css";
+@import "components/chart-card.css";
+@import "components/chat-preview.css";
+@import "components/band.css";
+
+/* Дополнительные компоненты из global.css */
+@import "components/feature-list.css";
+@import "components/badge.css";
+@import "components/animations.css";
+@import "components/reveal.css";
+@import "components/a11y.css";
+@import "components/table-registry.css";
+@import "components/search-hub.css";
+@import "components/misc.css";

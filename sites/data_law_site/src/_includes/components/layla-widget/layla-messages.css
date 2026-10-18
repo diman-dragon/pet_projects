@@ -1,0 +1,33 @@
+.layla-messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  background: #fcfcfc;
+  scrollbar-color: var(--layla-gold) transparent;
+  scrollbar-width: thin;
+}
+
+.msg {
+  max-width: 85%;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  border-radius: 8px;
+}
+
+.msg.ai {
+  align-self: flex-start;
+  color: var(--layla-navy);
+  background: var(--layla-bg-msg);
+  border-left: 3px solid var(--layla-gold);
+}
+
+.msg.user {
+  align-self: flex-end;
+  color: var(--layla-white);
+  background: var(--layla-navy);
+}

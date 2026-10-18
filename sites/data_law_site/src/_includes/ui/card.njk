@@ -1,0 +1,45 @@
+{#
+  card({ label, title, description, href, dark, footer, class })
+  Поддерживает {% call card({...}) %}...{% endcall %} для произвольного контента.
+#}
+{% macro card(params) %}
+  {%- set isDark = params.dark -%}
+  {%- set cls = 'dl-card' + (' dl-card--dark' if isDark else '') + (' ' + params.class if params.class else '') -%}
+
+  {%- if params.href -%}
+    <a href="{{ params.href | url }}" class="{{ cls }} dl-card--link">
+  {%- else -%}
+    <div class="{{ cls }}">
+  {%- endif -%}
+
+    {% if params.label %}
+      <div class="text-overline{% if isDark %} text-overline--white{% else %} text-overline--gold{% endif %} dl-card__label">{{ params.label }}</div>
+    {% endif %}
+
+    {% if params.title %}
+      <h4 class="dl-card__title">{{ params.title | safe }}</h4>
+    {% endif %}
+
+    {% if params.description %}
+      <p class="dl-card__desc">{{ params.description | safe }}</p>
+    {% endif %}
+
+    {# caller() — произвольный контент через {% call %} #}
+    {% if caller %}
+      <div class="dl-card__body">{{ caller() }}</div>
+    {% endif %}
+
+    {% if params.footer %}
+      <div class="dl-card__footer">{{ params.footer | safe }}</div>
+    {% endif %}
+
+    {% if params.href and not params.footer %}
+      <span class="dl-card__arrow">→</span>
+    {% endif %}
+
+  {%- if params.href -%}
+    </a>
+  {%- else -%}
+    </div>
+  {%- endif -%}
+{% endmacro %}

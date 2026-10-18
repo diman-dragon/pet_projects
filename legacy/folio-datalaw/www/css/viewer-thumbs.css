@@ -1,0 +1,22 @@
+/* Page thumbnails: transparent overlay strip on the left; never resizes the document, only thumbnails take touches. */
+.viewer-thumbs{position:absolute;left:0;top:0;bottom:0;width:96px;z-index:25;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.34),rgba(0,0,0,0))}
+.viewer-thumbs[hidden]{display:none!important}
+.thumbs-bar{position:absolute;top:6px;left:6px;z-index:2;display:flex;gap:6px;pointer-events:auto}
+.thumbs-bar button{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.4)}
+.thumbs-bar button.on{box-shadow:inset 0 0 0 2px var(--on-chrome)}
+.thumbs-bar svg{width:22px;height:22px}
+.thumbs-tab{position:absolute;left:0;top:42%;z-index:24;width:30px;height:58px;border-radius:0 14px 14px 0;background:rgba(18,12,6,.5);border:1px solid rgba(255,255,255,.16);border-left:0;display:grid;place-items:center}
+.thumbs-tab[hidden]{display:none!important}
+.thumbs-tab svg{width:22px;height:22px}
+#thumbs-list{position:relative;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:44px 8px calc(10px + var(--sab));display:flex;flex-direction:column;align-items:center;gap:10px;scrollbar-width:none;overscroll-behavior:contain;pointer-events:none}
+#thumbs-list::-webkit-scrollbar{display:none}
+.thumb-item{flex:none;display:flex;flex-direction:column;align-items:center;pointer-events:auto;cursor:pointer;transition:transform .12s}
+.thumb-item:active{transform:scale(.95)}
+.thumb-box{position:relative;width:72px;height:var(--th,102px);background:#fff;border:1.5px solid rgba(0,0,0,.25);border-radius:5px;box-shadow:0 3px 10px rgba(0,0,0,.4);overflow:hidden}
+.thumb-box canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.night .thumb-box{background:#111;border-color:rgba(255,255,255,.2)}
+.night .thumb-box canvas{filter:invert(1) hue-rotate(180deg)}
+.thumb-ph{position:absolute;inset:0;display:grid;place-items:center;font-size:15px;font-weight:700;color:#94a3b8}
+.thumb-item.active .thumb-box{outline:2.5px solid var(--accent);box-shadow:0 4px 14px rgba(0,0,0,.55)}
+.thumb-num{margin-top:4px;font-size:11px;font-weight:700;color:#fff;background:rgba(0,0,0,.72);padding:1px 7px;border-radius:10px}
+.thumb-item.active .thumb-num{background:var(--accent);color:var(--on-accent)}

@@ -1,0 +1,11 @@
+{% macro button(params) %}
+  {%- set t = params.type or 'primary' -%}
+  {%- set cls = 'dl-btn dl-btn--' + t + (' ' + params.class if params.class else '') -%}
+  {%- if params.href -%}
+    <a href="{{ params.href | url }}" class="{{ cls }}">{{ params.text | safe }}</a>
+  {%- elif params.trigger == 'layla' -%}
+    <button type="button" class="{{ cls }}" data-trigger="layla">{{ params.text | safe }}</button>
+  {%- else -%}
+    <button type="button" class="{{ cls }}">{{ params.text | safe }}</button>
+  {%- endif -%}
+{% endmacro %}

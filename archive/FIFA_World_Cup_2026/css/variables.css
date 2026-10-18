@@ -1,0 +1,37 @@
+:root {
+  --bg: #F0F4F8;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-solid: #FFFFFF;
+  --surface-alt: #F8FAFC;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.12);
+  --accent: #0067C0;
+  --accent-light: #4C9EE3;
+  --accent-dark: #005A9E;
+  --accent-dim: rgba(0, 103, 192, 0.1);
+  --accent-glow: rgba(0, 103, 192, 0.3);
+  --text: #1A1A1A;
+  --text-secondary: #5F5F5F;
+  --text-tertiary: #8A8A8A;
+  --win: #107C10;
+  --win-light: #28A745;
+  --draw: #D97706;
+  --loss: #DC2626;
+  --position-1: rgba(16, 185, 129, 0.15);
+  --position-2: rgba(59, 130, 246, 0.15);
+  --position-3: rgba(245, 158, 11, 0.15);
+  --position-4: rgba(239, 68, 68, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  /* Group colors */
+  --group-a: #0078D4; --group-b: #881798; --group-c: #107C10; --group-d: #D83B01;
+  --group-e: #5C2D91; --group-f: #008272; --group-g: #B7472A; --group-h: #C50F1F;
+  --group-i: #0063B1; --group-j: #CA5010; --group-k: #567C73; --group-l: #A4373A;
+}

@@ -1,0 +1,12 @@
+node_modules/
+android/
+ios/
+*.apk
+*.aab
+# реальные ключи подписи — НИКОГДА в git (dev-ключ signing/datalaw-dev.p12 нужен CI и коммитится)
+signing/datalaw-release*
+signing/*.b64
+*.jks
+*.keystore
+.DS_Store
+__pycache__/

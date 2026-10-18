@@ -1,0 +1,23 @@
+/* Registry table (expert-opinions) */
+
+.table-registry__header,
+.table-registry__row {
+  display: grid;
+  grid-template-columns: 120px 1fr 160px 120px;
+  gap: var(--sp-6);
+  padding: var(--sp-5) 0;
+  border-bottom: 1px solid var(--c-border);
+  align-items: start;
+}
+.table-registry__header {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  color: var(--c-text-dim);
+  padding-top: 0;
+}
+@media (max-width: 768px) {
+  .table-registry__header { display: none; }
+  .table-registry__row { grid-template-columns: 1fr; }
+}

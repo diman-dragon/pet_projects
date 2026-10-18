@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DATALAW Solutions — Платформа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">DL</div>
+        <div class="logo-text">
+          <span class="logo-name">DATALAW</span>
+          <span class="logo-sub">Solutions Group</span>
+        </div>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="practices.html" class="nav-link">Практики</a>
+        <a href="product.html" class="nav-link active">Продукт</a>
+        <a href="eu-bridge.html" class="nav-link">EU Bridge</a>
+        <a href="about.html" class="nav-link">О компании</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+      <a href="contact.html" class="btn btn-outline-sm">Консультация</a>
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content" data-aos="fade-up">
+          <h1>DATALAW <em style="font-style:italic;color:var(--gold)">Platform</em></h1>
+          <p>Десктопная система управления юридической практикой. Local-first архитектура. Все данные у вас. Никакого облака.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="product-showcase">
+          <div class="product-info" data-aos="fade-right">
+            <div class="section-label">
+              <span class="section-label-line"></span>
+              <span class="section-label-text">Конфиденциальность</span>
+            </div>
+            <h2>Полный контроль над <em style="color:var(--gold);font-style:italic">конфиденциальностью</em></h2>
+            <p>Всё работает без интернета. Клиентские данные, дела, документы — в SQLite базах на вашем диске. При необходимости — резервное копирование вашими средствами.</p>
+            <div class="feature-list">
+              <div class="feature-row"><i class="fas fa-database"></i> Хранение клиентов, дел, линий работы и обращений локально</div>
+              <div class="feature-row"><i class="fas fa-users"></i> Разграничение доступа: SUPERADMIN, ADMIN, LAWYER, ASSISTANT</div>
+              <div class="feature-row"><i class="fas fa-history"></i> Полный журнал аудита всех действий в системе</div>
+              <div class="feature-row"><i class="fas fa-search"></i> Локальный RAG-поиск по базе знаний без отправки данных в облако</div>
+              <div class="feature-row"><i class="fas fa-robot"></i> Встроенный AI-ассистент Laila для анализа документов</div>
+              <div class="feature-row"><i class="fas fa-laptop"></i> Лицензирование с привязкой к устройству</div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <div class="mockup-frame">
+              <div class="mockup-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title">DATALAW System — Production</span>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-row active"><span>📊 Dashboard</span><span class="badge badge-on">Активно</span></div>
+                <div class="mockup-row"><span>👥 Clients & Cases</span><span class="badge badge-on">Активно</span></div>
+                <div class="mockup-row"><span>📚 Knowledge Base (RAG)</span><span class="badge badge-on">Активно</span></div>
+                <div class="mockup-row"><span>🤖 Laila AI Assistant</span><span class="badge badge-beta">Beta</span></div>
+                <div class="mockup-row"><span>⚙️ Systematizer</span><span class="badge badge-on">Активно</span></div>
+                <div class="mockup-row"><span>📄 Document Generator</span><span class="badge badge-off">В разработке</span></div>
+                <div class="mockup-row"><span>🔐 Users & Audit</span><span class="badge badge-on">Активно</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">
+            <span class="section-label-line"></span>
+            <span class="section-label-text">Технологический стек</span>
+          </div>
+          <h2 class="section-heading light">Построено на <em>надёжных технологиях</em></h2>
+        </div>
+        <div class="tech-grid" data-aos="fade-up">
+          <div class="tech-pill">Tauri v2</div>
+          <div class="tech-pill">React + TypeScript</div>
+          <div class="tech-pill">Rust</div>
+          <div class="tech-pill">SQLite × 3</div>
+          <div class="tech-pill">Local RAG</div>
+          <div class="tech-pill">Zustand + Vite</div>
+          <div class="tech-pill">node-llama-cpp</div>
+          <div class="tech-pill">bge-m3 Embeddings</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered" data-aos="fade-up">
+          <div class="section-label" style="justify-content:center">
+            <span class="section-label-line"></span>
+            <span class="section-label-text">Лицензирование</span>
+          </div>
+          <h2 class="section-heading">Выберите <em>тариф</em></h2>
+        </div>
+        <div class="pricing-grid" data-aos="fade-up">
+          <div class="pricing-card">
+            <h3>Basic</h3>
+            <div class="pricing-price">По запросу</div>
+            <ul>
+              <li><i class="fas fa-check"></i> Клиенты и дела</li>
+              <li><i class="fas fa-check"></i> База знаний</li>
+              <li><i class="fas fa-check"></i> Базовые роли</li>
+              <li class="disabled"><i class="fas fa-times"></i> Laila AI</li>
+              <li class="disabled"><i class="fas fa-times"></i> RAG-поиск</li>
+            </ul>
+          </div>
+          <div class="pricing-card featured">
+            <div class="popular-tag">Популярный</div>
+            <h3>Pro</h3>
+            <div class="pricing-price">По запросу</div>
+            <ul>
+              <li><i class="fas fa-check"></i> Всё из Basic</li>
+              <li><i class="fas fa-check"></i> Laila AI (Beta)</li>
+              <li><i class="fas fa-check"></i> RAG-поиск</li>
+              <li><i class="fas fa-check"></i> Аудит и история</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <div class="pricing-price">По запросу</div>
+            <ul>
+              <li><i class="fas fa-check"></i> Всё из Pro</li>
+              <li><i class="fas fa-check"></i> Все модули</li>
+              <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+              <li><i class="fas fa-check"></i> Кастомизация</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-strip">
+      <div class="container">
+        <h2 data-aos="fade-up">Запросить <em>демонстрацию</em></h2>
+        <p data-aos="fade-up">Покажем платформу в действии. Ответ в течение 24 часов.</p>
+        <a href="contact.html" class="btn btn-primary" data-aos="fade-up">Написать нам</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">DL</div>
+            <div class="logo-text"><span class="logo-name">DATALAW</span><span class="logo-sub">Solutions Group</span></div>
+          </a>
+          <p>Специализированная юридическая группа в области международного права, экстрадиции, арбитража и трансграничных споров.</p>
+        </div>
+        <div class="footer-col"><h4>Практики</h4><ul>
+          <li><a href="practices.html#interpol">Interpol & Экстрадиция</a></li>
+          <li><a href="practices.html#arbitration">Международный арбитраж</a></li>
+          <li><a href="practices.html#corporate">Гражданское право</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Компания</h4><ul>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="product.html">DATALAW Platform</a></li>
+          <li><a href="eu-bridge.html">EU Bridge</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Контакты</h4><ul>
+          <li><a href="mailto:info@datalaw.solutions">info@datalaw.solutions</a></li>
+          <li><a href="#">Telegram: @datalaw_solutions</a></li>
+          <li><span>Белград, Сербия</span></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DATALAW Solutions Group. Все права защищены.</p>
+        <div class="footer-legal"><a href="#">Конфиденциальность</a><a href="#">Условия использования</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.header-legend__dropdown {
+  right: 0;
+  min-width: 260px;
+  padding: 18px 20px;
+}
+
+.header-legend__heading {
+  margin-bottom: 12px;
+  color: #8b663d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  color: #67523a;
+  font-size: 13px;
+}
+
+.header-legend__marriage{display:flex;align-items:center;gap:3px;width:38px;color:#b8414e}.header-legend__marriage i{width:13px;border-top:3px solid currentColor;border-radius:999px}.header-legend__marriage .relation-heart{position:static;width:18px;height:18px;transform:none;filter:none}.header-legend__marriage.is-dissolved{color:#b8414e}.header-legend__marriage.is-older{color:#202020}
+.header-legend__relation-line{display:block;width:38px;height:3px;flex:0 0 38px;border-radius:999px;background:#3b82c4}.header-legend__relation-line--parenthood{background:#3b82c4}

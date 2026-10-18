@@ -1,0 +1,49 @@
+<div class="layla-container" id="laylaWidget">
+
+  <div class="layla-window" id="laylaWindow" data-db="{{ '/data/layla-db.json' | url }}">
+
+    <div class="layla-header">
+      <div class="layla-header-info">
+        <span class="status-live">● ONLINE</span>
+        <h4>Лайла / AI-ассистент</h4>
+      </div>
+      <button class="layla-close" id="laylaClose" type="button" aria-label="Закрыть Лайлу">&times;</button>
+    </div>
+
+    <div class="layla-messages" id="laylaMsgs">
+      <div class="msg ai">Я Лайла. Система готова к анализу данных DataLaw. Какой у вас запрос?</div>
+    </div>
+
+    <div class="layla-input-area">
+      <input
+        type="text"
+        class="layla-input"
+        id="laylaIn"
+        placeholder="Интерпол, экстрадиция..."
+        autocomplete="off"
+        aria-label="Ваш запрос"
+      >
+      <button class="layla-send" id="laylaSend" type="button">Отправить</button>
+    </div>
+
+  </div>
+
+  <button class="layla-trigger" id="laylaTrigger" type="button" aria-label="Открыть Лайлу">
+    <svg class="orbital-system" viewBox="0 0 100 100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="4" fill="#c5a87c"/>
+      <g class="orbit-1">
+        <circle cx="50" cy="50" r="20" fill="none" stroke="rgba(197,168,124,0.35)" stroke-width="0.8"/>
+        <circle class="satellite" cx="70" cy="50" r="2.5"/>
+      </g>
+      <g class="orbit-2">
+        <circle cx="50" cy="50" r="32" fill="none" stroke="rgba(197,168,124,0.35)" stroke-width="0.8" stroke-dasharray="2,4"/>
+        <circle class="satellite" cx="18" cy="50" r="2"/>
+      </g>
+      <g class="orbit-3">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(197,168,124,0.35)" stroke-width="0.8"/>
+        <circle class="satellite" cx="50" cy="6" r="3"/>
+      </g>
+    </svg>
+  </button>
+
+</div>

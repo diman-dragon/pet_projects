@@ -1,0 +1,23 @@
+{
+  "about": {
+    "title": "O arhivi",
+    "text": "Nezavisna javna evidencija ekstradicijskog predmeta Lagovski. Arhiva prikuplja sudske odluke, procesne dokumente i medijske objave kako bi ceo tok postupka ostao vidljiv i proverljiv.",
+    "disclaimer": "Svi ovde objavljeni dokumenti potiču iz javnih izvora ili su ih dostavili branitelji u okviru prava na javnu zaštitu interesa."
+  },
+  "nav": {
+    "title": "Navigacija"
+  },
+  "contact": {
+    "title": "Kontakti i verifikacija",
+    "press": "Za novinare:",
+    "legal": "Pravna podrška:",
+    "phone": "+381 65 230 48 25",
+    "telegram": "Telegram: @diman_dragon",
+    "telegram_link": "https://t.me/diman_dragon",
+    "email": "1448884@gmail.com"
+  },
+  "copyright": {
+    "text": "© 2025–2026 Arhiva predmeta Lagovski. Ažurira se unosom novih sudskih odluka.",
+    "location": "Beograd — Moskva — Interpol (praćenje)"
+  }
+}

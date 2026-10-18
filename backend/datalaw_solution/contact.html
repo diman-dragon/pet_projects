@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DATALAW Solutions — Контакты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">DL</div>
+        <div class="logo-text">
+          <span class="logo-name">DATALAW</span>
+          <span class="logo-sub">Solutions Group</span>
+        </div>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="practices.html" class="nav-link">Практики</a>
+        <a href="product.html" class="nav-link">Продукт</a>
+        <a href="eu-bridge.html" class="nav-link">EU Bridge</a>
+        <a href="about.html" class="nav-link">О компании</a>
+        <a href="contact.html" class="nav-link active">Контакты</a>
+      </nav>
+      <a href="contact.html" class="btn btn-outline-sm">Консультация</a>
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content" data-aos="fade-up">
+          <h1>Связаться <em style="font-style:italic;color:var(--gold)">с нами</em></h1>
+          <p>Первичная консультация — бесплатно. Опишите ситуацию, и мы свяжемся в течение 24 часов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info-list" data-aos="fade-right">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@datalaw.solutions">info@datalaw.solutions</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fab fa-telegram"></i></div>
+              <div>
+                <h4>Telegram</h4>
+                <a href="#">@datalaw_solutions</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Офис</h4>
+                <p>Белград, Сербия<br>Встречи — по предварительному согласованию</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Время ответа</h4>
+                <p>В течение 24 часов в рабочие дни.<br>Срочные обращения — по Telegram.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap" data-aos="fade-left">
+            <h3>Форма обратной связи</h3>
+            <p>Опишите ситуацию в нескольких строках — это поможет нам подготовиться к разговору.</p>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-field"><input type="text" placeholder="Имя" required></div>
+                <div class="form-field"><input type="text" placeholder="Фамилия" required></div>
+              </div>
+              <div class="form-field"><input type="email" placeholder="Email" required></div>
+              <div class="form-field">
+                <select>
+                  <option value="">Тип обращения</option>
+                  <option>Interpol / Экстрадиция</option>
+                  <option>Международный арбитраж</option>
+                  <option>Гражданское / Корпоративное право</option>
+                  <option>EU Bridge (для адвокатов)</option>
+                  <option>OSINT / Корпоративная разведка</option>
+                  <option>DATALAW Platform</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <textarea rows="5" placeholder="Опишите ситуацию или вопрос..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Отправить обращение</button>
+              <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+            </form>
+            <div id="formSuccess" class="form-success" style="display:none">
+              <i class="fas fa-check-circle"></i>
+              <h3>Обращение получено</h3>
+              <p>Мы свяжемся с вами в течение 24 часов.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">DL</div>
+            <div class="logo-text"><span class="logo-name">DATALAW</span><span class="logo-sub">Solutions Group</span></div>
+          </a>
+          <p>Специализированная юридическая группа в области международного права, экстрадиции, арбитража и трансграничных споров.</p>
+        </div>
+        <div class="footer-col"><h4>Практики</h4><ul>
+          <li><a href="practices.html#interpol">Interpol & Экстрадиция</a></li>
+          <li><a href="practices.html#arbitration">Международный арбитраж</a></li>
+          <li><a href="practices.html#corporate">Гражданское право</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Компания</h4><ul>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="product.html">DATALAW Platform</a></li>
+          <li><a href="eu-bridge.html">EU Bridge</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Контакты</h4><ul>
+          <li><a href="mailto:info@datalaw.solutions">info@datalaw.solutions</a></li>
+          <li><a href="#">Telegram: @datalaw_solutions</a></li>
+          <li><span>Белград, Сербия</span></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DATALAW Solutions Group. Все права защищены.</p>
+        <div class="footer-legal"><a href="#">Конфиденциальность</a><a href="#">Условия использования</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

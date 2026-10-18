@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>DataLaw Camera</title>
+<link rel="stylesheet" href="styles.css">
+<script src="version.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <!-- Верхняя панель -->
+  <div class="top">
+    <button class="ib" id="btnFlash" aria-label="Вспышка"><i data-ic="zap"></i><b id="flashLbl"></b></button>
+    <button class="ib" id="btnTimer" aria-label="Таймер"><i data-ic="clock"></i><b id="timerLbl"></b></button>
+    <button class="ib txt" id="btnAspect" aria-label="Формат">4:3</button>
+    <button class="ib" id="btnFilters" aria-label="Фильтры"><i data-ic="sliders"></i></button>
+    <button class="ib txt" id="btnPro" aria-label="Ручной режим" hidden>PRO</button>
+    <button class="ib" id="btnSettings" aria-label="Настройки"><i data-ic="gear"></i></button>
+  </div>
+
+  <!-- Видоискатель -->
+  <div class="vf" id="vf">
+    <video id="video" playsinline muted autoplay></video>
+    <div class="grid" id="grid"></div>
+    <div class="level" id="level"></div>
+    <div class="brand" id="brand"><img src="brand/dl_mark_white.png" alt=""><span>DATALAW</span></div>
+    <canvas id="hist" width="96" height="40"></canvas>
+    <div class="ring" id="ring"></div>
+    <div class="ev" id="ev" hidden>
+      <span id="evLbl">EV 0</span>
+      <div class="evbox"><input type="range" id="evRange" value="0"></div>
+    </div>
+    <div class="recbar" id="recbar"><i></i><span id="recTime">00:00</span></div>
+    <div class="zlabel" id="zlabel">1×</div>
+    <div class="blink" id="blink"></div>
+    <div class="cd" id="cd"></div>
+    <div class="facehint" id="facehint">Покажите лицо 🙂</div>
+  </div>
+
+  <!-- Нижняя панель -->
+  <div class="bottom">
+    <div class="filters" id="filters"></div>
+    <div class="fxwrap" id="fxwrap" hidden>
+      <button class="fxk" id="funVid">📷 ФОТО</button>
+      <div class="fx" id="fx"></div>
+    </div>
+    <div class="pro" id="pro" hidden>
+      <div class="prow"><span>ISO</span><input type="range" id="isoR" min="0" max="0" step="1" value="0"><b id="isoV">—</b></div>
+      <div class="prow"><span>S</span><input type="range" id="expR" min="0" max="0" step="1" value="0"><b id="expV">—</b></div>
+      <button class="pm" id="proM">AUTO</button>
+    </div>
+    <div class="zoombar" id="zoombar" hidden></div>
+    <div class="modes" id="modes">
+      <button data-mode="photo" class="on">ФОТО</button>
+      <button data-mode="portrait" hidden>ПОРТРЕТ</button>
+      <button data-mode="fun" hidden>ЭФФЕКТЫ</button>
+      <button data-mode="video">ВИДЕО</button>
+      <button data-mode="burst">СЕРИЯ</button>
+    </div>
+    <div class="row">
+      <button class="thumb" id="btnThumb" aria-label="Галерея"><span id="thumbImg"></span></button>
+      <button class="shutter" id="shutter" aria-label="Затвор"><em id="burstCount"></em></button>
+      <div class="side">
+        <button class="ib round" id="btnLens" aria-label="Объектив" hidden><i data-ic="lens"></i><b id="lensLbl"></b></button>
+        <button class="ib round" id="btnFlip" aria-label="Сменить камеру"><i data-ic="flip"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Настройки -->
+  <div class="sheet" id="sheet">
+    <div class="card">
+      <h3>Настройки</h3>
+      <div class="opt"><span>Разрешение видео</span>
+        <div class="seg" data-key="res">
+          <button data-val="720">720p</button><button data-val="1080">1080p</button><button data-val="2160">4K</button>
+        </div>
+      </div>
+      <label class="opt nonly"><span>Расширенный режим CameraX: PRO, портрет, эффекты (бета)</span><input class="tgl" type="checkbox" data-key="nativeEngine"></label>
+      <div class="opt nonly"><span>Размытие фона (портрет)</span>
+        <div class="seg" data-key="blur">
+          <button data-val="1">Слабо</button><button data-val="2">Средне</button><button data-val="3">Сильно</button>
+        </div>
+      </div>
+      <label class="opt"><span>Водяной знак DataLaw на фото</span><input class="tgl" type="checkbox" data-key="watermark"></label>
+      <label class="opt"><span>Макс. разрешение фото</span><input class="tgl" type="checkbox" data-key="maxphoto"></label>
+      <label class="opt"><span>Сетка 3×3</span><input class="tgl" type="checkbox" data-key="grid"></label>
+      <label class="opt"><span>Уровень горизонта</span><input class="tgl" type="checkbox" data-key="level"></label>
+      <label class="opt"><span>Гистограмма</span><input class="tgl" type="checkbox" data-key="hist"></label>
+      <label class="opt"><span>Звук затвора</span><input class="tgl" type="checkbox" data-key="sound"></label>
+      <label class="opt"><span>Кнопки громкости = затвор</span><input class="tgl" type="checkbox" data-key="volume"></label>
+
+      <div class="about">
+        <img src="brand/dl_logo.png" alt="DataLaw">
+        <div>
+          <b>DataLaw Camera</b>
+          <small id="aboutVer">версия</small>
+          <small><a id="aboutPrivacy" href="#" target="_blank" rel="noopener">Политика конфиденциальности</a></small>
+        </div>
+      </div>
+      <details class="diag">
+        <summary>Диагностика</summary>
+        <pre id="diag"></pre>
+        <button class="pm" id="diagCopy">Копировать</button>
+      </details>
+      <button class="close" id="sheetClose">Готово</button>
+    </div>
+  </div>
+
+  <!-- Просмотр снятого -->
+  <div class="viewer" id="viewer">
+    <div class="vbody" id="vbody"></div>
+    <div class="vbar">
+      <button class="ib" id="vPrev">‹</button>
+      <span id="vCount"></span>
+      <button class="ib" id="vNext">›</button>
+      <button class="ib" id="vClose">✕</button>
+    </div>
+  </div>
+
+  <div class="sflash" id="sflash"></div>
+  <div class="toast" id="toast"></div>
+
+  <!-- Ошибка: всегда есть выход -->
+  <div class="err" id="err">
+    <img src="brand/dl_logo.png" alt="" class="err-logo">
+    <p id="errText"></p>
+    <pre class="err-log" id="errLog"></pre>
+    <div class="err-btns">
+      <button id="errBtn">Повторить</button>
+      <button id="errSafe" class="alt">Режим совместимости</button>
+      <button id="errCopy" class="alt">Копировать журнал</button>
+    </div>
+  </div>
+
+  <!-- Загрузочный экран DataLaw -->
+  <div class="boot" id="boot">
+    <img src="brand/dl_logo.png" alt="DataLaw" class="boot-logo">
+    <div class="boot-name">DataLaw <span>Camera</span></div>
+    <div class="boot-bar"><i></i></div>
+    <div class="boot-note" id="bootNote">Запуск камеры…</div>
+    <pre class="boot-log" id="bootLog"></pre>
+    <button class="boot-copy" id="bootCopy">Копировать журнал</button>
+    <button class="boot-btn" id="bootSafe" hidden>Не открывается? Режим совместимости</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

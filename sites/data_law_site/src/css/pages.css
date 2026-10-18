@@ -1,0 +1,9 @@
+/* ==========================================================================
+   DATALAW — PAGES CSS (INDEX)
+   Стили страниц теперь вынесены в отдельные файлы в папке pages/.
+   ========================================================================== */
+
+@import "pages/home.css";
+@import "pages/intelligence.css";
+@import "pages/analytics.css";
+@import "pages/utils.css";

@@ -1,0 +1,18 @@
+{
+  "errors.common.unknown": "Unknown error",
+  "errors.common.notFound": "Record not found",
+  "errors.config.missingWorkDir": "Working directory is not configured",
+  "errors.config.resolveFailed": "Failed to resolve config path",
+  "errors.db.queryFailed": "Database query failed",
+  "errors.serialization.invalidPayload": "Invalid request payload",
+  "errors.fs.io": "Filesystem error",
+  "errors.fs.pathMissing": "Appeal folder path is missing",
+  "errors.fs.invalidFileName": "Invalid file name",
+  "errors.document.extractFailed": "Failed to extract document text",
+  "errors.ai.unavailable": "Local AI model is unavailable",
+  "errors.ai.requestFailed": "Local AI request failed",
+  "errors.ai.invalidResponse": "Local AI returned an invalid response",
+  "errors.ai.transport": "Local AI transport error",
+  "errors.appeal.chainMissing": "Appeal chain context is missing",
+  "errors.regex.invalid": "Internal pattern processing error"
+}

@@ -1,0 +1,56 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+}
+
+.date-group {
+    scroll-margin-top: 85px;
+}
+
+.detail-header { display: flex; align-items: center; gap: 20px; margin-bottom: 30px; padding: 10px 0; border-bottom: 2px solid var(--border); }
+
+.back-btn { 
+  padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); 
+  background: var(--surface-solid); color: var(--text); cursor: pointer; 
+  font-weight: 700; transition: 0.2s; font-size: 0.85rem;
+  box-shadow: var(--shadow-sm);
+}
+.back-btn:hover { background: var(--surface-alt); border-color: var(--accent); color: var(--accent); transform: translateX(-3px); }
+
+.detailed-card.full-width { grid-column: 1 / -1; max-width: 900px; margin: 0 auto; width: 100%; }
+.main-score { font-size: 3.5rem !important; padding: 20px 40px !important; }
+.big-stats { padding: 40px !important; }
+.big-stats .mini-stat-row { margin-bottom: 30px; }
+.big-stats .ms-label { font-size: 0.85rem; margin-bottom: 12px; font-weight: 700; color: var(--text-secondary); }
+.big-stats .ms-bar-bg { height: 16px; border-radius: 8px; }
+.big-stats .ms-bar-val { font-size: 1.1rem; width: 60px; }
+
+.team-title-row { display: flex; align-items: center; gap: 15px; }
+.clickable { cursor: pointer; transition: 0.2s; }
+.clickable:hover { opacity: 0.85; transform: scale(1.01); }
+
+.view { display: none; }
+.view.active { display: block; animation: fadeIn 0.4s ease-out; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.placeholder-msg {
+  padding: 60px 20px; text-align: center; color: var(--text-tertiary);
+  background: var(--surface-alt); border-radius: var(--radius-lg);
+  border: 2px dashed var(--border);
+}

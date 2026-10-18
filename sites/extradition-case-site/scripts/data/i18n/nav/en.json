@@ -1,0 +1,22 @@
+{
+  "home": "Overview",
+  "timeline": "Timeline",
+  "legal": "Legal Analysis",
+  "persons": "Who's Who",
+  "docs": "Documents",
+  "intl": "International proceedings",
+  "media": "Press archive",
+  "flagrant": "Flagrant denial of justice",
+  "article8": "Article 8 ECHR: Family",
+  "search": "Search...",
+  "descriptions": {
+    "home": "Core thesis and site map",
+    "timeline": "Events and decisions in order",
+    "legal": "Legal frame of the conflict",
+    "intl": "International review of risks",
+    "flagrant": "Flagrant denial of justice",
+    "persons": "Roles and personal responsibility",
+    "docs": "Archive of primary sources",
+    "media": "Coverage and external record"
+  }
+}

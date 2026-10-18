@@ -1,0 +1,16 @@
+/* Reset, typography and shared controls (button, segmented switch). */
+:root{--sat:var(--safe-area-inset-top,env(safe-area-inset-top,0px));--sab:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:16px/1.4 system-ui,sans-serif}
+button{font:inherit;color:inherit;border:0;background:none}
+ul{list-style:none}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.hidden,[hidden]{display:none!important}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:12px;font-size:14px;font-weight:600;background:var(--accent);color:var(--on-accent);flex:none}
+.icon-btn{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;flex:none}
+.icon-btn:active{background:var(--accent-soft)}
+.icon-btn svg{width:22px;height:22px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.seg button{padding:8px 12px;font-size:14px}
+.seg button.on{background:var(--accent);color:var(--on-accent)}

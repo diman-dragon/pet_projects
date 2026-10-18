@@ -1,0 +1,47 @@
+.relation-overlay {
+  position: absolute;
+  z-index: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.relation-overlay__segment {
+  position: absolute;
+  display: block;
+  transform-origin: 0 50%;
+  border-radius: 999px;
+}
+
+.relation-line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  transform-origin: 0 50%;
+  border-radius: 999px;
+  opacity: 0.9;
+  pointer-events: none;
+  background: var(--relation-color);
+}
+
+.relation-path { position: absolute; overflow: visible; pointer-events: none; }
+.relation-path__line { fill: none; stroke: var(--relation-color); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
+
+.relation-overlay__svg {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.relation-overlay__svg-line {
+  stroke-width: 3;
+  stroke-linecap: round;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.relation-overlay.is-selected .relation-line,
+.relation-overlay.is-selected .relation-path__line {
+  filter: drop-shadow(0 0 3px currentColor);
+  opacity: 1;
+}

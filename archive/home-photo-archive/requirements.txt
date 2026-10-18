@@ -1,0 +1,12 @@
+# MediaOrganizer — зависимости
+# Установка: pip install -r requirements.txt
+
+# ОБЯЗАТЕЛЬНО — EXIF из фотографий (JPG, TIFF и др.)
+Pillow>=10.0.0
+
+# ОБЯЗАТЕЛЬНО — метаданные видеофайлов (дата съёмки из MP4/MOV/MKV и др.)
+hachoir>=3.2.0
+
+# ОПЦИОНАЛЬНО — поддержка HEIC/HEIF (Apple iPhone)
+# Раскомментируйте если нужна поддержка .heic файлов:
+# pillow-heif>=0.13.0

@@ -1,0 +1,94 @@
+<header class="site-header">
+  <div class="header-inner">
+    
+    <div class="logo-section">
+      <a href="{{ '/' | url }}" class="text-logo">
+        <img src="{{ '/assets/datalaw-logo-shield.jpg' | url }}" alt="Логотип DataLaw — щит" class="logo-shield">
+        <div class="logo-text-group">
+          <div class="logo-wrapper">
+            <span class="logo-main">DATA LAW</span>
+            <div class="logo-accent-line"></div>
+          </div>
+          <span class="logo-sub">GLOBAL TECHNOLOGIES FOR HUMAN RIGHTS</span>
+        </div>
+      </a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню">
+      <div class="hamburger"><span></span><span></span><span></span></div>
+      <span class="toggle-text">MENU</span>
+    </button>
+
+    <nav class="header-nav" id="main-nav">
+      <div class="nav-container">
+        
+        {# Группа 1: Об организации #}
+        <div class="nav-group">
+          <div class="nav-link-row">
+            <a href="{{ '/pages/about/' | url }}" class="nav-link {% if '/pages/about/' in page.url or '/pages/mission/' in page.url or '/pages/contacts/' in page.url %}is-active{% endif %}">Об организации</a>
+            <button class="expander" type="button"></button>
+          </div>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <a href="{{ '/pages/about/' | url }}" class="drop-item {% if page.url == '/pages/about/' %}is-active{% endif %}">О нас</a>
+              <a href="{{ '/pages/mission/' | url }}" class="drop-item {% if page.url == '/pages/mission/' %}is-active{% endif %}">Миссия и ценности</a>
+              <a href="{{ '/pages/contacts/' | url }}" class="drop-item {% if page.url == '/pages/contacts/' %}is-active{% endif %}">Контакты</a>
+            </div>
+          </div>
+        </div>
+
+        {# Группа 2: Экспертиза (Сюда переехала Библиотека) #}
+        <div class="nav-group">
+          <div class="nav-link-row">
+            <a href="{{ '/pages/interpol/' | url }}" class="nav-link {% if '/pages/interpol/' in page.url or '/pages/practice/' in page.url or '/pages/library/' in page.url %}is-active{% endif %}">Экспертиза</a>
+            <button class="expander" type="button"></button>
+          </div>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <a href="{{ '/pages/interpol/' | url }}" class="drop-item {% if page.url == '/pages/interpol/' %}is-active{% endif %}">Интерпол / Red Notice</a>
+              <a href="{{ '/pages/arbitration/' | url }}" class="drop-item {% if page.url == '/pages/arbitration/' %}is-active{% endif %}">Арбитраж</a>
+              <a href="{{ '/pages/civil-law/' | url }}" class="drop-item {% if page.url == '/pages/civil-law/' %}is-active{% endif %}">Гражданское право</a>
+              <a href="{{ '/pages/practice/' | url }}" class="drop-item {% if page.url == '/pages/practice/' %}is-active{% endif %}">Судебная практика</a>
+              <a href="{{ '/pages/library/' | url }}" class="drop-item {% if page.url == '/pages/library/' %}is-active{% endif %}">Библиотека</a>
+            </div>
+          </div>
+        </div>
+
+        {# Группа 3: Аналитика (Сюда добавили новую страницу Аналитика) #}
+        <div class="nav-group">
+          <div class="nav-link-row">
+            <a href="{{ '/pages/analytics/' | url }}" class="nav-link {% if '/pages/analytics/' in page.url or '/pages/reviews/' in page.url or '/pages/articles/' in page.url %}is-active{% endif %}">Аналитика</a>
+            <button class="expander" type="button"></button>
+          </div>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <a href="{{ '/pages/reviews/' | url }}" class="drop-item {% if page.url == '/pages/reviews/' %}is-active{% endif %}">Страновые обзоры</a>
+              <a href="{{ '/pages/articles/' | url }}" class="drop-item {% if page.url == '/pages/articles/' %}is-active{% endif %}">Статьи и гайды</a>
+              <a href="{{ '/pages/expert-opinions/' | url }}" class="drop-item {% if page.url == '/pages/expert-opinions/' %}is-active{% endif %}">Экспертные заключения</a>
+            </div>
+          </div>
+        </div>
+
+        {# Группа 4: Технологии #}
+        <div class="nav-group">
+          <div class="nav-link-row">
+            <a href="{{ '/pages/ai-navigator/' | url }}" class="nav-link {% if '/pages/ai-navigator/' in page.url or '/pages/crm/' in page.url or '/pages/integration/' in page.url %}is-active{% endif %}">Технологии</a>
+            <button class="expander" type="button"></button>
+          </div>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <a href="{{ '/pages/intelligence/' | url }}" class="drop-item {% if page.url == '/pages/intelligence/' %}is-active{% endif %}">Интеллектуальный поиск</a>
+              <a href="{{ '/pages/ai-navigator/' | url }}" class="drop-item {% if page.url == '/pages/ai-navigator/' %}is-active{% endif %}">AI-Навигатор Лайла</a>
+              <a href="{{ '/pages/crm/' | url }}" class="drop-item {% if page.url == '/pages/crm/' %}is-active{% endif %}">Legal CRM Система</a>
+              <a href="{{ '/pages/integration/' | url }}" class="drop-item {% if page.url == '/pages/integration/' %}is-active{% endif %}">Интеграция</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-actions">
+          <a href="{{ '/pages/contacts/' | url }}" class="cta-button">Связаться</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

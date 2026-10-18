@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-shell {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-shell__content {
+  min-height: 0;
+  flex: 1;
+}
+
+.app-shell--dark {
+  color-scheme: dark;
+  background: #1e1d1b;
+  color: #eee9e0;
+}
+
+.app-shell--dark .app-header {
+  border-color: rgba(232, 220, 201, 0.14);
+  background: rgba(38, 36, 33, 0.96);
+  color: #eee9e0;
+}
+
+.app-shell--dark .app-header::after {
+  background: rgba(214, 176, 119, 0.22);
+}
+
+.app-shell--dark .app-header h1,
+.app-shell--dark .header-trigger,
+.app-shell--dark .header-menu__settings,
+.app-shell--dark .header-legend__item,
+.app-shell--dark .header-legend__title {
+  color: #eee9e0;
+}
+
+.app-shell--dark .header-dropdown,
+.app-shell--dark .context-menu,
+.app-shell--dark .canvas-controls,
+.app-shell--dark .generation-zero-label,
+.app-shell--dark .header-center-marker__number {
+  border-color: rgba(232, 220, 201, 0.18);
+  background: rgba(43, 41, 38, 0.98);
+  color: #eee9e0;
+}
+
+
+.app-shell--dark .canvas {
+  background-color: #242321;
+}
+
+.app-shell--dark .canvas-controls button,
+.app-shell--dark .context-menu__item,
+.app-shell--dark .header-menu__version,
+.app-shell--dark .generation-zero-label,
+.app-shell--dark .person-card__line {
+  color: #d8cfc2;
+}
+
+.app-shell--dark .person-card {
+  border-color: color-mix(in srgb, var(--person-accent) 70%, transparent);
+  background: linear-gradient(135deg, #302e2a 0%, #262522 100%);
+  color: #eee9e0;
+}
+
+.app-shell--dark .person-card__name,
+.app-shell--dark .person-card__surname,
+.app-shell--dark .person-card__line strong {
+  color: #f1e9dd;
+}
+
+.app-shell--dark .person-card__photo {
+  border-color: rgba(232, 220, 201, 0.2);
+  background: linear-gradient(145deg, #4a443b, #302e2a);
+}
+
+.app-shell--dark .person-edit-modal,
+.app-shell--dark .workspace-settings-modal {
+  border-color: rgba(232, 220, 201, 0.2);
+  background: #2b2926;
+  color: #eee9e0;
+}
+
+.app-shell--dark .person-edit-modal h2,
+.app-shell--dark .workspace-settings-modal h2 {
+  color: #f1e9dd;
+}
+
+.app-shell--dark .person-edit-modal input,
+.app-shell--dark .person-edit-modal select,
+.app-shell--dark .person-edit-modal textarea,
+.app-shell--dark .workspace-settings-modal input,
+.app-shell--dark .workspace-settings-modal select {
+  border-color: rgba(232, 220, 201, 0.24);
+  background: #1f1e1c;
+  color: #eee9e0;
+}
+
+.app-shell--dark .workspace-settings-modal__theme-field,
+.app-shell--dark .workspace-settings-modal__theme-button {
+  color: #d8cfc2;
+}
+
+.app-shell--dark .workspace-settings-modal__theme-button {
+  border-color: rgba(232, 220, 201, 0.24);
+}
+
+.app-shell--dark .workspace-settings-modal__theme-button--active {
+  border-color: #d6b077;
+  background: rgba(214, 176, 119, 0.16);
+  box-shadow: inset 0 0 0 1px #d6b077;
+  color: #f1e9dd;
+}
+
+.app-shell--dark .data-transfer-modal { border-color: rgba(232, 220, 201, 0.2); background: #2b2926; color: #eee9e0; }
+.app-shell--dark .data-transfer-modal h2, .app-shell--dark .data-transfer-modal__format, .app-shell--dark .data-transfer-modal__mode { color: #f1e9dd; }
+.app-shell--dark .data-transfer-modal__format, .app-shell--dark .data-transfer-modal__mode, .app-shell--dark .workspace-settings-modal__transfer { border-color: rgba(232, 220, 201, 0.24); color: #d8cfc2; }
+.app-shell--dark .marriage-modal { border-color: rgba(232, 201, 143, 0.24); background: #2b2926; color: #eee9e0; }
+.app-shell--dark .marriage-modal h2 { color: #f1e9dd; }
+.app-shell--dark .marriage-modal__hint, .app-shell--dark .marriage-modal label { color: #d8cfc2; }
+.app-shell--dark .marriage-modal select { border-color: rgba(232, 220, 201, 0.24); background: #34312d; color: #f1e9dd; }
+.app-shell--dark .marriage-modal__secondary { border-color: rgba(232, 220, 201, 0.24); color: #e8c98f; }

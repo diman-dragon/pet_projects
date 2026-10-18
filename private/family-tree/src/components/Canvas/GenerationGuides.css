@@ -1,0 +1,26 @@
+.generation-guides {
+  position: absolute;
+  right: -100vw;
+  left: -100vw;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.generation-guides__line {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-top: 1px dashed rgba(126, 91, 45, 0.42);
+}
+
+.generation-guides__line--top {
+  top: 0;
+}
+
+.generation-guides__line--bottom {
+  bottom: 0;
+}
+
+.generation-guides--hidden {
+  opacity: 0;
+}

@@ -1,0 +1,152 @@
+{
+  "badge": "Flagrantno uskraćivanje pravde",
+  "title": "Flagrantno uskraćivanje pravde",
+  "subtitle": "Nijedan ruski državni organ nije razmatrao žalbe po suštini. Sud, tužilaštvo, Generalno tužilaštvo — svako je odgovorilo šablonom ili prosleđivanjem. Prema međunarodnim standardima, ovo predstavlja samostalni osnov za odbijanje ekstradicije.",
+  "intro": "Od 2025. godine podneto je više od 15 zahteva sudovima, Tužilaštvu Moskovske oblasti, Generalnom tužilaštvu RF i odeljenju unutrašnje bezbednosti. Rezultat: nula suštinskih odgovora. Ovaj sistemski obrazac, prema standardima ESLJP-a i normama UN-a, predstavlja samostalni i dovoljan osnov za odbijanje ekstradicije — bez obzira na ocenu osnovanosti optužbi.",
+  "un_block": {
+    "title": "Standardi UN-a: Osnovni principi UN-a o ulozi pravnika (1990)",
+    "intro": "Osmi kongres UN-a o sprečavanju kriminala usvojio je 'Osnovne principe o ulozi pravnika' (Havana, 1990). Ovaj dokument je autoritativni UN standard u oblasti pristupa pravdi i profesionalne delatnosti pravnika. Rusija, kao država članica UN-a, obavezna je da ga poštuje.",
+    "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/basic-principles-role-lawyers",
+    "url_label": "Puni tekst Osnovnih principa UN-a o ulozi pravnika (ohchr.org)",
+    "principles": [
+      {
+        "num": "Princip 1",
+        "text": "Sva lica imaju pravo da zatraže pomoć pravnika po svom izboru radi zaštite i utvrđivanja svojih prava i odbrane u svim fazama krivičnog postupka.",
+        "relevance": "Lagovski je lišen mogućnosti da podnosi žalbe ruskim sudovima upravo zbog toga što je pod krivičnim gonjenjem — začarani krug koji direktno krši Princip 1."
+      },
+      {
+        "num": "Princip 16(a)",
+        "text": "Pravnici moraju biti u mogućnosti da obavljaju sve svoje profesionalne funkcije bez zastrašivanja, ometanja, uznemiravanja ili neprikladnog mešanja.",
+        "relevance": "Krivično gonjenje Lagovskog zbog pružanja zakonitih pravnih usluga protivreči Principu 16(a): samo pokretanje postupka protiv samostalnog pravnika za rad po ugovoru predstavlja neprimerno mešanje."
+      },
+      {
+        "num": "Princip 18",
+        "text": "Pravnici se ne poistovećuju sa svojim klijentima ili interesima klijenata kao rezultat obavljanja svojih funkcija.",
+        "relevance": "Optužnica praktično pripisuje Lagovskom prevaru koju je navodno počinio klijent, poistovećujući advokata sa delima nalogodavca — direktno kršenje Principa 18."
+      },
+      {
+        "num": "Princip 23",
+        "text": "Pravnici, kao i drugi građani, imaju pravo na slobodu izražavanja i pravo da učestvuju u javnim raspravama o pitanjima prava i vršenja pravde.",
+        "relevance": "Zatvaranje pristupa sudu po formalnom osnovu statusa bežanca praktično lišava Lagovskog mogućnosti da osporava optužbe — ni na sudu, ni kroz nadzorne organe."
+      }
+    ]
+  },
+  "echr_block": {
+    "title": "Standard ESLJP-a: Šta je 'flagrantno uskraćivanje pravde'?",
+    "paras": [
+      {
+        "text": "U predmetu <a href=\"https://hudoc.echr.coe.int/eng?i=001-108629\" target=\"_blank\" rel=\"noopener noreferrer\">Othman (Abu Qatada) v. Ujedinjeno Kraljevstvo, Predstavka br. 8139/09, 2012</a>, ESLJP je naveo da i u predmetima izručenja ili udaljenja može nastati pitanje po članu 6 ako lice trpi stvarni rizik od 'flagrantnog uskraćivanja pravde' u državi prijema — povrede toliko ozbiljne da uništava samu suštinu prava na pravično suđenje.",
+        "is_html": true
+      },
+      {
+        "text": "U predmetu <a href=\"https://hudoc.echr.coe.int/eng?i=001-68183\" target=\"_blank\" rel=\"noopener noreferrer\">Mamatkulov and Askarov v. Turska [VS], Predstavke br. 46827/99 i 46951/99, 2005</a>, Veliko veće je objasnilo da se u ekstradicionim predmetima rizik od flagrantnog uskraćivanja pravde u državi odredišta procenjuje prema činjenicama koje je država koja izručuje znala ili morala znati u trenutku predaje. Za predvidive konvencijske posledice svoje odluke ona snosi sopstvenu odgovornost.",
+        "is_html": true
+      },
+      {
+        "text": "U predmetu <a href=\"https://hudoc.echr.coe.int/eng?i=001-57496\" target=\"_blank\" rel=\"noopener noreferrer\">Golder v. Ujedinjeno Kraljevstvo, Predstavka br. 4451/70, 1975</a>, Sud je utvrdio da je pristup sudu sastavni deo člana 6. Ako pravni sistem blokira samu mogućnost da se ospori optužba ili postupanje vlasti, zadire se u jezgro garancije pravičnog suđenja.",
+        "is_html": true
+      },
+      {
+        "text": "U predmetu <a href=\"https://hudoc.echr.coe.int/eng?i=001-58920\" target=\"_blank\" rel=\"noopener noreferrer\">Kudła v. Poljska [VS], Predstavka br. 30210/96, 2000</a>, Veliko veće je potvrdilo da konvencijska prava zahtevaju praktična i delotvorna pravna sredstva, a ne puko formalno postojanje postupaka. Zato jednolična šablonska odbijanja i kružno prosleđivanje pritužbi imaju direktan značaj pri oceni da li je licu uopšte ostavljen stvaran put pravne zaštite.",
+        "is_html": true
+      }
+    ]
+  },
+  "pattern_title": "Jedan šablon: Kako to izgleda u praksi",
+  "pattern_desc": "Svi organi deluju prema jednoj shemi — žalba je primljena, prosleđena ili 'razmotrena', a suštinskih zaključaka nema. Dokumenti navedeni u nastavku to potvrđuju: svaki od njih dokumentuje sistemsko odbijanje suštinskog razmatranja.",
+  "docs_cta": {
+    "title": "Svi dokumenti u arhivi",
+    "desc": "PDF i DOCX: odgovori tužilaštva, Generalnog tužilaštva, žalbe — sa pregledom i preuzimanjem",
+    "btn": "Otvoriti odeljak \"Flagrantno uskraćivanje pravde\""
+  },
+  "labels": {
+    "why_flagrant": "Zašto je ovo flagrantno po standardu ESLJP-a",
+    "quote": "Citat iz dokumenta",
+    "echr_refs": "Sudska praksa ESLJP-a",
+    "un_refs": "Standardi UN-a",
+    "doc_link": "Dokument"
+  },
+  "episodes": [
+    {
+      "title": "Tužilaštvo MO — 8 identičnih odgovora (A.A. Mitrokhina, 2025)",
+      "tag": "Tužilaštvo · Sistemski šablon",
+      "what_happened": "Zamenik načelnika odeljenja Tužilaštva Moskovske oblasti A.A. Mitrokhina potpisala je najmanje 8 odgovora na žalbe zbog nezakonitog krivičnog gonjenja. Svaki odgovor reprodukuje isti tekst: predmet je osnovanо pokrenut, istraga je obustavljena, argumenti o nepripadnosti 'provereni' su od strane sudova pri određivanju pritvora. Ni u jednom odgovoru nije sprovedena suštinska provera iznetih argumenata. Deo zahteva jednostavno je prosleđen onom organu čije se postupanje osporava — Odeljenju za istragu MUP-a. Tužilaštvo, nadležno da vrši nezavisni nadzor, faktički je postalo prenosnik stava istrage.",
+      "quote": "Pojašnjavam da su procesne odluke donete u krivičnom predmetu proverene od strane tužilaštva oblasti, o čemu ste ranije višestruko obavešteni.",
+      "why_flagrant": "Član 13 EKLJP zahteva pravno sredstvo koje je praktično i delotvorno, a ne samo formalno dostupno. Pozivanje na ranije 'provere' bez razmatranja novih navoda, kao i vraćanje pritužbe istom organu, ne predstavlja nezavisno preispitivanje. U kontekstu izručenja to je ključno, jer po predmetu Othman država koja izručuje mora proceniti da li lice šalje u postupak lišen osnovnih garancija.",
+      "violations": [
+        "Čl. 13 EKLJP (nedelotvorno pravno sredstvo)",
+        "Čl. 6 EKLJP (pristup sudu)",
+        "Princip 16(a) Osnovnih principa UN-a o ulozi pravnika"
+      ],
+      "echr_refs_html": [
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-58920\" target=\"_blank\" rel=\"noopener noreferrer\">Kudła v. Poljska [VS], Predstavka br. 30210/96, 2000</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-108629\" target=\"_blank\" rel=\"noopener noreferrer\">Othman (Abu Qatada) v. UK, Predstavka br. 8139/09, 2012</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-57496\" target=\"_blank\" rel=\"noopener noreferrer\">Golder v. Ujedinjeno Kraljevstvo, Predstavka br. 4451/70, 1975</a>"
+      ],
+      "un_refs_html": [
+        "<a href=\"https://www.ohchr.org/en/instruments-mechanisms/instruments/basic-principles-role-lawyers\" target=\"_blank\" rel=\"noopener noreferrer\">Osnovni principi UN-a o ulozi pravnika (1990), Principi 1, 16(a)</a>"
+      ],
+      "doc_link": {
+        "label": "Tužilaštvo MO — svi odgovori (PDF)",
+        "href": "./files/russia/prokuratura/Svod-otvetov-Mitrokhinoy.pdf"
+      }
+    },
+    {
+      "title": "Generalno tužilaštvo — 5 zahteva, nula suštinskih odgovora (S.V. Prokopenko, 2025–2026)",
+      "tag": "Generalno tužilaštvo · Vrhovni nadzorni organ",
+      "what_happened": "Generalnom tužilaštvu RF podneto je najmanje 5 zahteva (OGR-87571-26, OGR-95782-26, OGR-93291-26, OGR-116883-26 i OGR-434122-25). Stav GT u svim slučajevima: 'nema osnova za intervenciju', argumenti o nepripadnosti 'podležu proveri putem istrage'. Istraga je, međutim, obustavljena od izdavanja poternice i nikakve istražne radnje se ne preduzimaju. Odgovor od 17.03.2026. poziva se na pravosnažnu osuđujuću presudu prema drugim licima kao potvrdu osnovanosti gonjenja Lagovskog in absentia — direktna povreda pretpostavke nevinosti.",
+      "quote": "Dakle, trenutno ne postoje osnovi za intervenciju Generalnog tužilaštva Ruske Federacije.",
+      "why_flagrant": "Generalno tužilaštvo je najviši nadzorni tužilački organ. Ako se ni na tom nivou pritužbe ne razmatraju suštinski, sistem pravne zaštite nije samo slab nego praktično zatvoren. Za potrebe ekstradicije to je važno zato što država koja izručuje mora oceniti predvidive posledice svoje odluke: da li lice vraća u postupak u kojem ni tužilački nadzor ni praktična mogućnost osporavanja stvarno ne funkcionišu.",
+      "violations": [
+        "Čl. 13 EKLJP (odsustvo delotvornog pravnog sredstva)",
+        "Čl. 6 §1 EKLJP (pravo na pravično suđenje)",
+        "Čl. 6 §2 EKLJP (pitanja pretpostavke nevinosti)"
+      ],
+      "echr_refs_html": [
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-68183\" target=\"_blank\" rel=\"noopener noreferrer\">Mamatkulov and Askarov v. Turska [VS], Predstavke br. 46827/99, 46951/99, 2005</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-108629\" target=\"_blank\" rel=\"noopener noreferrer\">Othman (Abu Qatada) v. UK, Predstavka br. 8139/09, 2012</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-58920\" target=\"_blank\" rel=\"noopener noreferrer\">Kudła v. Poljska [VS], Predstavka br. 30210/96, 2000</a>"
+      ],
+      "un_refs_html": [
+        "<a href=\"https://www.ohchr.org/en/instruments-mechanisms/instruments/basic-principles-role-lawyers\" target=\"_blank\" rel=\"noopener noreferrer\">Osnovni principi UN-a o ulozi pravnika (1990), Princip 18 (pravnik se ne poistovećuje sa klijentom)</a>"
+      ],
+      "doc_link": {
+        "label": "Generalno tužilaštvo — svi odgovori (PDF)",
+        "href": "./files/russia/prokuratura/Genprokuratura-Prokopenko-otvety.pdf"
+      }
+    },
+    {
+      "title": "Moskovski gradski sud: Zahtev odbijen (16.10.2025)",
+      "tag": "Sudovi · Pristup pravdi",
+      "what_happened": "Dana 16. oktobra 2025. Moskovski gradski sud vratio je zahtev bez razmatranja. Zvanični izgovor: neusklađenost sa formalnim zahtevima čl. 7 Saveznog zakona br. 59-FZ o postupku razmatranja obraćanja građana. Operativni osnov, izričito naveden u pismu potpisanom od strane zamenika predsednika suda L.Yu. Ishmuratove: optuženi je u potrazi, nemoguće je 'identifikovati podnosioca'. Sud — organ nadležan da razmatra žalbe na povrede prava — pretvorio je sam čin krivičnog gonjenja u osnov za uskraćivanje pristupa pravdi: lice ne može da osporava optužbu upravo zato što je optuženo.",
+      "quote": "Uzimajući u obzir navedene okolnosti, a posebno nemogućnost identifikacije podnosioca koji se traži, podnesak se ostavlja bez razmatranja.",
+      "why_flagrant": "Pravo pristupa sudu ne može biti ispražnjeno procesnim formalizmom vezanim za status traženog lica. U predmetu Golder Sud je utvrdio da je pristup sudu sastavni element člana 6. Kada se sama optužba koristi kao razlog da se pritužba ne sasluša, to direktno ukazuje na rizik postupka bez minimalnih garancija pravičnog suđenja.",
+      "violations": [
+        "Čl. 46 Ustava RF",
+        "Čl. 6 §1 EKLJP (pristup sudu)",
+        "Čl. 13 EKLJP (delotvorno pravno sredstvo)",
+        "Princip 1 Osnovnih principa UN-a o ulozi pravnika"
+      ],
+      "echr_refs_html": [
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-57496\" target=\"_blank\" rel=\"noopener noreferrer\">Golder v. Ujedinjeno Kraljevstvo, Predstavka br. 4451/70, 1975 — pravo pristupa sudu kao element čl. 6 EKLJP</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-108629\" target=\"_blank\" rel=\"noopener noreferrer\">Othman (Abu Qatada) v. UK, Predstavka br. 8139/09, 2012</a>",
+        "<a href=\"https://hudoc.echr.coe.int/eng?i=001-58920\" target=\"_blank\" rel=\"noopener noreferrer\">Kudła v. Poljska [VS], Predstavka br. 30210/96, 2000</a>"
+      ],
+      "un_refs_html": [
+        "<a href=\"https://www.ohchr.org/en/instruments-mechanisms/instruments/basic-principles-role-lawyers\" target=\"_blank\" rel=\"noopener noreferrer\">Osnovni principi UN-a o ulozi pravnika (1990), Princip 1 (pravo na zaštitu u svim fazama postupka)</a>"
+      ],
+      "doc_link": {
+        "label": "Moskovski gradski sud — pismo o odbijanju (PDF)",
+        "href": "./files/russia/courts/Otvet-Tverskogo-suda-ob-otkaze-v-dostupe-k-pravosudiyu.pdf"
+      }
+    }
+  ],
+  "conclusion_title": "Zaključak: Sistemsko uskraćivanje kao samostalni osnov za odbijanje ekstradicije",
+  "conclusion_paras": [
+    "Skup ovde iznetih činjenica nije kolekcija izolovanih procesnih grešaka. Reč je o stabilnom sistemu: svaki organ na svakom nivou — od okružnog tužilaštva do Generalnog tužilaštva i Moskovskog gradskog suda — deluje prema istom šablonu izbegavanja. Ukupan broj podnesenih zahteva prelazi 15; ni jedan nije razmatran po suštini.",
+    "Prema pristupu ESLJP-a koji se vidi u predmetima Othman v. UK (2012), Mamatkulov and Askarov v. Turska (2005), Golder v. Ujedinjeno Kraljevstvo (1975) i Kudła v. Poljska (2000), država koja izručuje mora gledati dalje od formalnog paketa dokumenata i proceniti da li lice uopšte ima stvaran pristup sudu i bilo kakvo delotvorno pravno sredstvo. Ako tih garancija u praksi nema, izručenje povlači odgovornost države koja predaje lice.",
+    "Osnovni principi UN-a o ulozi pravnika (1990), usvojeni na Osmom kongresu UN-a, izričito zabranjuju poistovećivanje pravnika sa klijentom (Princip 18) i zahtevaju slobodu od gonjenja za profesionalnu delatnost (Princip 16). Gonjenje Lagovskog krši oba principa; odbijanje svih nadzornih organa da ih ispitaju dodatni je dokaz sistemske prirode problema.",
+    "Upravo zato svi ovde prikazani dokumenti imaju direktnu dokaznu vrednost za srpski sud koji razmatra zahtev za ekstradiciju. Oni ne dokumentuju samo povrede — dokumentuju njihov sistemski i nepopravljiv karakter."
+  ],
+  "summary": "Rusija je podnosiocu uskratila pristup svakom delotvornom pravnom sredstvu. Nijedan sud, nijedno tužilaštvo, ni Generalno tužilaštvo nisu razmatrali ijedan suštinski argument. Po pristupu ESLJP-a u predmetima Othman, Mamatkulov, Golder i Kudła, takav obrazac je direktno relevantan za analizu izručenja i podržava odbijanje kada država koja traži izručenje ne obezbeđuje stvarnu sudsku zaštitu."
+}

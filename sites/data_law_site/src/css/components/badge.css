@@ -1,0 +1,15 @@
+/* ── BADGE / STATUS ───────────────────────────────────────────────────────── */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--sp-1) var(--sp-3);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.badge--success { background: var(--c-green-10); color: var(--c-green); border-color: var(--c-green-10); }
+.badge--neutral { background: var(--c-ink-05); color: var(--c-text-dim); border-color: var(--c-border); }
+.badge--alert   { background: var(--c-red-10); color: var(--c-red); border-color: var(--c-red-10); }

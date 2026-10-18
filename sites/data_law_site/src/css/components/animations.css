@@ -1,0 +1,35 @@
+/* ── PULSE DOT ────────────────────────────────────────────────────────────── */
+
+.pulse-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  background: var(--c-red);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-anim 2.2s ease-in-out infinite;
+}
+@keyframes pulse-anim {
+  0%   { opacity:.6; box-shadow: 0 0 0 0 var(--c-red-10); }
+  60%  { opacity:1;  box-shadow: 0 0 0 7px rgba(192,57,43,0); }
+  100% { opacity:.6; box-shadow: 0 0 0 0 rgba(192,57,43,0); }
+}
+
+/* ── ANIMATE IN ───────────────────────────────────────────────────────────── */
+
+.animate-in {
+  animation: fade-up .65s var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-in { animation: none; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(var(--sp-5)); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in--d1 { animation-delay: 0.1s; }
+.animate-in--d2 { animation-delay: 0.2s; }
+.fade-in--d1 { animation-delay: 0.1s; }
+.fade-in--d2 { animation-delay: 0.2s; }

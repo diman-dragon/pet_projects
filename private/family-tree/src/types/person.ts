@@ -1,0 +1,22 @@
+export type PersonData = {
+  sex?: "male" | "female";
+  firstName?: string;
+  patronymic?: string;
+  lastName?: string;
+  previousLastName?: string;
+  birthDate?: string;
+  deathDate?: string;
+  photoUrl?: string;
+  photoZoom?: number;
+  photoOffsetX?: number;
+  photoOffsetY?: number;
+  genderIdentity?: string;
+  nationality?: string;
+  ethnicity?: string;
+  religion?: string;
+  occupation?: string;
+  education?: string;
+  description?: string;
+  biography?: string;
+  researchStatus?: string;
+};

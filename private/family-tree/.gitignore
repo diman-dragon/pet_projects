@@ -1,0 +1,15 @@
+# Node
+node_modules/
+dist/
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

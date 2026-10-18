@@ -1,0 +1,104 @@
+{
+  "main": {
+    "anatomy": {
+      "title": "Case Map",
+      "subtitle": "Transnational criminal prosecution: a state using legal instruments beyond the limits of its own jurisdiction.",
+      "text": "Transnational repression rarely begins with violence — it begins with paper. Arbitration and three court instances up to the Supreme Court of the Russian Federation all confirmed the same thing: the transaction was lawful. Then those same facts became the foundation of a criminal charge.\n\nThis is the central problem — not the outcome, but the mechanism. When the same conduct can simultaneously be found lawful by civil courts and criminal by prosecutors, legality means nothing. When every appeal is acknowledged, registered, and forwarded without ever being examined on the merits, the right to a remedy exists on paper only. When extradition machinery processes a request as a procedural formality rather than an independent check on the legitimacy of persecution — the system is no longer a safeguard. It becomes a transmission belt.\n\nWithin Russia, not one authority examined the defence's arguments on the merits. The Moscow Regional Prosecutor's Office, the Prosecutor General, the Moscow City Court: referrals, registrations, form letters. In Serbia, the extradition request passed through three court instances and now awaits the signature of the Minister of Justice — treated as a document to be processed, not a claim to be verified.\n\nWhen domestic mechanisms are closed, international ones remain: the Interpol CCF to challenge the Red Notice, UNHCR to assess the risks of persecution, Ukrainian authorities in connection with specific circumstances. All three have been engaged.",
+      "manifesto": "This case is not exceptional. It is a demonstration of what becomes possible when checks and balances stop functioning — when criminal law can be applied arbitrarily, when courts confirm legality while prosecutors prosecute the same acts, and when the state possesses both the apparatus and the political will to pursue a person across borders. Anyone who has left such a state carries this exposure. The question this archive poses is simple: if these mechanisms cannot be relied upon to protect the person they were built for, who are they protecting?"
+    },
+    "cards": {
+      "legal": {
+        "title": "Legal dissonance",
+        "text": "The Moscow Regional Arbitration Court, the appellate and cassation courts, and the Supreme Court of the Russian Federation all confirmed the lawfulness of the transaction in case A41-20164/2022. A criminal case opened in parallel characterises the same facts as fraud. The defence's position on fair market value — documented in the investigative record — is subsequently reinterpreted as evidence of intent to understate the price.\n\nTwo mutually exclusive conclusions about the same act, issued by institutions of the same state: this is not a procedural inconsistency. It is what instrumentalised prosecution looks like.",
+        "question": "How can demanding a fair market price serve as proof of intent to conceal it?",
+        "link": "Moscow Regional Arbitration Court ruling, case A41-20164/2022"
+      },
+      "international": {
+        "title": "International proceedings",
+        "text": "Transnational repression is the practice by which a state pursues a person beyond its borders through legal and extra-legal means: international wanted notices, extradition requests, diplomatic pressure. All three are present here: an Interpol Red Notice (challenged before the CCF), a formal extradition request to Serbia, and submissions to UNHCR.\n\nEach of these mechanisms provides for independent review of the legitimacy of the prosecution. That review — its conduct, its findings, and its limits — is what this archive documents.",
+        "link": "International proceedings"
+      },
+      "actors": {
+        "title": "Participants",
+        "text": "The criminal case was opened by investigative authorities of the Moscow Region. The extradition request was transmitted by the Prosecutor General of the Russian Federation. The request was ruled upon by Serbian courts across three instances; the final instrument awaits the signature of the Minister of Justice of Serbia.\n\nIn parallel: the Interpol CCF is examining the challenge to the Red Notice; UNHCR is processing the asylum application; the Constitutional Court of Serbia is considering a constitutional complaint. All participants, the dates of their authority, and the acts they issued are documented without editorial commentary.",
+        "link": "Register of participants"
+      },
+      "archive": {
+        "title": "Document archive",
+        "text": "Primary sources without editorial revision or authorial interpretation. The archive is structured around four sections, each corresponding to a distinct legal dimension of the case. Documents are published in the form in which they were received from the competent authorities:",
+        "list": [
+          "Start of case — transaction, arbitration, criminal proceedings",
+          "Serbia — extradition proceedings, asylum",
+          "Russia — complaints, responses, court refusals",
+          "International track — Interpol, UNHCR, Ukraine"
+        ]
+      },
+      "flagrant": {
+        "title": "Flagrant denial of justice",
+        "text": "Under ECHR standards, a 'flagrant denial of justice' is a violation of the right to a fair trial so severe that it constitutes an independent ground for refusing extradition — regardless of the merits of the underlying charge.\n\nIn this case: more than 8 submissions to the Moscow Regional Prosecutor's Office — all referred elsewhere or rejected without examination on the merits. 5 submissions to the Prosecutor General — the same result. A complaint to the Moscow City Court — refused as inadmissible. Not one authority issued a decision containing any substantive assessment of the defence's arguments.\n\nThis is not a procedural failure. It is the system functioning exactly as designed — for someone else.",
+        "link": "Flagrant denial of justice"
+      }
+    }
+  },
+  "sidebar": {
+    "title": "Case timeline",
+    "note": "Events and press coverage — newest first.",
+    "news": [
+      {
+        "sort": "2026-06-05",
+        "date": "5 June 2026",
+        "source": "EU Delegation to Serbia",
+        "logo": "eu",
+        "logo_alt": "EU Delegation",
+        "title": "EU Delegation Response: Meeting Scheduled",
+        "desc": "The European Union Delegation in Belgrade has responded to the defence's submission. A working meeting has been scheduled to discuss extradition risks and human rights compliance.",
+        "link": "./files/international/interpol-and-unhcr/Otvet-Delegatsii-ES-v-Serbii.pdf"
+      },
+      {
+        "sort": "2026-05-27",
+        "date": "27 May 2026",
+        "source": "Prosecutor General's Office (RF)",
+        "logo": "prokuratura",
+        "logo_alt": "PG RF",
+        "title": "GPO Refusal to Review Falsification Claims",
+        "desc": "Deputy Prosecutor General Prokopenko rejected the complaint against investigator Salikov, ignoring documented evidence of forgery in the inspection records.",
+        "link": "./files/russia/prokuratura/2026-05-27-Otvet-Zamgenprokurora.pdf"
+      },
+      {
+        "sort": "2026-05-01",
+        "date": "May 2026",
+        "source": "Radio Free Europe",
+        "logo": "rse",
+        "logo_alt": "RFE/RL",
+        "title": "RFE/RL Feature: 'Six Months Without a Minister's Signature'",
+        "desc": "An in-depth report on the Lagovsky case, highlighting the legal vacuum, the family's lack of health insurance, and the wait for the Justice Minister's political decision.",
+        "link": "https://www.slobodnaevropa.org/a/dmitrij-lagovski-rusij-srbija-izrucenje/33756952.html"
+      },
+      {
+        "sort": "2026-04-21",
+        "date": "21 April 2026",
+        "source": "UNHCR Serbia",
+        "logo": "unhcr",
+        "logo_alt": "UNHCR",
+        "title": "Submission to UNHCR",
+        "desc": "The defence submitted a comprehensive evidence package to the UN refugee agency in Serbia, documenting risks of persecution on political and ethnic grounds.",
+        "link": "./files/international/interpol-and-unhcr/Pismo-v-UVKB.pdf"
+      },
+      {
+        "sort": "2026-03-23",
+        "date": "23 March 2026",
+        "source": "Serbian Asylum Commission",
+        "logo": "komisija-azil",
+        "logo_alt": "Asylum Commission",
+        "title": "Final Asylum Refusal",
+        "desc": "The Commission upheld the refusal, declining to examine arguments regarding family life (Art. 8 ECHR). An appeal has been lodged with the Administrative Court.",
+        "link": "./files/serbia/asylum/commission-decision/Lagovskii-Dmitrii-resenje-KzA.pdf"
+      }
+    ],
+    "subscribe": {
+      "title": "Follow updates",
+      "text": "New rulings and documents are posted to the archive as they become available."
+    },
+    "archive_link": "Full document archive"
+  }
+}

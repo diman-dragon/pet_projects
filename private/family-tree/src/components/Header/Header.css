@@ -1,0 +1,86 @@
+.app-header {
+  position: relative;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 78px;
+  padding: 0 28px;
+  border-bottom: 1px solid rgba(98, 76, 43, 0.2);
+  background: rgba(255, 252, 245, 0.94);
+  box-shadow: 0 5px 18px rgba(66, 48, 25, 0.08);
+  color: #4a3a28;
+}
+
+.app-header::after {
+  position: absolute;
+  right: 28px;
+  bottom: -3px;
+  left: 28px;
+  height: 1px;
+  background: rgba(138, 102, 55, 0.16);
+  content: "";
+}
+
+.app-header__side {
+  display: flex;
+}
+
+.app-header__side--right {
+  justify-content: flex-end;
+}
+
+.app-header__title {
+  text-align: center;
+  line-height: 1;
+}
+
+.app-header__eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  color: #a17b4d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #533d25;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    min-height: 68px;
+    padding: 0 14px;
+  }
+
+  .app-header__eyebrow {
+    display: none;
+  }
+
+  .app-header h1 {
+    font-size: 23px;
+  }
+
+  .header-trigger {
+    padding: 8px !important;
+  }
+
+  .header-trigger > span:not(.header-trigger__icon):not(.header-trigger__chevron) {
+    display: none;
+  }
+}
+.header-undo { position: relative; display: flex; align-items: stretch; }
+.header-undo__button { border-radius: 9px 0 0 9px; gap: 4px; }
+.header-undo__toggle { min-width: 24px; padding-inline: 6px; border-left: 1px solid rgba(112, 83, 46, .18); border-radius: 0 9px 9px 0; }
+.header-undo__dropdown { left: 0; top: calc(100% + 8px); min-width: 220px; padding: 7px; }
+.header-undo__item { display: flex; width: 100%; gap: 9px; align-items: center; border: 0; border-radius: 7px; padding: 9px 10px; background: transparent; color: #67523a; cursor: pointer; font: inherit; font-size: 12px; text-align: left; }
+.header-undo__item:hover { background: rgba(168, 117, 54, .1); }
+.header-undo__all { width: 100%; margin-bottom: 5px; padding: 8px 10px; border: 0; border-bottom: 1px solid rgba(112, 83, 46, .14); background: transparent; color: #9a6532; cursor: pointer; font: inherit; font-size: 11px; font-weight: 700; text-align: left; }
+.header-undo__item small { margin-left: auto; color: #a17b4d; font-size: 10px; white-space: nowrap; }
